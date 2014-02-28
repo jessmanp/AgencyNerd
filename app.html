@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AGENCY nerd - Application</title>
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!-- mobile device meta data -->
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="app_style.css">
+<link rel="stylesheet" href="font_style.css">
+<link rel="stylesheet" href="datepickr.css" />
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="ie-only.css" />
+<![endif]-->
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="datepickr.js"></script>
+	<script>
+		/* <![CDATA[ */
+		
+		// CREATE TODAY DATE
+		function currentdate() {
+			var currentDate = new Date()
+			var day = (currentDate.getDate()<10 ? "0" : "") + currentDate.getDate()
+			var month = (currentDate.getMonth()<9 ? "0" : "") + (currentDate.getMonth()+1)
+			var year =  currentDate.getFullYear()
+			var todayDate =  month +"/" +day + "/" + year ;
+			return todayDate;
+		}
+
+		// LOAD PAGE
+		$(document).ready(function() {
+		
+			function loadDatePickers(){
+				new datepickr('datepick1', {
+					'dateFormat': 'm/d/Y'
+				});
+				new datepickr('datepick2', {
+					'dateFormat': 'm/d/Y'
+				});
+			}
+		
+			//bind orientation change to date picker event
+			$(window).bind("orientationchange", loadDatePickers);
+			$(window).resize(function() {
+				loadDatePickers();
+			});
+
+			window.scrollTo(0, 0);
+			
+			var hashTag = window.location.hash
+			if (hashTag != "") {
+   				var section = hashTag;
+   			} else {
+   				var section = "#myagency";
+   			}
+   			
+   			// ABOUT
+   			$("header").find("img").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#about";
+				window.location.reload();
+			});
+
+			// NAVIGATION
+			$("#whiteboard-link").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#whiteboard";
+				window.location.reload();
+			});
+			$("#myagency-link").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#myagency";
+				window.location.reload();
+			});
+				$("#agencyinfo-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#myagency-agencyinfo";
+					window.location.reload();
+				});
+				$("#billing-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#myagency-billing";
+					window.location.reload();
+				});
+				$("#goals-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#myagency-goals";
+					window.location.reload();
+				});
+				$("#aemployees-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#employees";
+					window.location.reload();
+				});
+			$("#policyentry-link").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#policyentry";
+				window.location.reload();
+			});
+				$("#punmatched-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#policyentry-punmatched";
+					window.location.reload();
+				});
+			$("#controld-link").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#controld";
+				window.location.reload();
+			});
+				$("#upload-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#controld-upload";
+					window.location.reload();
+				});
+				$("#cunmatched-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#controld-cunmatched";
+					window.location.reload();
+				});
+			$("#reports-link").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#reports";
+				window.location.reload();
+			});
+				$("#productline-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#reports-productline";
+					window.location.reload();
+				});
+				$("#teammembers-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#reports-teammembers";
+					window.location.reload();
+				});
+				$("#policies-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#reports-policies";
+					window.location.reload();
+				});
+				$("#premiums-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#reports-premiums";
+					window.location.reload();
+				});
+				$("#compensation-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#reports-compensation";
+					window.location.reload();
+				});
+				$("#controldsource-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#reports-controldsource";
+					window.location.reload();
+				});
+			$("#employees-link").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#employees";
+				window.location.reload();
+			});
+			$("#support-link").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#support";
+				window.location.reload();
+			});
+				$("#faq-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#support-faq";
+					window.location.reload();
+				});
+				$("#contact-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#support-contact";
+					window.location.reload();
+				});
+				$("#howtovideos-link").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#support-howtovideos";
+					window.location.reload();
+				});
+			$("#menu-link").on("click", function(event) {
+				event.preventDefault();
+				window.location = "menu.html";
+			});
+			$("#settings-link").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#settings";
+				window.location.reload();
+			});
+			$("#logout-link").on("click", function(event) {
+				event.preventDefault();
+				window.location = "login.html";
+			});
+			
+			// MOBILE NAVIGATION
+			$("#whiteboard-link-mobile").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#whiteboard";
+				window.location.reload();
+			});
+			$("#myagency-link-mobile").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#myagency";
+				window.location.reload();
+			});
+				$("#agencyinfo-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#myagency-agencyinfo";
+					window.location.reload();
+				});
+				$("#billing-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#myagency-billing";
+					window.location.reload();
+				});
+				$("#goals-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#myagency-goals";
+					window.location.reload();
+				});
+				$("#aemployees-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#employees";
+					window.location.reload();
+				});
+			$("#policyentry-link-mobile").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#policyentry";
+				window.location.reload();
+			});
+				$("#punmatched-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#policyentry-punmatched";
+					window.location.reload();
+				});
+			$("#controld-link-mobile").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#controld";
+				window.location.reload();
+			});
+				$("#upload-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#controld-upload";
+					window.location.reload();
+				});
+				$("#cunmatched-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#controld-cunmatched";
+					window.location.reload();
+				});
+			$("#reports-link-mobile").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#reports";
+				window.location.reload();
+			});
+				$("#productline-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#reports-productline";
+					window.location.reload();
+				});
+				$("#teammembers-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#reports-teammembers";
+					window.location.reload();
+				});
+				$("#policies-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#reports-policies";
+					window.location.reload();
+				});
+				$("#premiums-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#reports-premiums";
+					window.location.reload();
+				});
+				$("#compensation-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#reports-compensation";
+					window.location.reload();
+				});
+				$("#controldsource-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#reports-controldsource";
+					window.location.reload();
+				});
+			$("#employees-link-mobile").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#employees";
+				window.location.reload();
+			});
+			$("#support-link-mobile").on("click", function(event) {
+				event.preventDefault();
+				window.location.hash = "#support";
+				window.location.reload();
+			});
+				$("#faq-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#support-faq";
+					window.location.reload();
+				});
+				$("#contact-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#support-contact";
+					window.location.reload();
+				});
+				$("#howtovideos-link-mobile").on("click", function(event) {
+					event.preventDefault();
+					window.location.hash = "#support-howtovideos";
+					window.location.reload();
+				});
+			$("#menu-link-mobile").on("click", function(event) {
+				event.preventDefault();
+				window.location = "menu.html";
+			});
+			
+			// SUB MENUS
+			if (section) {
+				var page = section.split('-');
+				section = page[0];
+				page = page[1];
+				if (page) {
+					// SECONDARY HIGHLIGHT EXPANDED BUTTON
+					$(section+"-link").removeClass("button-normal");
+					$(section+"-link").addClass("button-select-sub");
+					$(section+"-link-mobile").removeClass("button-normal");
+					$(section+"-link-mobile").addClass("button-select-sub");
+					// HIGHLIGHT SUB BUTTON
+					$("#"+page+"-link").removeClass("button-sub-normal");
+					$("#"+page+"-link").addClass("button-sub-select");
+					$("#"+page+"-link-mobile").removeClass("button-sub-normal");
+					$("#"+page+"-link-mobile").addClass("button-sub-select");
+				} else {
+					// HIGHLIGHT EXPANDED BUTTON
+					$(section+"-link").removeClass("button-normal");
+					$(section+"-link").addClass("button-select");
+					$(section+"-link-mobile").removeClass("button-normal");
+					$(section+"-link-mobile").addClass("button-select");
+				} // END IF PAGE
+				// EXPAND SUB BUTTONS
+				switch (section) {
+					case "#myagency":
+						$(".sub-myagency").slideDown();
+						break;
+					case "#policyentry":
+						$(".sub-policyentry").slideDown();
+						break;
+					case "#controld":
+						$(".sub-controld").slideDown();
+						break;
+					case "#reports":
+						$(".sub-reports").slideDown();
+						break;
+					case "#support":
+						$(".sub-support").slideDown();
+						break;
+				} // END section CASE				
+			} // END IF SECTION
+			
+			// SLIDE OUT MENUS
+			$(".button-left").on("click", function() {
+				var state = parseInt($("#menu-panel").css("left"),10) > -250;
+				$("#menu-panel").animate({"left": (state ? -250: 0)});
+				$("#user-panel").animate({"right": "-250px"});
+			});
+			
+			$(".button-right").on("click", function() {
+				var state = parseInt($("#user-panel").css("right"),10) > -250;
+				$("#user-panel").animate({"right": (state ? -250: 0)});
+				$("#menu-panel").animate({"left": "-250px"});
+			});
+			
+			// SHOW SEARCH X
+			$("#field").keyup(function() {
+				$("#x").fadeIn();
+				if ($.trim($("#field").val()) == "") {
+					$("#x").fadeOut();
+				}
+			});
+			// on click of "X", delete input field value and hide "X"
+			$("#x").click(function() {
+				$("#field").val("");
+				$(this).hide();
+			});
+			
+			// SET DATE PICKERS
+			$("#datepick1").attr("placeholder", currentdate());
+			$("#datepick2").attr("placeholder", currentdate());
+			loadDatePickers();
+			
+		});
+		/* ]]> */
+	</script>
+</head>
+<body>
+<div id="viewport">
+<!-- BEGIN CANVAS AREA -->
+<div id="menu-panel">
+	<div class="menu-box">
+		<!-- BEGIN MOBILE MENU -->
+		<div id="menu-link-mobile" class="button-normal">
+			<div class="icon-home">Menu</div>
+		</div>
+		<div id="whiteboard-link-mobile" class="button-normal">
+			<div class="icon-whiteboard"><span style="font-size:18px;">Whiteboard</span></div>
+		</div>
+		<div id="myagency-link-mobile" class="button-normal">
+			<div class="icon-my-agency">My Agency</div>
+		</div>
+		<div class="sub-myagency">
+			<div id="agencyinfo-link-mobile" class="button-sub-normal">
+				<div class="icon-agency-info"><span style="font-size:16px;">Agency Info</span></div>
+			</div>
+			<div id="billing-link-mobile" class="button-sub-normal">
+				<div class="icon-billing"><span style="font-size:16px;">Billing</span></div>
+			</div>
+			<div id="goals-link-mobile" class="button-sub-normal">
+				<div class="icon-goals"><span style="font-size:16px;">Goals</span></div>
+			</div>
+			<div id="aemployees-link-mobile" class="button-sub-normal">
+				<div class="icon-employees"><span style="font-size:16px;">Employees</span></div>
+			</div>
+		</div>
+		<div id="policyentry-link-mobile" class="button-normal">
+			<div class="icon-policy-entry">Policy Entry</div>
+		</div>
+			<div class="sub-policyentry">
+				<div id="punmatched-link-mobile" class="button-sub-normal">
+					<div class="icon-unmatched"><span style="font-size:16px;">Unmatched</span></div>
+				</div>
+			</div>
+		<div id="controld-link-mobile" class="button-normal">
+			<div class="icon-control-d">Control D</div>
+		</div>
+			<div class="sub-controld">
+				<div id="upload-link-mobile" class="button-sub-normal">
+					<div class="icon-upload"><span style="font-size:16px;">Upload</span></div>
+				</div>
+				<div id="cunmatched-link-mobile" class="button-sub-normal">
+					<div class="icon-unmatched"><span style="font-size:16px;">Unmatched</span></div>
+				</div>
+			</div>
+		<div id="reports-link-mobile" class="button-normal">
+			<div class="icon-reports">Reports</div>
+		</div>
+			<div class="sub-reports">
+				<div id="productline-link-mobile" class="button-sub-normal">
+					<div class="icon-products"><span style="font-size:16px;">Product Line</span></div>
+				</div>
+				<div id="teammembers-link-mobile" class="button-sub-normal">
+					<div class="icon-member"><span style="font-size:16px;">Team Members</span></div>
+				</div>
+				<div id="policies-link-mobile" class="button-sub-normal">
+					<div class="icon-policy"><span style="font-size:16px;">Policies</span></div>
+				</div>
+				<div id="premiums-link-mobile" class="button-sub-normal">
+					<div class="icon-premium"><span style="font-size:16px;">Premiums</span></div>
+				</div>
+				<div id="compensation-link-mobile" class="button-sub-normal">
+					<div class="icon-compensation"><span style="font-size:16px;">Compensation</span></div>
+				</div>
+				<div id="controldsource-link-mobile" class="button-sub-normal">
+					<div class="icon-control-d"><span style="font-size:16px;">Control D Source</span></div>
+				</div>
+			</div>
+		<div id="employees-link-mobile" class="button-normal">
+			<div class="icon-employees">Employees</div>
+		</div>
+		<div id="support-link-mobile" class="button-normal">
+			<div class="icon-support">Support</div>
+		</div>
+			<div class="sub-support">
+				<div id="faq-link-mobile" class="button-sub-normal">
+					<div class="icon-faq"><span style="font-size:16px;">FAQ</span></div>
+				</div>
+				<div id="contact-link-mobile" class="button-sub-normal">
+					<div class="icon-contact"><span style="font-size:16px;">Contact</span></div>
+				</div>
+				<div id="howtovideos-link-mobile" class="button-sub-normal">
+					<div class="icon-video"><span style="font-size:16px;">How-To Videos</span></div>
+				</div>
+			</div>
+		<div class="button-under">
+			&nbsp;
+		</div>
+	<!-- END MOBILE MENU -->
+	</div>
+</div>
+<div id="user-panel">
+	<div class="user-box">
+		<div id="settings-link" class="button-normal">
+			<div class="icon-gears">Settings</div>
+		</div>
+		<div id="logout-link" class="button-normal">
+			<div class="icon-logout">Logout</div>
+		</div>
+	</div>
+</div>
+<header>
+	<div class="button-left"><div class="icon-menu-large"></div></div>
+	<img src="images/agency_nerd_app_logo.png" class="logo" alt="" />
+	<div class="button-right"><div class="icon-user"></div></div>
+</header>
+<div style="background-color:#ffffff;">
+	<nav>
+		<div id="menu-link" class="button-normal">
+			<div class="icon-home">Menu</div>
+		</div>
+		<div id="whiteboard-link" class="button-normal">
+			<div class="icon-whiteboard"><span style="font-size:18px;">Whiteboard</span></div>
+		</div>
+		<div id="myagency-link" class="button-normal">
+			<div class="icon-my-agency">My Agency</div>
+		</div>
+		<div class="sub-myagency">
+			<div id="agencyinfo-link" class="button-sub-normal">
+				<div class="icon-agency-info"><span style="font-size:16px;">Agency Info</span></div>
+			</div>
+			<div id="billing-link" class="button-sub-normal">
+				<div class="icon-billing"><span style="font-size:16px;">Billing</span></div>
+			</div>
+			<div id="goals-link" class="button-sub-normal">
+				<div class="icon-goals"><span style="font-size:16px;">Goals</span></div>
+			</div>
+			<div id="aemployees-link" class="button-sub-normal">
+				<div class="icon-employees"><span style="font-size:16px;">Employees</span></div>
+			</div>
+		</div>
+		<div id="policyentry-link" class="button-normal">
+			<div class="icon-policy-entry">Policy Entry</div>
+		</div>
+			<div class="sub-policyentry">
+				<div id="punmatched-link" class="button-sub-normal">
+					<div class="icon-unmatched"><span style="font-size:16px;">Unmatched</span></div>
+				</div>
+			</div>
+		<div id="controld-link" class="button-normal">
+			<div class="icon-control-d">Control D</div>
+		</div>
+			<div class="sub-controld">
+				<div id="upload-link" class="button-sub-normal">
+					<div class="icon-upload"><span style="font-size:16px;">Upload</span></div>
+				</div>
+				<div id="cunmatched-link" class="button-sub-normal">
+					<div class="icon-unmatched"><span style="font-size:16px;">Unmatched</span></div>
+				</div>
+			</div>
+		<div id="reports-link" class="button-normal">
+			<div class="icon-reports">Reports</div>
+		</div>
+			<div class="sub-reports">
+				<div id="productline-link" class="button-sub-normal">
+					<div class="icon-products"><span style="font-size:16px;">Product Line</span></div>
+				</div>
+				<div id="teammembers-link" class="button-sub-normal">
+					<div class="icon-member"><span style="font-size:16px;">Team Members</span></div>
+				</div>
+				<div id="policies-link" class="button-sub-normal">
+					<div class="icon-policy"><span style="font-size:16px;">Policies</span></div>
+				</div>
+				<div id="premiums-link" class="button-sub-normal">
+					<div class="icon-premium"><span style="font-size:16px;">Premiums</span></div>
+				</div>
+				<div id="compensation-link" class="button-sub-normal">
+					<div class="icon-compensation"><span style="font-size:16px;">Compensation</span></div>
+				</div>
+				<div id="controldsource-link" class="button-sub-normal">
+					<div class="icon-control-d"><span style="font-size:16px;">Control D Source</span></div>
+				</div>
+			</div>
+		<div id="employees-link" class="button-normal">
+			<div class="icon-employees">Employees</div>
+		</div>
+		<div id="support-link" class="button-normal">
+			<div class="icon-support">Support</div>
+		</div>
+			<div class="sub-support">
+				<div id="faq-link" class="button-sub-normal">
+					<div class="icon-faq"><span style="font-size:16px;">FAQ</span></div>
+				</div>
+				<div id="contact-link" class="button-sub-normal">
+					<div class="icon-contact"><span style="font-size:16px;">Contact</span></div>
+				</div>
+				<div id="howtovideos-link" class="button-sub-normal">
+					<div class="icon-video"><span style="font-size:16px;">How-To Videos</span></div>
+				</div>
+			</div>
+		<!-- END MENU -->
+		<div class="button-under">
+			&nbsp;
+		</div>
+	</nav>
+	<div id="content">
+		<div id="search-area">
+			<form name="search-form" action="app.html#search" method="post">
+				<input id="field" name="field" type="text" placeholder="Search Customers" />
+				<div id="delete"><span id="x">c</span></div>
+				<input id="submit" name="submit" type="submit" value="k" />
+				<div class="date-title">Date Range:</div>
+				<input id="datepick1" name="datepick1" placeholder="" readonly />
+				<input id="datepick2" name="datepick2" placeholder="" readonly />
+			</form>
+		</div>
+		<div class="container">
+		<h2>Section Title Will Go Here</h2>
+		Content will be placed in this area.
+		</div>
+	</div>
+</div>
+<footer>
+	&copy; 2014 Sea Cloud Media. All Rights Reserved.
+</footer>
+<!-- END CANVAS AREA -->
+</div>
+
+<!-- Scripts -->
+<script src="retina.js"></script>
+</body>
+</html>
