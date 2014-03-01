@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    #RewriteEngine On
+	#RewriteRule .*\.git/.* - [F]
+	#ErrorDocument 403 "Access denied"
+</IfModule>
