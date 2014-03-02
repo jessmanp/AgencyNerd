@@ -9,26 +9,26 @@ AGENCY nerd was originally developed by a State Farm agent in 2011. He was frust
 
 ## AGENCY nerd Can...
 
--Automatically account for chargebacks
--Import past and current control D reports
--Calculate payroll (hourly & commission) in less than 10 minutes
--Assign a policy to a specific team member
--Improve your lapse/cancellation percentage
--Improve employee retention
--Increase your overall team member ROI
+* Automatically account for chargebacks
+* Import past and current control D reports
+* Calculate payroll (hourly & commission) in less than 10 minutes
+* Assign a policy to a specific team member
+* Improve your lapse/cancellation percentage
+* Improve employee retention
+* Increase your overall team member ROI
 
 ## AGENCY nerd Features
 
--Cloud based which can be accessed by any computer, tablet, or smart phone.
--Control D reports can be uploaded for 100% accuracy including chargebacks.
--Agents can finally pay team members a small renewal % to improve employee retention and lapse/cancellation %.
--Virtual agency whiteboard with "pace tracker".
--Daily email notifications (policies/premium written & hours worked).
--All data is encrypted and secure.
--Historical reports are saved and easily accessible for comparison.
--Calculate payroll accurately in less than 10 minutes.
--Agents can calculate exact ROI on each team member to determine their exact value and contribution to the agency.
--No annual contract. No set-up fee.
+* Cloud based which can be accessed by any computer, tablet, or smart phone.
+* Control D reports can be uploaded for 100% accuracy including chargebacks.
+* Agents can finally pay team members a small renewal % to improve employee retention and lapse/cancellation %.
+* Virtual agency whiteboard with "pace tracker".
+* Daily email notifications (policies/premium written & hours worked).
+* All data is encrypted and secure.
+* Historical reports are saved and easily accessible for comparison.
+* Calculate payroll accurately in less than 10 minutes.
+* Agents can calculate exact ROI on each team member to determine their exact value and contribution to the agency.
+* No annual contract. No set-up fee.
 
 ## Copyright and Ownership
 
