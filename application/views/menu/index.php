@@ -17,8 +17,8 @@
 	<br /><br />
 	<div id="menu-home">
 		<!--whiteboard button -->
-		<div class="button-home">
-		<div id="whiteboard-link" class="home-btn">
+		<div id="whiteboard-link" class="button-home">
+		<div class="home-btn">
 			<div class="icon-whiteboard-large"></div>
 		</div>
 		<div class="home-btn-text">Whiteboard</div>
