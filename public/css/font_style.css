@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "agency-nerd-2";
-  src:url("fonts/agency-nerd-2.eot");
-  src:url("fonts/agency-nerd-2.eot?#iefix") format("embedded-opentype"),
-    url("fonts/agency-nerd-2.woff") format("woff"),
-    url("fonts/agency-nerd-2.ttf") format("truetype"),
-    url("fonts/agency-nerd-2.svg#agency-nerd-2") format("svg");
+  src:url("/public/fonts/agency-nerd-2.eot");
+  src:url("/public/fonts/agency-nerd-2.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/agency-nerd-2.woff") format("woff"),
+    url("/public/fonts/agency-nerd-2.ttf") format("truetype"),
+    url("/public/fonts/agency-nerd-2.svg#agency-nerd-2") format("svg");
   font-weight: normal;
   font-style: normal;
 
