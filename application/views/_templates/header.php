@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="<?php echo URL; ?>public/css/style.css">
 <link rel="stylesheet" href="<?php echo URL; ?>public/css/app_style.css">
 <link rel="stylesheet" href="<?php echo URL; ?>public/css/font_style.css">
+<link rel="stylesheet" href="<?php echo URL; ?>public/css/datepicker.css">
 <!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="<?php echo URL; ?>public/css/ie-only.css" />
 <![endif]-->

@@ -20,7 +20,94 @@ class App extends Controller
 		$navScript = 'application.js';
         // load views.
         require 'application/views/_templates/header.php';
-        require 'application/views/whiteboard/index.php';
+        require 'application/views/home/index.php';
         require 'application/views/_templates/footer.php';
     }
+
+	public function whiteboard()
+    {
+		// load jQuery script based on method
+		$navScript = 'application.js';
+        // load views.
+        require 'application/views/_templates/header.php';
+        require 'application/views/_templates/sub_header.php';
+        require 'application/views/_templates/search.php';
+        require 'application/views/whiteboard/index.php';
+        require 'application/views/_templates/sub_footer.php';
+        require 'application/views/_templates/footer.php';
+    }
+
+	public function myagency($sub = 'index')
+    {
+		// load jQuery script based on method
+		$navScript = 'application.js';
+        // load views.
+        require 'application/views/_templates/header.php';
+        require 'application/views/_templates/sub_header.php';
+        require 'application/views/myagency/'.$sub.'.php';
+        require 'application/views/_templates/sub_footer.php';
+        require 'application/views/_templates/footer.php';
+    }
+
+	public function policyentry($sub = 'index')
+    {
+		// load jQuery script based on method
+		$navScript = 'application.js';
+        // load views.
+        require 'application/views/_templates/header.php';
+        require 'application/views/_templates/sub_header.php';
+        require 'application/views/policyentry/'.$sub.'.php';
+        require 'application/views/_templates/sub_footer.php';
+        require 'application/views/_templates/footer.php';
+    }
+
+	public function controld($sub = 'index')
+    {
+		// load jQuery script based on method
+		$navScript = 'application.js';
+        // load views.
+        require 'application/views/_templates/header.php';
+        require 'application/views/_templates/sub_header.php';
+        require 'application/views/controld/'.$sub.'.php';
+        require 'application/views/_templates/sub_footer.php';
+        require 'application/views/_templates/footer.php';
+    }
+
+	public function reports($sub = 'index')
+    {
+		// load jQuery script based on method
+		$navScript = 'application.js';
+        // load views.
+        require 'application/views/_templates/header.php';
+        require 'application/views/_templates/sub_header.php';
+        require 'application/views/reports/'.$sub.'.php';
+        require 'application/views/_templates/sub_footer.php';
+        require 'application/views/_templates/footer.php';
+    }
+
+	public function employees()
+    {
+		// load jQuery script based on method
+		$navScript = 'application.js';
+        // load views.
+        require 'application/views/_templates/header.php';
+        require 'application/views/_templates/sub_header.php';
+        //require 'application/views/_templates/search.php';
+        require 'application/views/employees/index.php';
+        require 'application/views/_templates/sub_footer.php';
+        require 'application/views/_templates/footer.php';
+    }
+
+	public function support($sub = 'index')
+    {
+		// load jQuery script based on method
+		$navScript = 'application.js';
+        // load views.
+        require 'application/views/_templates/header.php';
+        require 'application/views/_templates/sub_header.php';
+        require 'application/views/support/'.$sub.'.php';
+        require 'application/views/_templates/sub_footer.php';
+        require 'application/views/_templates/footer.php';
+    }
+
 }

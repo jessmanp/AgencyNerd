@@ -3,8 +3,8 @@ $(document).ready(function() {
 
 	// ABOUT
 	$("header").find("img").on("click", function(event) {
-		// do popup div with about info
-		alert("info popup will go here");
+		event.preventDefault();
+		window.location.href = "/about";
 	});
 
 	// NAVIGATION

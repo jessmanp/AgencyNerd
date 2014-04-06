@@ -48,101 +48,125 @@ $(document).ready(function() {
 	// ABOUT
 	$("header").find("img").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/about";
+		window.location.hash = "#about";
+		window.location.reload();
 	});
 
 	// NAVIGATION
 	$("#whiteboard-link").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/app/whiteboard";
+		window.location.hash = "#whiteboard";
+		window.location.reload();
 	});
 	$("#myagency-link").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/app/myagency";
+		window.location.hash = "#myagency";
+		window.location.reload();
 	});
 		$("#agencyinfo-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/myagency/agencyinfo";
+			window.location.hash = "#myagency-agencyinfo";
+			window.location.reload();
 		});
 		$("#billing-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/myagency/billing";
+			window.location.hash = "#myagency-billing";
+			window.location.reload();
 		});
 		$("#goals-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/myagency/goals";
+			window.location.hash = "#myagency-goals";
+			window.location.reload();
 		});
 		$("#aemployees-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/employees";
+			window.location.hash = "#employees";
+			window.location.reload();
 		});
 	$("#policyentry-link").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/app/policyentry";
+		window.location.hash = "#policyentry";
+		window.location.reload();
 	});
 		$("#punmatched-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/policyentry/punmatched";
+			window.location.hash = "#policyentry-punmatched";
+			window.location.reload();
 		});
 	$("#controld-link").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/app/controld";
+		window.location.hash = "#controld";
+		window.location.reload();
 	});
 		$("#upload-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/controld/upload";
+			window.location.hash = "#controld-upload";
+			window.location.reload();
 		});
 		$("#cunmatched-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/controld/cunmatched";
+			window.location.hash = "#controld-cunmatched";
+			window.location.reload();
 		});
 	$("#reports-link").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/app/reports";
+		window.location.hash = "#reports";
+		window.location.reload();
 	});
 		$("#productline-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/reports/productline";
+			window.location.hash = "#reports-productline";
+			window.location.reload();
 		});
 		$("#teammembers-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/reports/teammembers";
+			window.location.hash = "#reports-teammembers";
+			window.location.reload();
 		});
 		$("#policies-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/reports/policies";
+			window.location.hash = "#reports-policies";
+			window.location.reload();
 		});
 		$("#premiums-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/reports/premiums";
+			window.location.hash = "#reports-premiums";
+			window.location.reload();
 		});
 		$("#compensation-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/reports/compensation";
+			window.location.hash = "#reports-compensation";
+			window.location.reload();
 		});
 		$("#controldsource-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/reports/controldsource";
+			window.location.hash = "#reports-controldsource";
+			window.location.reload();
 		});
 	$("#employees-link").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/app/employees";
+		window.location.hash = "#employees";
+		window.location.reload();
 	});
 	$("#support-link").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/app/support";
+		window.location.hash = "#support";
+		window.location.reload();
 	});
 		$("#faq-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/support/faq";
+			window.location.hash = "#support-faq";
+			window.location.reload();
 		});
 		$("#contact-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/support/contact";
+			window.location.hash = "#support-contact";
+			window.location.reload();
 		});
 		$("#howtovideos-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/support/howtovideos";
+			window.location.hash = "#support-howtovideos";
+			window.location.reload();
 		});
 	$("#menu-link").on("click", function(event) {
 		event.preventDefault();
@@ -150,11 +174,12 @@ $(document).ready(function() {
 	});
 	$("#settings-link").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/home/settings";
+		window.location.hash = "#settings";
+		window.location.reload();
 	});
 	$("#logout-link").on("click", function(event) {
 		event.preventDefault();
-		window.location = "/home/logout";
+		window.location = "/login/";
 	});
 	
 	// MOBILE NAVIGATION

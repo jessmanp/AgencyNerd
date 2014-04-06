@@ -3,8 +3,8 @@ $(document).ready(function() {
 
 	// ABOUT
 	$("header").find("img").on("click", function(event) {
-		// do popup div with about info
-		alert("info popup will go here");
+		event.preventDefault();
+		window.location.href = "/about";
 	});
 
 	 // NAVIGATION
@@ -38,7 +38,7 @@ $(document).ready(function() {
 	});
 	$("#how-to-videos-link").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/app/howtovideos";
+		window.location.href = "/app/support/howtovideos";
 	});
 	$("#settings-link").on("click", function(event) {
 		event.preventDefault();
