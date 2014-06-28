@@ -1,4 +1,36 @@
-<?php include('_header.php'); ?>
+<?php include('../application/views/_templates/header.php'); ?>
+
+<div id="user-panel">
+	<div class="user-box">
+		<div id="settings-link" class="button-select">
+			<div class="icon-gears">Settings</div>
+		</div>
+		<div id="logout-link" class="button-normal">
+			<div class="icon-logout">Logout</div>
+		</div>
+	</div>
+</div>
+<header>
+	<img src="<?php echo URL; ?>public/img/agency_nerd_app_logo.png" class="home-logo" alt="" />
+ 	<div class="button-right"><div class="icon-user"></div></div>
+</header>
+<div id="home">
+
+<?php
+// show potential errors / feedback (from registration object)
+if (isset($registration)) {
+    if ($registration->errors) {
+        foreach ($registration->errors as $error) {
+            echo $error;
+        }
+    }
+    if ($registration->messages) {
+        foreach ($registration->messages as $message) {
+            echo $message;
+        }
+    }
+}
+?>
 
 <!-- show registration form, but only if we didn't submit already -->
 <?php if (!$registration->registration_successful && !$registration->verification_successful) { ?>
@@ -24,6 +56,8 @@
 </form>
 <?php } ?>
 
-    <a href="index.php"><?php echo WORDING_BACK_TO_LOGIN; ?></a>
+   <!-- <a href="/menu/"><?php echo WORDING_BACK_TO_LOGIN; ?></a> -->
 
-<?php include('_footer.php'); ?>
+</div>
+
+<?php include('../application/views/_templates/footer.php'); ?>

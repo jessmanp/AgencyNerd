@@ -6,6 +6,12 @@
  * and create a language switch in your root files.
  */
 
+/**
+ * Configuration for: Project URL
+ * Put your URL here, for local development "127.0.0.1" or "localhost" (plus sub-folder) is fine
+ */
+define("URL", "http://dev.agencynerd.com/");
+
 // login & registration classes
 define("MESSAGE_ACCOUNT_NOT_ACTIVATED", "Your account is not activated yet. Please click on the confirm link in the mail.");
 define("MESSAGE_CAPTCHA_WRONG", "Captcha was wrong!");
@@ -49,7 +55,7 @@ define("MESSAGE_USERNAME_INVALID", "Username does not fit the name scheme: only 
 define("MESSAGE_USERNAME_SAME_LIKE_OLD_ONE", "Sorry, that username is the same as your current one. Please choose another one.");
 
 // views
-define("WORDING_BACK_TO_LOGIN", "Back to Login Page");
+define("WORDING_BACK_TO_LOGIN", "Back to Menu");
 define("WORDING_CHANGE_EMAIL", "Change email");
 define("WORDING_CHANGE_PASSWORD", "Change password");
 define("WORDING_CHANGE_USERNAME", "Change username");

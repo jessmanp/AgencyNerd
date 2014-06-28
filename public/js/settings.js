@@ -4,13 +4,14 @@ $(document).ready(function() {
 	// ABOUT
 	$("header").find("img").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/about";
+		//window.location.href = "/about";
+		window.location.href = "http://www.agencynerd.com";
 	});
 
 	// NAVIGATION
 	$("#logout-link").on("click", function(event) {
 		event.preventDefault();
-		window.location = "/home/logout";
+		window.location = "/login/?logout";
 	});
 	
 	// SLIDE OUT MENUS	

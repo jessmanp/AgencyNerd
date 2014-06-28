@@ -38,10 +38,31 @@ $login = new Login();
 if ($login->isUserLoggedIn() == true) {
     // the user is logged in. you can do whatever you want here.
     // for demonstration purposes, we simply show the "you are logged in" view.
-    include("views/logged_in.php");
+	if (isset($_GET['edit'])) {
+    		include("views/edit.php");
+	} else {
+		header("location: /menu");
+	}
 
 } else {
+
+	// show potential errors / feedback (from login object)
+
+    if ($login->errors) {
+		$_SESSION['login_errors'] = $login->errors;
+        //foreach ($login->errors as $error) {
+        //    echo $error;
+        //}
+    }
+    if ($login->messages) {
+		$_SESSION['login_messages'] = $login->messages;
+        //foreach ($login->messages as $message) {
+        //    echo $message;
+       //}
+    }
+
     // the user is not logged in. you can do whatever you want here.
     // for demonstration purposes, we simply show the "you are not logged in" view.
-    include("views/not_logged_in.php");
+    //include("views/not_logged_in.php");
+	header("location: /");
 }

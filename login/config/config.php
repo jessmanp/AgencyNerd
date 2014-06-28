@@ -1,5 +1,8 @@
 <?php
 
+// load jQuery script for login/settings nav
+$navScript = 'settings.js';
+
 /**
  * Configuration for: Database Connection
  * This is the place where your database login constants are saved
