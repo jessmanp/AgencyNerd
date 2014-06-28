@@ -109,7 +109,7 @@
 .icon-find:before {
   content: "k";
   padding:0 20px 0 10px;
-  font-size:30px;
+  font-size:28px;
   vertical-align:middle;
 }
 .icon-find-large:before {
@@ -142,8 +142,8 @@
 }
 .icon-key:before {
   content: "p";
-  padding:0 20px 0 0;
-  font-size:30px;
+  padding:0 10px 0 0;
+  font-size:36px;
   vertical-align:middle;
 }
 .icon-logout:before {

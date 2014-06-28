@@ -28,6 +28,7 @@ class App extends Controller
     {
 		// load jQuery script based on method
 		$navScript = 'application.js';
+		$dateScript = 'datepicker.js';
         // load views.
         require 'application/views/_templates/header.php';
         require 'application/views/_templates/sub_header.php';

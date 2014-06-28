@@ -369,3 +369,29 @@ var datepickr = (function() {
 		}
 	}
 })();
+
+// LOAD PAGE
+$(document).ready(function() {
+
+	function loadDatePickers(){
+		new datepickr("datepick1", {
+			"dateFormat": "m/d/Y"
+		});
+		new datepickr("datepick2", {
+			"dateFormat": "m/d/Y"
+		});
+	}
+
+	//bind orientation change to date picker event
+	$(window).bind("orientationchange", loadDatePickers);
+	$(window).resize(function() {
+		loadDatePickers();
+	});
+
+	// SET DATE PICKERS
+	$("#datepick1").attr("placeholder", currentdate());
+	$("#datepick2").attr("placeholder", currentdate());
+	loadDatePickers();
+
+
+});

@@ -11,7 +11,8 @@
 			<br />
 			<input id="password" name="password" type="password" placeholder="Enter Password" />
 			<br /><br />
-			<input id="login-btn" name="login-btn" type="submit" value="p" />
+			<!-- <input id="login-btn" name="login-btn" type="submit" value="Login" /> -->
+			<button id="login-btn"><span class="icon-key">Login</span></button>
 		</form>
 	</div>
 	<br /><br />

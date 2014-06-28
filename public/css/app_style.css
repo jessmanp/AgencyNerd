@@ -85,7 +85,7 @@ DYNAMIC WIDTH CSS
 	.container h2 {
 		font-size:18px;
 	}
-	
+
 	.button-right {
 		float:right;
 		margin:7px 0 0 0;
@@ -253,6 +253,10 @@ DYNAMIC WIDTH CSS
 		border-top-right-radius:10px;
 		border-bottom-right-radius:10px;
 	}
+	.button-left:hover {
+		background-color:#000000;
+		cursor:pointer;
+	}
 	
 	#menu-panel {
 		/* display:none; */
@@ -284,12 +288,12 @@ DYNAMIC WIDTH CSS
 		/* for IE 5.5 - 9 */
 		box-shadow: 1px 3px 8px #666666;
 	}
-	
+
 	.button-right {
 		float:right;
 		margin:7px 0 0 0;
 		width:40px;
-		height:37px;
+		height:35px;
 		background-color:#a20004;
 		color:#ffffff;
 		padding:6px 10px 10px 10px;
@@ -302,6 +306,10 @@ DYNAMIC WIDTH CSS
 		/* for IE 5.5 - 9 & firefox 13+ */
 		border-top-left-radius:10px;
 		border-bottom-left-radius:10px;
+	}
+	.button-right:hover {
+		background-color:#000000;
+		cursor:pointer;
 	}
 	
 	.button-under {
@@ -610,16 +618,6 @@ nav {
 	/* for IE 5.5 - 9 & firefox 13+ */
 	border-top-right-radius:10px;
 	border-bottom-right-radius:10px;
-	font-family: "agency-nerd-2" !important;
-	font-style: normal !important;
-	font-weight: normal !important;
-	font-variant: normal !important;
-	text-transform: none !important;
-	speak: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-size:26px;
 }
 
 #submit:hover {
@@ -663,8 +661,8 @@ nav {
 
 #login-btn {
     cursor:pointer; 
-    padding:0;
-    width:100px; 
+    padding:0	 25px 0 0;
+    width:150px; 
     height:55px; 
     background-color:#a20004;
     color:#ffffff;
@@ -675,17 +673,11 @@ nav {
 	-moz-border-radius:10px;
 	/* for IE 5.5 - 9 & firefox 13+ */
 	border-radius:10px;
-	font-family: "agency-nerd-2" !important;
-	font-style: normal !important;
-	font-weight: normal !important;
-	font-variant: normal !important;
-	text-transform: none !important;
-	speak: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-size:40px;
+	font-size:24px;
+	text-align:right;
+line-height:50px;
 }
+
 
 #login-btn:hover {
     background-color:#000000;
