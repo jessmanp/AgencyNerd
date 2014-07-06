@@ -1,20 +1,9 @@
 <?php include('../application/views/_templates/header.php'); ?>
-
-<div id="user-panel">
-	<div class="user-box">
-		<div id="settings-link" class="button-select">
-			<div class="icon-gears">Settings</div>
-		</div>
-		<div id="logout-link" class="button-normal">
-			<div class="icon-logout">Logout</div>
-		</div>
-	</div>
-</div>
 <header>
 	<img src="<?php echo URL; ?>public/img/agency_nerd_app_logo.png" class="home-logo" alt="" />
- 	<div class="button-right"><div class="icon-user"></div></div>
 </header>
-<div id="home">
+<div style="background-color:#eeeeee;">
+<br /><br />
 
 <?php
 // show potential errors / feedback (from registration object)
@@ -32,32 +21,43 @@ if (isset($registration)) {
 }
 ?>
 
-<!-- show registration form, but only if we didn't submit already -->
 <?php if (!$registration->registration_successful && !$registration->verification_successful) { ?>
-<form method="post" action="register.php" name="registerform">
-    <label for="user_name"><?php echo WORDING_REGISTRATION_USERNAME; ?></label>
-    <input id="user_name" type="text" pattern="[a-zA-Z0-9]{2,64}" name="user_name" required />
+<div id="register">
 
-    <label for="user_email"><?php echo WORDING_REGISTRATION_EMAIL; ?></label>
-    <input id="user_email" type="email" name="user_email" required />
+<h1>New User Registration</h1>
+<br />
 
-    <label for="user_password_new"><?php echo WORDING_REGISTRATION_PASSWORD; ?></label>
-    <input id="user_password_new" type="password" name="user_password_new" pattern=".{6,}" required autocomplete="off" />
+<form method="post" action="register.php" id="registerform" name="registerform">
+	<input type="hidden" id="register" name="register" value="1" />
+	
+    <label for="user_name">Username<span class="small">*Required</span></label>
+    <input id="user_name" type="text" pattern="[a-zA-Z0-9]{2,64}" name="user_name" placeholder="Enter Username" required />
+	
+    <label for="user_email">Email<span class="small">*Valid e-mail only</span></label>
+    <input id="user_email" type="email" name="user_email" placeholder="Enter Email" required />
 
-    <label for="user_password_repeat"><?php echo WORDING_REGISTRATION_PASSWORD_REPEAT; ?></label>
-    <input id="user_password_repeat" type="password" name="user_password_repeat" pattern=".{6,}" required autocomplete="off" />
+    <label for="user_password_new">Password<span class="small">*Minimum 6 chars</span></label>
+    <input id="user_password_new" type="password" name="user_password_new" pattern=".{6,}" placeholder="Enter Password" required autocomplete="off" />
 
-    <img src="tools/showCaptcha.php" alt="captcha" />
-
-    <label><?php echo WORDING_REGISTRATION_CAPTCHA; ?></label>
-    <input type="text" name="captcha" required />
-
-    <input type="submit" name="register" value="<?php echo WORDING_REGISTER; ?>" />
+    <label for="user_password_repeat">Password<span class="small">*Required</span></label>
+    <input id="user_password_repeat" type="password" name="user_password_repeat" pattern=".{6,}" placeholder="Password Again" required autocomplete="off" />
+	
+	<br /><img id="captcha-image" src="tools/showCaptcha.php" alt="captcha" />
+	<div style="clear:both;"></div>
+    <label>Captcha<span class="small">*Required</span></label>
+    <input type="text" id="captcha" name="captcha" required placeholder="Enter code" />
+	
+	<div style="clear:both;"></div>
+	<br />
+	<button id="register-btn"><span class="icon-policy-entry">Register</span></button>
+	<br />
+    <!-- <input type="submit" name="register" value="<?php echo WORDING_REGISTER; ?>" /> -->
 </form>
+<div style="clear:both;"></div>
+</div>
 <?php } ?>
 
-   <!-- <a href="/menu/"><?php echo WORDING_BACK_TO_LOGIN; ?></a> -->
-
+<br /><br />
 </div>
 
 <?php include('../application/views/_templates/footer.php'); ?>

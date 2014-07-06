@@ -43,6 +43,7 @@ function detectIE() {
 <!-- jQuery -->
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <!-- JavaScript -->
+<script src="<?php echo URL; ?>public/js/validation.js"></script>
 <script src="<?php echo URL; ?>public/js/<?php echo $navScript; ?>"></script>
 <?php if (isset($dateScript)) { ?>
 <script src="<?php echo URL; ?>public/js/<?php echo $dateScript; ?>"></script>
