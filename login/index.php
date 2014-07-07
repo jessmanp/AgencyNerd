@@ -46,19 +46,13 @@ if ($login->isUserLoggedIn() == true) {
 
 } else {
 
-	// show potential errors / feedback (from login object)
+	// pass potential errors / feedback (from login object) via session variables
 
     if ($login->errors) {
 		$_SESSION['login_errors'] = $login->errors;
-        //foreach ($login->errors as $error) {
-        //    echo $error;
-        //}
     }
     if ($login->messages) {
 		$_SESSION['login_messages'] = $login->messages;
-        //foreach ($login->messages as $message) {
-        //    echo $message;
-       //}
     }
 
     // the user is not logged in. you can do whatever you want here.

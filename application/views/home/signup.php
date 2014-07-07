@@ -14,6 +14,6 @@
 </header>
 <div id="home">
 
-settings here
+signup here
 
 </div>

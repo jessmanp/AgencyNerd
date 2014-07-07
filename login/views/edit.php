@@ -14,42 +14,122 @@
 	<img src="<?php echo URL; ?>public/img/agency_nerd_app_logo.png" class="home-logo" alt="" />
  	<div class="button-right"><div class="icon-user"></div></div>
 </header>
-<div id="home">
+<div style="background-color:#eeeeee;">
+<br /><br />
 
-<!-- clean separation of HTML and PHP -->
-<h2><?php echo $_SESSION['user_name']; ?> <?php echo WORDING_EDIT_YOUR_CREDENTIALS; ?></h2>
+<?php
+// show potential errors / feedback (from login object)
+    if ($login->errors) {
+        foreach ($login->errors as $error) {
+            echo $error;
+        }
+    }
+    if ($login->messages) {
+        foreach ($login->messages as $message) {
+            echo $message;
+        }
+    }
+?>
 
-<!-- edit form for username / this form uses HTML5 attributes, like "required" and type="email" -->
-<form method="post" action="edit.php" name="user_edit_form_name">
-    <label for="user_name"><?php echo WORDING_NEW_USERNAME; ?></label>
-    <input id="user_name" type="text" name="user_name" pattern="[a-zA-Z0-9]{2,64}" required /> (<?php echo WORDING_CURRENTLY; ?>: <?php echo $_SESSION['user_name']; ?>)
-    <input type="submit" name="user_edit_submit_name" value="<?php echo WORDING_CHANGE_USERNAME; ?>" />
-</form><hr/>
+<div id="register">
 
-<!-- edit form for user email / this form uses HTML5 attributes, like "required" and type="email" -->
-<form method="post" action="edit.php" name="user_edit_form_email">
-    <label for="user_email"><?php echo WORDING_NEW_EMAIL; ?></label>
-    <input id="user_email" type="email" name="user_email" required /> (<?php echo WORDING_CURRENTLY; ?>: <?php echo $_SESSION['user_email']; ?>)
-    <input type="submit" name="user_edit_submit_email" value="<?php echo WORDING_CHANGE_EMAIL; ?>" />
-</form><hr/>
+<h1>Edit User Settings</h1>
+<br />
 
-<!-- edit form for user's password / this form uses the HTML5 attribute "required" -->
-<form method="post" action="edit.php" name="user_edit_form_password">
-    <label for="user_password_old"><?php echo WORDING_OLD_PASSWORD; ?></label>
-    <input id="user_password_old" type="password" name="user_password_old" autocomplete="off" />
+<?php echo WORDING_EDIT_YOUR_CREDENTIALS; ?>
 
-    <label for="user_password_new"><?php echo WORDING_NEW_PASSWORD; ?></label>
-    <input id="user_password_new" type="password" name="user_password_new" autocomplete="off" />
-
-    <label for="user_password_repeat"><?php echo WORDING_NEW_PASSWORD_REPEAT; ?></label>
-    <input id="user_password_repeat" type="password" name="user_password_repeat" autocomplete="off" />
-
-    <input type="submit" name="user_edit_submit_password" value="<?php echo WORDING_CHANGE_PASSWORD; ?>" />
-</form><hr/>
-
+<br />
 <!-- backlink -->
-<a href="/menu/"><?php echo WORDING_BACK_TO_LOGIN; ?></a>
+	<div style="clear:both;"></div>
+	<br />
+	<a href="/menu/"><button class="plain-btn"><?php echo WORDING_BACK_TO_LOGIN; ?></button></a>
+	<br />
 
+<div style="clear:both;">
+<!-- clean separation of HTML and PHP -->
+<div class="settings-title"><em>Update Username:</em> <strong><?php echo $_SESSION['user_name']; ?></strong></div>
+<!-- edit form for username / this form uses HTML5 attributes, like "required" and type="email" -->
+<form method="post" action="/login/?edit=username" name="user_edit_form_name">
+	<input type="hidden" id="user_edit_submit_name" name="user_edit_submit_name" value="1" />
+    <label for="user_name"><?php echo WORDING_NEW_USERNAME; ?><span class="small">*Required</span></label>
+    <input id="user_name" type="text" name="user_name" pattern="[a-zA-Z0-9]{2,64}" required />
+	<div style="clear:both;"></div>
+	<span style="font-style:italic;font-size:12px;">(Username cannot be empty and must be 2-64 characters long)</span>
+	</div>
+	<br />
+	<button class="plain-btn"><?php echo WORDING_CHANGE_USERNAME; ?></button>
+	<br />
+    <!-- <input type="submit" name="user_edit_submit_name" value="<?php echo WORDING_CHANGE_USERNAME; ?>" /> -->
+</form>
+
+<div class="settings-title"><em>Update Email:</em> <strong><?php echo $_SESSION['user_email']; ?></strong></div>
+<!-- edit form for user email / this form uses HTML5 attributes, like "required" and type="email" -->
+<form method="post" action="/login/?edit=email" name="user_edit_form_email">
+	<input type="hidden" id="user_edit_submit_email" name="user_edit_submit_email" value="1" />
+    <label for="user_email"><?php echo WORDING_NEW_EMAIL; ?><span class="small">*Valid e-mail only</span></label>
+    <input id="user_email" type="email" name="user_email" required />
+	<div style="clear:both;"></div>
+	<br />
+	<button class="plain-btn"><?php echo WORDING_CHANGE_EMAIL; ?></button>
+	<br />
+    <!-- <input type="submit" name="user_edit_submit_email" value="<?php echo WORDING_CHANGE_EMAIL; ?>" /> -->
+</form>
+
+<div class="settings-title"><em>Update Password</em></div>
+<!-- edit form for user's password / this form uses the HTML5 attribute "required" -->
+<form method="post" action="/login/?edit=password" name="user_edit_form_password">
+	<input type="hidden" id="user_edit_submit_password" name="user_edit_submit_password" value="1" />
+    <label for="user_password_old"><?php echo WORDING_OLD_PASSWORD; ?><span class="small">*Required</span></label>
+    <input id="user_password_old" type="password" name="user_password_old" required autocomplete="off" />
+
+    <label for="user_password_new"><?php echo WORDING_NEW_PASSWORD; ?><span class="small">Minimum 6 chars</span></label>
+    <input id="user_password_new" type="password" name="user_password_new" required autocomplete="off" />
+
+    <label for="user_password_repeat"><?php echo WORDING_NEW_PASSWORD_REPEAT; ?><span class="small">*Required</span></label>
+    <input id="user_password_repeat" type="password" name="user_password_repeat" required autocomplete="off" />
+
+	<div style="clear:both;"></div>
+	<br />
+	<button class="plain-btn"><?php echo WORDING_CHANGE_PASSWORD; ?></button>
+	<br />
+
+    <!-- <input type="submit" name="user_edit_submit_password" value="<?php echo WORDING_CHANGE_PASSWORD; ?>" /> -->
+</form>
+
+<div class="settings-title"><em>Update Personal Info</em></div>
+<!-- edit form for user's info / this form uses the HTML5 attribute "required" -->
+<form method="post" action="/login/?edit=info" name="user_edit_form_info">
+	<input type="hidden" id="user_edit_submit_info" name="user_edit_submit_info" value="1" />
+    <label for="user_first_name"><?php echo WORDING_FIRST_NAME; ?><span class="small">*Optional</span></label>
+    <input id="user_first_name" type="text" name="user_first_name" />
+
+	<label for="user_last_name"><?php echo WORDING_LAST_NAME; ?><span class="small">*Optional</span></label>
+    <input id="user_last_name" type="text" name="user_last_name" />
+
+    <label for="user_job_title"><?php echo WORDING_JOB_TITLE; ?><span class="small">*Optional</span></label>
+    <input id="user_job_title" type="text" name="user_job_title" />
+
+    <label for="user_phone"><?php echo WORDING_PHONE; ?><span class="small">*Optional</span></label>
+    <input id="user_phone" type="text" name="user_phone" />
+
+	<label for="user_mobile"><?php echo WORDING_MOBILE; ?><span class="small">*Optional</span></label>
+    <input id="user_mobile" type="text" name="user_mobile" />
+
+	<label for="user_zip_code"><?php echo WORDING_ZIP_CODE; ?><span class="small">*Optional</span></label>
+    <input id="user_zip_code" type="text" name="user_zip_code" />
+
+	<div style="clear:both;"></div>
+	<br />
+	<button class="plain-btn"><?php echo WORDING_CHANGE_INFO; ?></button>
+	<br />
+
+    <!-- <input type="submit" name="user_edit_submit_info" value="<?php echo WORDING_CHANGE_PASSWORD; ?>" /> -->
+</form>
+
+<br /><br />
+</div>
+
+<br /><br />
 </div>
 
 <?php include('../application/views/_templates/footer.php'); ?>

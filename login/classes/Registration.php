@@ -205,84 +205,60 @@ class Registration
 
 
         $body = '
-<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
 <title>AGENCY nerd - Welcome New Member Email</title>
-<meta name="author" content="" />
-<meta name="keywords" content="" />
-<meta name="description" content="" />
 <!-- css -->
 <style>
 	html {
 		font-size: 100%;
 		-webkit-text-size-adjust: 100%;
 	}
-	body	{
-		margin:0;
-		padding:0;
-		border:0;
-		background-color:#ffffff;
-		font-family: Calibri, Helvetica, Arial, Verdana, sans-serif;
-		font-size:18px;
-		color:#000000;
-	}
 	::-ms-clear { display: none; }
 </style>
 </head>
-<body>
+<body style="margin:0;padding:0;border:0;background-color:#ffffff;font-family: Calibri, Helvetica, Arial, Verdana, sans-serif;font-size:16px;color:#000000;">
 <div style="width:100%;min-height:100%;overflow-x:hidden;position:absolute;">
-<!-- BEGIN CANVAS AREA -->
 <div style="padding:10px 0 0 10px;height:55px;background-color:#ffffff;border-bottom:2px solid #ff0000;color:#333333;">
 	<img src="http://dev.agencynerd.com/public/img/agency_nerd_app_logo.png" class="home-logo" alt="" />
 </div>
-
 <div style="background-color:#eeeeee;">
 <br /><br />
-
 <div style="margin:0 10px 0 10px;background-color:#ffffff;border:2px solid #ff0000;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;font-size:16px;text-align:left;line-height:22px;padding:15px;">
-
 <h1 style="margin:5px 0 0 0;font-size:22px;font-weight:normal;">Welcome to Agency Nerd!</h1>
 <br />
 Please confirm your email by clicking the link below. Once you have clicked the link below your account will be confirmed and you can complete the setup process.
 <br /><br />
 ';
         $link = EMAIL_VERIFICATION_URL.'?id='.urlencode($user_id).'&verification_code='.urlencode($user_activation_hash);
-	    $body .= EMAIL_VERIFICATION_CONTENT.' '.$link;
+	    $body .= EMAIL_VERIFICATION_CONTENT.' <a href="'.$link.'">'.$link.'</a>';
 
 	    $body .= '
 <br /><br />
 Thanks! We look forward to making your agency smarter!
 <div style="clear:both;"></div>
-
 </div>
-
 <br /><br />
 </div>
-
 <div style="clear:both;text-align:center;padding:5px;font-size:12px;height:45px;background-color:#ffffff;border-top:2px solid #ff0000;color:#333333;">
 	&copy; 2014 Sea Cloud Media. All Rights Reserved.
 </div>
-
 <div style="clear:both;font-size:14px;padding:10px;">
 <span style="font-weight:bold; color:#000000;">AGENCY</span> <span style="font-family:Courier, \'Courier New Bold\', monospace; color:#ff0000; font-style:normal; font-weight:normal;">nerd</span>&trade; is Your Agency&rsquo;s Solution.<br />
 <span style="color:#ff0000; text-shadow:none; font-weight:bold;">We make your agency smarter</span><br /><br />
 <span style="font-weight:bold; color:#000000;">AGENCY</span> <span style="font-family:Courier, \'Courier New Bold\', monospace; color:#ff0000; font-style:normal; font-weight:normal;">nerd</span>&trade; is easy to use and can be set up in minutes. There is no annual contract or set up fee. Cancel at any time.<br /><br />
-If you do not wish to receive email from <span style="font-weight:bold; color:#000000;">AGENCY</span> <span style="font-family:Courier, \'Courier New Bold\', monospace; color:#ff0000; font-style:normal; font-weight:normal;">nerd</span>&trade; in the future, please <a href="#">UNSUBSCRIBE</a>.
+If you do not wish to receive email from <span style="font-weight:bold; color:#000000;">AGENCY</span> <span style="font-family:Courier, \'Courier New Bold\', monospace; color:#ff0000; font-style:normal; font-weight:normal;">nerd</span>&trade; in the future, please <a href="http://www.agencynerd.com/unsubscribe">UNSUBSCRIBE</a>.
 <br /><br />
 </div>
-
-<!-- END CANVAS AREA -->
 </div>
 </body>
 </html>
 ';
 
         // the link to your register.php, please set this value in config/email_verification.php
-        //$mail->Body = $body;
+        $mail->Body = $body;
 	    $mail->AltBody = "Welcome to Agency Nerd! ".EMAIL_VERIFICATION_CONTENT." ".$link; // optional, text alternative content
-	    $mail->MsgHTML($body);
+	    //$mail->MsgHTML($body);
 
         if(!$mail->Send()) {
             $this->errors[] = MESSAGE_VERIFICATION_MAIL_NOT_SENT . $mail->ErrorInfo;

@@ -684,6 +684,25 @@ input[type=radio]:not(old):checked + label > span > span{
 	border:2px solid #ffffff;
 }
 
+.plain-btn {
+		margin:0 auto;
+		clear:both;
+		cursor:pointer; 
+		width:250px; 
+		height:55px; 
+		background-color:#a20004;
+		color:#ffffff;
+		border:2px solid #a20004;
+		/* for Chrome 10+ and Safari 5+ */
+		-webkit-border-radius:10px;
+		/* for FireFox 3.6 - 12 */
+		-moz-border-radius:10px;
+		/* for IE 5.5 - 9 & firefox 13+ */
+		border-radius:10px;
+		font-size:22px;
+		line-height:50px;
+	}
+
 .home-logo {
 	margin:15px 0 0 15px;
 	width:240px;
@@ -969,6 +988,15 @@ nav {
 #login-btn:hover {
     background-color:#000000;
     border:2px solid #000000;
+}
+
+.settings-title {
+	clear:both;
+	margin:25px 0 0 0;
+	padding:20px 0 20px 0;
+	border-top:2px solid #ff0000;
+	font-size:18px;
+	color:#000000;
 }
 
 .error {

@@ -55,6 +55,16 @@ if (isset($registration)) {
 </form>
 <div style="clear:both;"></div>
 </div>
+<?php } else { ?>
+<?php if ($registration->verification_successful) { ?>
+<div id="register">
+
+<h1>New User Account Setup</h1>
+<br />
+setup steps will go here
+<br />
+</div>
+<?php } ?>
 <?php } ?>
 
 <br /><br />

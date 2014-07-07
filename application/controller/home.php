@@ -26,27 +26,27 @@ class Home extends Controller
     }
 
     /**
-     * PAGE: settings
-     * This method handles what happens when you move to http://yourproject/home/settings
+     * PAGE: signup
+     * This method handles what happens when you move to http://yourproject/home/signup
      * The camelCase writing is just for better readability. The method name is case insensitive.
      */
-    public function settings()
+    public function signup()
     {
         // load jQuery script based on method
 		$navScript = 'settings.js';
         require 'application/views/_templates/header.php';
-        require 'application/views/home/settings.php';
+        require 'application/views/home/signup.php';
         require 'application/views/_templates/footer.php';
     }
 
 	/**
      * PAGE: logout
-     * This method handles what happens when you move to http://yourproject/home/settings
+     * This method handles what happens when you move to http://yourproject/home/logout
      * The camelCase writing is just for better readability. The method name is case insensitive.
      */
     public function logout()
     {
         // do logout function
-		echo "This will logout the user.";
+		//echo "This will logout the user.";
     }
 }

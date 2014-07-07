@@ -3,7 +3,13 @@
 <header>
 	<img src="<?php echo URL; ?>public/img/agency_nerd_app_logo.png" class="home-logo" alt="" />
 </header>
-<div id="home">
+<div style="background-color:#eeeeee;">
+<br /><br />
+
+<div id="register">
+
+<h1>Password Reset</h1>
+<br />
 
 <?php if ($login->passwordResetLinkIsValid() == true) { ?>
 <form method="post" action="password_reset.php" name="new_password_form">
@@ -20,14 +26,23 @@
 <!-- no data from a password-reset-mail has been provided, so we simply show the request-a-password-reset form -->
 <?php } else { ?>
 <form method="post" action="password_reset.php" name="password_reset_form">
-    <label for="user_name"><?php echo WORDING_REQUEST_PASSWORD_RESET; ?></label>
+	<!-- <?php echo WORDING_REQUEST_PASSWORD_RESET; ?> -->
+	Please enter your username below to reset your password.<br />You will receive an email with further instructions on how to reset your password.<br /><br /><br />
+    <label for="user_name">Username<span class="small">*Required</span></label>
     <input id="user_name" type="text" name="user_name" required />
-    <input type="submit" name="request_password_reset" value="<?php echo WORDING_RESET_PASSWORD; ?>" />
+	<div style="clear:both;"></div>
+	<br />
+	<button id="login-btn"><span class="icon-key">Reset Password</span></button>
+	<br /><br /><br />
+	<span style="font-size:12px;"><strong>NOTE:</strong> If you do not remember your Username you can email us at <a href="mailto:support@agencynerd.com">support@agencynerd.com</a> for instructions on how to reset your password.</span>
+    <!-- <input type="submit" name="request_password_reset" value="<?php echo WORDING_RESET_PASSWORD; ?>" /> -->
 </form>
 <?php } ?>
 
 <!-- <a href="/menu/"><?php echo WORDING_BACK_TO_LOGIN; ?></a> -->
+</div>
 
+<br /><br />
 </div>
 
 <?php include('../application/views/_templates/footer.php'); ?>
