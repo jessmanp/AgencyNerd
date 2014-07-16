@@ -27,8 +27,8 @@ $login = new Login();
 // the user has just successfully entered a new password
 // so we show the index page = the login page
 if ($login->passwordResetWasSuccessful() == true && $login->passwordResetLinkIsValid() != true) {
-    include("views/not_logged_in.php");
-
+    //include("views/not_logged_in.php");
+	header("location: /");
 } else {
     // show the request-a-password-reset or type-your-new-password form
     include("views/password_reset.php");

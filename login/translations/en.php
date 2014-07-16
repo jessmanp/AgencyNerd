@@ -66,7 +66,7 @@ define("WORDING_FORGOT_MY_PASSWORD", "I forgot my password");
 define("WORDING_LOGIN", "Log in");
 define("WORDING_LOGOUT", "Log out");
 define("WORDING_NEW_EMAIL", "NEW email");
-define("WORDING_NEW_PASSWORD", "NEW Passord");
+define("WORDING_NEW_PASSWORD", "NEW Password");
 define("WORDING_NEW_PASSWORD_REPEAT", "NEW Password");
 define("WORDING_NEW_USERNAME", "NEW Username");
 define("WORDING_OLD_PASSWORD", "OLD Password");

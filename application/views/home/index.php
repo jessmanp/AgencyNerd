@@ -1,11 +1,23 @@
 <header>
 	<img src="<?php echo URL; ?>public/img/agency_nerd_app_logo.png" class="home-logo" alt="" />
 </header>
-<?php
-echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>';
-?>
 <div style="background-color:#eeeeee;">
 	<br /><br />
+
+<?php
+// show potential errors / feedback (from login object)
+    if (isset($_SESSION['login_errors'])) {
+        foreach ($_SESSION['login_errors'] as $error) {
+            echo $error;
+        }
+    }
+    if (isset($_SESSION['login_messages'])) {
+        foreach ($_SESSION['login_messages'] as $message) {
+            echo $message;
+        }
+    }
+?>
+
 	<div id="login">
 		<h1>Login to Agency Nerd</h1>
 		<br />

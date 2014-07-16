@@ -221,16 +221,15 @@ DYNAMIC WIDTH CSS
 		font-weight:normal;
 	}
 
-	#register p{
+	#register p {
 		clear:both;
 		text-align:left;
 		color:#000000;
 		margin-bottom:20px;
 		padding-bottom:10px;
-		font-weight:bold;
 	}
 
-	#register label{
+	#register label {
 		clear:both;
 		display:block;
 		font-weight:bold;
@@ -241,7 +240,7 @@ DYNAMIC WIDTH CSS
 		color:#000000;
 	}
 
-	#register .small{
+	#register .small {
 		color:#666666;
 		display:block;
 		font-size:12px;
@@ -250,7 +249,7 @@ DYNAMIC WIDTH CSS
 		width:220px;
 	}
 
-	#register input{
+	#register input {
 		float:left;
 		margin:5px 0 20px 10px;
 		width:420px;
@@ -289,6 +288,21 @@ DYNAMIC WIDTH CSS
 		margin:0 0 10px 220px;
 	}
 
+	.main-select {
+		float:left;
+		margin:5px 0 20px 10px;
+		width:400px;
+		height:33px;
+		font-size:14px;
+		padding:4px;
+		border-top:solid 2px #ff0000;
+		border-right:0;
+		border-bottom:solid 2px #ff0000;
+		border-left:solid 2px #ff0000;
+		-webkit-appearance:none;
+		border-radius:0;
+		cursor:pointer;
+	}
 
 }
 
@@ -502,7 +516,7 @@ DYNAMIC WIDTH CSS
 	}
 	
 	#register {
-		width:260px;
+		width:270px;
 		min-height:200px;
 		margin:0 auto 0 auto;
 		padding:20px;
@@ -525,16 +539,15 @@ DYNAMIC WIDTH CSS
 		font-weight:normal;
 	}
 
-	#register p{
+	#register p {
 		clear:both;
 		text-align:left;
 		color:#000000;
 		margin-bottom:20px;
 		padding-bottom:10px;
-		font-weight:bold;
 	}
 
-	#register label{
+	#register label {
 		clear:both;
 		display:block;
 		font-weight:bold;
@@ -545,7 +558,7 @@ DYNAMIC WIDTH CSS
 		color:#000000;
 	}
 
-	#register .small{
+	#register .small {
 		color:#666666;
 		display:block;
 		font-size:12px;
@@ -592,6 +605,22 @@ DYNAMIC WIDTH CSS
 		display:block;
 		margin:0 0 10px 100px;
 	}
+
+	.main-select {
+		float:left;
+		margin:5px 0 20px 10px;
+		width:120px;
+		height:33px;
+		font-size:14px;
+		padding:4px;
+		border-top:solid 2px #ff0000;
+		border-right:0;
+		border-bottom:solid 2px #ff0000;
+		border-left:solid 2px #ff0000;
+		-webkit-appearance:none;
+		border-radius:0;
+		cursor:pointer;
+	}
 	
 }
 
@@ -620,6 +649,21 @@ a.content-link:hover {
 	text-decoration:underline;
 }
 
+/* Select arrow styling */
+.main-select-after {
+	float:left;
+	margin:5px 0 0 0;
+    width:18px;
+	padding:4px 4px 3px 4px;
+    background-color:#ffffff;
+    color:#ff0000;
+	border-top:solid 2px #ff0000;
+	border-right:solid 2px #ff0000;
+	border-bottom:solid 2px #ff0000;
+	border-left:0;
+	cursor:pointer;
+}
+
 input[type=text],
 input[type=email],
 input[type=password],
@@ -633,7 +677,7 @@ textarea {
 	border-radius:0;
 }
 
-input[type=checkbox]:not(old),
+#login input[type=checkbox]:not(old),
 input[type=radio]:not(old){
 	width:32px;
 	margin:0;
@@ -642,7 +686,7 @@ input[type=radio]:not(old){
 	opacity:0;
 }
 
-input[type=checkbox]:not(old) + label,
+#login input[type=checkbox]:not(old) + label,
 input[type=radio]:not(old) + label{
 	display:inline-block;
 	margin-left:-45px;
@@ -651,7 +695,7 @@ input[type=radio]:not(old) + label{
 	color:#333333;
 }
 
-input[type=checkbox]:not(old) + label > span,
+#login input[type=checkbox]:not(old) + label > span,
 input[type=radio]:not(old) + label > span{
 	display:inline-block;
 	width:14px;
@@ -662,12 +706,12 @@ input[type=radio]:not(old) + label > span{
 	vertical-align:bottom;
 }
 
-input[type=checkbox]:not(old):checked + label > span,
+#login input[type=checkbox]:not(old):checked + label > span,
 input[type=radio]:not(old):checked + label > span{
 	background-color:#a20004;
 }
 
-input[type=checkbox]:not(old):checked + label > span:before{
+#login input[type=checkbox]:not(old):checked + label > span:before{
 	content:'✓';
 	display:block;
 	width:12px;
@@ -677,31 +721,86 @@ input[type=checkbox]:not(old):checked + label > span:before{
 	font-weight:bold;
 }
 
-input[type=radio]:not(old):checked + label > span > span{
+#login input[type=radio]:not(old):checked + label > span > span{
 	display:block;
 	width:10px;
 	height:10px;
 	border:2px solid #ffffff;
 }
 
+
+
+
+#register input[type=checkbox]:not(old),
+input[type=radio]:not(old){
+	width:35px;
+	height:30px;
+	margin:0;
+	padding:0;
+	opacity:0;
+}
+
+#register input[type=checkbox]:not(old) + span,
+input[type=radio]:not(old) + span{
+	float:left;
+	width:14px;
+	height:14px;
+	margin:4px 8px 4px -20px;
+	margin:5px 0 35px -20px;
+	border:2px solid #ff0000;
+	background-color:#ffffff;
+	vertical-align:bottom;
+}
+
+#register input[type=checkbox]:not(old):checked + span,
+input[type=radio]:not(old):checked + span {
+	background-color:#a20004;
+}
+
+#register input[type=checkbox]:not(old):checked + span:before {
+	content:'✓';
+	display:block;
+	width:12px;
+	color:#ffffff;
+	font-size:12px;
+	line-height:16px;
+	font-weight:bold;
+}
+
+#register input[type=radio]:not(old):checked + span {
+	display:block;
+	width:10px;
+	height:10px;
+	border:2px solid #ffffff;
+}
+
+
+
+
+
+
 .plain-btn {
-		margin:0 auto;
-		clear:both;
-		cursor:pointer; 
-		width:250px; 
-		height:55px; 
-		background-color:#a20004;
-		color:#ffffff;
-		border:2px solid #a20004;
-		/* for Chrome 10+ and Safari 5+ */
-		-webkit-border-radius:10px;
-		/* for FireFox 3.6 - 12 */
-		-moz-border-radius:10px;
-		/* for IE 5.5 - 9 & firefox 13+ */
-		border-radius:10px;
-		font-size:22px;
-		line-height:50px;
-	}
+	margin:0 auto;
+	clear:both;
+	cursor:pointer; 
+	width:250px; 
+	height:55px; 
+	background-color:#a20004;
+	color:#ffffff;
+	border:2px solid #a20004;
+	/* for Chrome 10+ and Safari 5+ */
+	-webkit-border-radius:10px;
+	/* for FireFox 3.6 - 12 */
+	-moz-border-radius:10px;
+	/* for IE 5.5 - 9 & firefox 13+ */
+	border-radius:10px;
+	font-size:22px;
+	line-height:50px;
+}
+.plain-btn:hover {
+	background-color:#000000;
+	border:2px solid #000000;
+}
 
 .home-logo {
 	margin:15px 0 0 15px;
@@ -1021,4 +1120,113 @@ footer {
 	font-size:14px;
 	padding:10px;
 }
+
+.signup {
+	margin:0 0 20px 0;
+	border:2px solid #ff0000;
+	background-color:#ffffff;
+	color:#000000;
+    * for Chrome 10+ and Safari 5+ */
+	-webkit-border-radius:10px;
+	/* for FireFox 3.6 - 12 */
+	-moz-border-radius:10px;
+	/* for IE 5.5 - 9 & firefox 13+ */
+	border-radius:10px;
+}
+
+.signup-header {
+	padding:10px;
+	background-color:#a20004;
+	color:#ffffff;
+    /* for Chrome 10+ and Safari 5+ */
+	-webkit-border-top-left-radius:8px;
+	-webkit-border-top-right-left-radius:8px;
+	/* for FireFox 3.6 - 12 */
+	-moz-border-top-left-radius:8px;
+	-moz-border-top-right-radius:8px;
+	/* for IE 5.5 - 9 & firefox 13+ */
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom:1px solid #ffffff;
+	font-size:18px;
+	cursor:pointer;
+}
+.signup-header:hover {
+	background-color:#000000;
+}
+
+.signup-middle {
+	padding:10px;
+	background-color:#a20004;
+	border-bottom:1px solid #ffffff;
+	color:#ffffff;
+	font-size:18px;
+	cursor:pointer;
+}
+.signup-middle:hover {
+	background-color:#000000;
+}
+
+.signup-footer {
+	padding:10px;
+	background-color:#a20004;
+	color:#ffffff;
+    /* for Chrome 10+ and Safari 5+ */
+	-webkit-border-bottom-left-radius:8px;
+	-webkit-border-bottom-right-left-radius:8px;
+	/* for FireFox 3.6 - 12 */
+	-moz-border-bottom-left-radius:8px;
+	-moz-border-bottom-right-radius:8px;
+	/* for IE 5.5 - 9 & firefox 13+ */
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	/* border-bottom:1px solid #ffffff; */
+	font-size:18px;
+	cursor:pointer;
+}
+.signup-footer:hover {
+	background-color:#000000;
+}
+
+.arrow-down {
+	display:none;
+	margin:0 auto 0 auto;
+	width:0;
+	height:0;
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+	border-top:10px solid #a20004;
+}
+
+#signup-agency {
+	display:none;
+}
+
+#signup-employees {
+	display:none;
+}
+
+#signup-compensation {
+	display:none;
+}
+
+.number {
+	position:absolute;
+	margin:-10px 0 0 -10px;
+	width:40px;
+	height:40px;
+	background-color:#a20004;
+	color:#ffffff;
+    /* for Chrome 10+ and Safari 5+ */
+	-webkit-border-radius:5px;
+	/* for FireFox 3.6 - 12 */
+	-moz-border-radius:5px;
+	/* for IE 5.5 - 9 & firefox 13+ */
+	border-radius:5px;
+	border:2px solid #ffffff;
+	font-size:24px;
+	line-height:42px;
+}
+
+
 

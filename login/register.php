@@ -24,5 +24,12 @@ require_once('classes/Registration.php');
 // so this single line handles the entire registration process.
 $registration = new Registration();
 
+// ... check if we are new and verified:
+if ($registration->verification_successful == true) {
+    // the user is verified in. you can now pass to signup screen.
+    // after completing the signup process the user will be automatically logged in.
+	header("location: /home/setup");
+}
+
 // showing the register view (with the registration form, and messages/errors)
 include("views/register.php");
