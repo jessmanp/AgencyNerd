@@ -15,122 +15,145 @@
 <div style="background-color:#eeeeee;">
 <br />
 
+<div id="info"></div>
+
 <div id="register">
 
 <h1>Account Configuration</h1>
 
-<p>Thank you for comfirming your registration. In order to complete your account setup we need a bit more information from you. Please take a moment to configure your account. If you need help you can email us at <a href="mailto:support@agencynerd.com">support@agencynerd.com</a> or watch our video to get more details on how to complete this configuration. Welcome to Agency Nerd!</p>
+<p>Welcome to Agency Nerd! Thank you for comfirming your registration. In order to complete your account setup we need a bit more information from you. Please take a moment to configure your account in three easy steps. If you need help you can email us at <a href="mailto:support@agencynerd.com">support@agencynerd.com</a> or <a href="#">watch our video</a> to get more details on how to complete this configuration.</p><p><strong>Open each section below to enter your information.</strong></p>
 
 	<div class="signup">
 
-		<div class="signup-header">Agency Information</div>
+		<div class="signup-header"><div class="step-number"><span>1</span></div>Agency Information<div id="setup-arrow" class="arrow-down"></div></div>
 	   	<div id="signup-agency">
 <br />
 <!-- edit form for agency info -->
-<form method="post" action="" id="signup_agency_info" name="signup_agency_info">
+<form method="post" action="/home/saveAgencySetup" id="signup_agency_info" name="signup_agency_info">
 
-    <label for="agency_name">Name<span class="small">*Optional</span></label>
-    <input id="agency_name" type="text" name="agency_name" placeholder="Enter Name" />
+    <label for="agency_name">Name<span class="small">*Required</span></label>
+    <input id="agency_name" type="text" name="agency_name" maxlength="64" placeholder="Enter Name" required />
 
 	<label for="agancy_address">Address<span class="small">*Optional</span></label>
-    <input id="agancy_address" type="text" name="agancy_address" placeholder="Enter Address" />
+    <input id="agency_address" type="text" name="agency_address" maxlength="255" placeholder="Enter Address" />
 
 	<label for="agency_city">City<span class="small">*Optional</span></label>
-    <input id="agency_city" type="text" name="agency_city" placeholder="Enter City" />
+    <input id="agency_city" type="text" name="agency_city" maxlength="64" placeholder="Enter City" />
 
 	<label for="agency_state">State<span class="small">*Optional</span></label>
-    <input id="agency_state" type="text" name="agency_state" placeholder="Enter State" />
+    <input id="agency_state" type="text" name="agency_state" maxlength="4" placeholder="Enter State" />
 
-	<label for="user_zip_code">Zip Code<span class="small">*Optional</span></label>
-    <input id="user_zip_code" type="text" name="user_zip_code" placeholder="Enter Zip Code" />
+	<label for="agency_zip_code">Zip Code<span class="small">*Optional</span></label>
+    <input id="agency_zip_code" type="text" name="agency_zip_code" maxlength="10" placeholder="Enter Zip Code" />
 
-    <label for="user_phone">Phone<span class="small">*Optional</span></label>
-    <input id="user_phone" type="text" name="user_phone" placeholder="Enter Phone" />
+    <label for="agency_phone">Phone<span class="small">*Optional</span></label>
+    <input id="agency_phone" type="text" name="agency_phone" maxlength="20" placeholder="Enter Phone" />
 
 	<div style="clear:both;"></div>
 </form>
 <br />
 	   	</div>
 
-		<div class="signup-middle">Employees</div><div class="arrow-down"></div>
+		<div class="signup-middle"><div class="step-number"><span>2</span></div>Invite Employee(s)<div id="setup-arrow" class="arrow-down"></div></div>
 	   	<div id="signup-employees">
 <br />
 <!-- edit form for adding employees -->
-<form method="post" action="register.php" id="registerform" name="registerform">
-	
-    <label for="user_name">Username<span class="small">*Required</span></label>
-    <input id="user_name" type="text" pattern="[a-zA-Z0-9]{2,64}" name="user_name" placeholder="Enter Username" required />
-	
-    <label for="user_email">Email<span class="small">*Valid e-mail only</span></label>
-    <input id="user_email" type="email" name="user_email" placeholder="Enter Email" required />
+<form method="post" action="/home/inviteEmployeeSetup" id="setup_invite_employee" name="setup_invite_employee">
 
-    <label for="user_password_new">Password<span class="small">*Minimum 6 chars</span></label>
-    <input id="user_password_new" type="password" name="user_password_new" pattern=".{6,}" placeholder="Enter Password" required autocomplete="off" />
+	<input type="hidden" id="agency_id" name="agency_id" value="<?php echo $agency_id; ?>" />
 
-    <label for="user_password_repeat">Password<span class="small">*Required</span></label>
-    <input id="user_password_repeat" type="password" name="user_password_repeat" pattern=".{6,}" placeholder="Password Again" required autocomplete="off" />
+	<label for="employee_first_name">First Name<span class="small">*Required</span></label>
+    <input id="employee_first_name" type="text" name="employee_first_name" maxlength="64" placeholder="Enter Name" required />
+
+	<label for="employee_last_name">Last Name<span class="small">*Required</span></label>
+    <input id="employee_last_name" type="text" name="employee_last_name" maxlength="64" placeholder="Enter Surname" required />
+	
+    <label for="employee_email">Email<span class="small">*Valid e-mail only</span></label>
+    <input id="employee_email" type="email" name="employee_email" maxlength="64" placeholder="Enter Email" required />
+
+	<label for="employee_type">User Type<span class="small">*Required</span></label>
+    <select class="main-select" id="employee_type" name="employee_type" required>
+		<option value="">- Select -</option>
+		<option value="0">Employee</option>
+		<option value="1">Manager</option>
+		<option value="2">Admin</option>
+	</select><div class="main-select-after" data="user_type">&#x25Be;</div>
 	
 	<div style="clear:both;"></div>
 	<br />
-	<button class="plain-btn">Add Employee</button>
+	<button class="plain-btn">Invite Employee</button>
 	<br />
 </form>
 <br />
 	   	</div>
 
-		<div id="signup-footer" class="signup-footer">Compensation Plans</div><div class="arrow-down"></div>
+		<div id="signup-footer" class="signup-footer"><div class="step-number"><span>3</span></div>Setup Employee(s)<div id="setup-arrow" class="arrow-down"></div></div>
 	   	<div id="signup-compensation">
 <br />
 <!-- edit form for adding compensation plans -->
-<form method="post" action="" id="signup_compensation_info" name="signup_compensation_info">
+<form method="post" action="" id="setup_employee_compensation" name="setup_employee_compensation">
 
-    <label for="compensation_name">Plan Name<span class="small">*Required</span></label>
-    <input id="compensation_name" type="text" name="compensation_name" placeholder="Enter Name" required />
-
-	<label for="compensation_position">Position<span class="small">*Required</span></label>
-    <input id="compensation_position" type="text" name="compensation_position" placeholder="Enter Position" required />
-
-	<label for="compensation_status">Status<span class="small">*Required</span></label>
-    <select class="main-select" id="compensation_status" name="compensation_status" required>
+	<label for="employees_compensation">Employee(s)<span class="small">*Select to Update</span></label>
+    <select class="main-select" id="employees_compensation" name="employees_compensation" required>
 		<option value="">- Select -</option>
-		<option value="1">Test an Option</option>
 	</select><div class="main-select-after" data="compensation_status">&#x25Be;</div>
+
+
+<div class="settings-title"><em>Employee Rate</em></div>
+
+
+	<label for="compensation_type">Hourly<span class="small">*Required</span></label><input class="input-mini" type="radio" id="compensation_type1" name="compensation_type" value="1" checked /><span><span></span></span>
+
+	<label class="label-inline" for="compensation_type">Salary</label><input class="input-inline" type="radio" id="compensation_type2" name="compensation_type" value="2" /><span><span></span></span>
+
+	<label for="compensation_rate">Rate<span class="small">*Required</span></label>
+    <div class="input-short-before">$</div><input class="input-short" id="compensation_rate" type="text" name="compensation_rate" placeholder="0.00" required /><div id="rate-text" class="input-after">per hour</div>
+
+	<label for="compensation_other">Other<span class="small">*Optional</span></label>
+    <div class="input-short-before">$</div><input class="input-short" id="compensation_other" type="text" name="compensation_other" placeholder="0.00" /><div class="input-after">per month</div>
 
 	<label for="compensation_draw">Draw<span class="small">*Optional</span></label>
 	<input type="checkbox" id="compensation_draw" name="compensation_draw" value="1" /><span><span></span></span>
-	<div style="clear:both;"></div>
 
-	<label for="compensation_rate">Rate<span class="small">*Required</span></label>
-    <input id="compensation_rate" type="text" name="compensation_rate" placeholder="Enter Rate" required />
 
-    <label for="compensation_commission">Commission Plan<span class="small">*Required</span></label>
-    <select class="main-select" id="compensation_commission" name="compensation_commission" required>
-		<option value="">- Select -</option>
-		<option value="1">Test an Option</option>
-	</select><div class="main-select-after" data="compensation_commission">&#x25Be;</div>
+<div class="settings-title"><em>Employee Commission</em></div>
+
+
+	<label for="commission_auto_new">Auto New<span class="small">*Required</span></label>
+    <input class="input-percent" id="commission_auto_new" type="text" name="commission_auto_new" placeholder="0" required /><div class="input-after">&#37;</div>
+
+	<label class="label-inline" for="commission_auto_renew">Auto Renew<span class="small">*Required</span></label>
+    <input class="input-percent" id="commission_auto_renew" type="text" name="commission_auto_renew" placeholder="0" required /><div class="input-after">&#37;</div>
+
+	<label for="commission_fire_new">Fire New<span class="small">*Required</span></label>
+    <input class="input-percent" id="commission_fire_new" type="text" name="commission_fire_new" placeholder="0" required /><div class="input-after">&#37;</div>
+
+	<label class="label-inline" for="commission_fire_renew">Fire Renew<span class="small">*Required</span></label>
+    <input class="input-percent" id="commission_fire_renew" type="text" name="commission_fire_renew" placeholder="0" required /><div class="input-after">&#37;</div>
+
+	<label for="commission_life">Life<span class="small">*Required</span></label>
+    <input class="input-percent" id="commission_life" type="text" name="commission_life" placeholder="0" required /><div class="input-after">&#37;</div>
+
+	<label class="label-inline" for="commission_health">Health<span class="small">*Required</span></label>
+    <input class="input-percent" id="commission_health" type="text" name="commission_health" placeholder="0" required /><div class="input-after">&#37;</div>
 
 	<div style="clear:both;"></div>
 	<br />
-	<button class="plain-btn">Add Plan</button>
+	<button id="update_employee" class="plain-btn">Update Compensation</button>
 	<br />
 </form>
+
+<div class="settings-title"><em>Employee Setup Progress</em></div>
+
 <br />
 	   	</div>
 
 	</div>
 
 <br />
-<a href="/menu"><button class="plain-btn">Save &amp; Continue</button></a>
+<button id="save_setup" class="plain-btn">Save &amp; Continue</button>
 <br /><br />
 
 </div>
 <br />
 </div>
-
-<script>
-
-$(document).ready(function() {
-	$("#signup-agency").slideToggle();
-});
-
-</script>

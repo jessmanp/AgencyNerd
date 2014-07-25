@@ -60,23 +60,47 @@ $(document).ready(function() {
 	});
 
 	$(".signup-header").on("click", function() {
+		if($(this).find("#setup-arrow").hasClass("arrow-down")) {
+			$(this).find("#setup-arrow").removeClass("arrow-down").addClass("arrow-up");
+		} else {
+			$(this).find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		}
+		$(".signup-middle").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		$(".signup-footer").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
 		$("#signup-agency").slideToggle();
 		$("#signup-employees").slideUp();
 		$("#signup-compensation").slideUp();
+		$("#signup-commission").slideUp();
 		$("#signup-footer").removeClass("signup-middle").addClass("signup-footer");
 	});
 
 	$(".signup-middle").on("click", function() {
+		if($(this).find("#setup-arrow").hasClass("arrow-down")) {
+			$(this).find("#setup-arrow").removeClass("arrow-down").addClass("arrow-up");
+		} else {
+			$(this).find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		}
+		$(".signup-header").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		$("#signup-footer").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
 		$("#signup-employees").slideToggle();
 		$("#signup-agency").slideUp();
 		$("#signup-compensation").slideUp();
+		$("#signup-commission").slideUp();
 		$("#signup-footer").removeClass("signup-middle").addClass("signup-footer");
 	});
 
 	$("#signup-footer").on("click", function(e) {
+		if($(this).find("#setup-arrow").hasClass("arrow-down")) {
+			$(this).find("#setup-arrow").removeClass("arrow-down").addClass("arrow-up");
+		} else {
+			$(this).find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		}
+		$(".signup-header").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		$(".signup-middle").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
 		$("#signup-compensation").slideToggle();
 		$("#signup-employees").slideUp();
 		$("#signup-agency").slideUp();
+		$("#signup-commission").slideUp();
 		if($(this).hasClass("signup-footer")) {
 			$(this).removeClass("signup-footer").addClass("signup-middle");
 		} else {
@@ -96,5 +120,148 @@ $(document).ready(function() {
     		//$(elem).prop("size", ddstate ? $("option").length : 1);
 
 	});
+
+	$("#signup_agency_info").submit(function(event) {
+		$.ajax({
+					type: "POST",
+					url: "/home/saveAgencySetup",
+					data: $(this).serialize(),
+					dataType: "json",
+					cache: false,
+        				async: true,
+					success: function (data) {
+						console.log(data);
+						if (data.error == true) {
+							// show returned error msg here
+							$("#info").html(data.msg);
+							$("#agency_name").focus();
+						} else {
+							// setup was successful, send to menu screen
+							window.location = "/menu";
+						}	
+					},
+					error: function (request, status, error) {
+        					console.log(error);
+					}
+		});
+		event.preventDefault();
+	});
+
+	$("#setup_invite_employee").submit(function(event) {
+		$.ajax({
+					type: "POST",
+					url: "/home/inviteEmployeeSetup",
+					data: $(this).serialize(),
+					dataType: "json",
+					cache: false,
+        				async: true,
+					success: function (data) {
+						console.log(data);
+						if (data.error == true) {
+							// show returned error msg here
+							$("#employee_email").focus();
+							$("#info").html(data.msg);
+						} else {
+							// invite was successful, clear fields...
+							$("#employee_first_name").val("");
+							$("#employee_last_name").val("");
+							$("#employee_email").val("");
+							$("#employee_type").val("").change();
+							// update user drop down in step 3...
+							updateEmployeeList();
+							// show success message...
+							$("#info").html(data.msg);
+						}	
+					},
+					error: function (request, status, error) {
+        					console.log(error);
+					}
+		});
+		event.preventDefault();
+	});
+
+	function updateEmployeeList() {
+		$.ajax({
+					type: "POST",
+					url: "/home/updateEmployeeList",
+					data: $(this).serialize(),
+					dataType: "json",
+					cache: false,
+        				async: true,
+					success: function (data) {
+						console.log(data);
+						if (data.error == true) {
+							// show returned error msg here
+							$("#info").html(data.msg);
+						} else {
+							// update was successful populate drop down with json data
+							$.each(data, function(key, value) {
+								$("#employees_compensation option[value="+value.user_id+"]").remove();
+    								$("#employees_compensation").append(
+        								$("<option></option>").val(value.user_id).html(value.user_first_name+" "+value.user_last_name)
+    								);
+  							});
+						}	
+					},
+					error: function (request, status, error) {
+        					console.log(error);
+					}
+		});
+	}
+
+	$("#setup_employee_compensation").submit(function(event) {
+		$.ajax({
+					type: "POST",
+					url: "/home/updateEmployeeCompensation",
+					data: $(this).serialize(),
+					dataType: "json",
+					cache: false,
+        				async: true,
+					success: function (data) {
+						console.log(data);
+						if (data.error == true) {
+							// show returned error msg here
+							$("#info").html(data.msg);
+						} else {
+							// show success message...
+							$("#info").html(data.msg);
+						}	
+					},
+					error: function (request, status, error) {
+        					console.log(error);
+					}
+		});
+		event.preventDefault();
+	});
+
+	$("#save_setup").on("click", function() {
+		//do agency info form submit
+		$("#signup_agency_info").submit();
+		event.preventDefault();
+	});
+
+	
+	$("#compensation_type1").on("click", function() {
+		if ($(this).val() == 1) {
+			// change display text
+			$("#rate-text").text("per hour");
+		}
+	});
+
+	$("#compensation_type2").on("click", function() {
+		if ($(this).val() == 2) {
+			// change display text
+			$("#rate-text").text("per month");
+		}
+	});
+
+	$("#update_employee").on("click", function() {
+		//do agency info form submit
+		$("#setup_employee_compensation").submit();
+		event.preventDefault();
+	});
+
+
 	
 });
+

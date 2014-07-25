@@ -315,8 +315,8 @@ If you do not wish to receive email from <span style="font-weight:bold; color:#0
 
 					// link this user to the agency
                 		$query_agency_user_insert = $this->db_connection->prepare('INSERT INTO agencies_users (agency_id,user_id) VALUES (:agency_id,:user_id)');
-					$query_agency_user_insert->bindValue(':agency_id', $agency_id, PDO::PARAM_STR);
-                		$query_agency_user_insert->bindValue(':user_id', $user_id, PDO::PARAM_STR);
+					$query_agency_user_insert->bindValue(':agency_id', $agency_id, PDO::PARAM_INT);
+                		$query_agency_user_insert->bindValue(':user_id', $user_id, PDO::PARAM_INT);
                 		$query_agency_user_insert->execute();
 
             		}
