@@ -288,5 +288,20 @@ If you do not wish to receive email from <span style="font-weight:bold; color:#0
 
 	}
 
+	/**
+     * Query employee compensation data to populate form
+     */
+    public function getEmployeeCompensationData($employee_id)
+    {
 
+		// query to get employee data
+		$query_get_employee_compensation = $this->db->prepare('SELECT * FROM compensation_plans WHERE user_id = :employee_id');
+		$query_get_employee_compensation->bindValue(':employee_id', $employee_id, PDO::PARAM_INT);
+		$query_get_employee_compensation->execute();
+		return $query_get_employee_compensation->fetchAll();
+
+	}
+
+
+// EOF
 }

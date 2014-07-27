@@ -1,5 +1,8 @@
 <div id="user-panel">
-	<div class="user-box">
+	<div class="user-box-settings">
+		<div id="menu-link-dead" class="button-select">
+			<div class="icon-home">Menu</div>
+		</div>
 		<div id="settings-link" class="button-select">
 			<div class="icon-gears">Settings</div>
 		</div>
@@ -10,7 +13,7 @@
 </div>
 <header>
 	<img src="<?php echo URL; ?>public/img/agency_nerd_app_logo.png" class="home-logo" alt="" />
- 	<div class="button-right"><div class="icon-user"></div></div>
+ 	<!-- <div class="button-right"><div class="icon-user"></div></div> -->
 </header>
 <div style="background-color:#eeeeee;">
 <br />
@@ -25,7 +28,7 @@
 
 	<div class="signup">
 
-		<div class="signup-header"><div class="step-number"><span>1</span></div>Agency Information<div id="setup-arrow" class="arrow-down"></div></div>
+		<div class="signup-header"><div class="step-number"><span>1</span></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agency Information<div id="setup-arrow" class="arrow-down"></div></div>
 	   	<div id="signup-agency">
 <br />
 <!-- edit form for agency info -->
@@ -54,7 +57,7 @@
 <br />
 	   	</div>
 
-		<div class="signup-middle"><div class="step-number"><span>2</span></div>Invite Employee(s)<div id="setup-arrow" class="arrow-down"></div></div>
+		<div class="signup-middle"><div class="step-number"><span>2</span></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invite Employee(s)<div id="setup-arrow" class="arrow-down"></div></div>
 	   	<div id="signup-employees">
 <br />
 <!-- edit form for adding employees -->
@@ -87,13 +90,13 @@
 <br />
 	   	</div>
 
-		<div id="signup-footer" class="signup-footer"><div class="step-number"><span>3</span></div>Setup Employee(s)<div id="setup-arrow" class="arrow-down"></div></div>
+		<div id="signup-footer" class="signup-footer"><div class="step-number"><span>3</span></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup Employee(s)<div id="setup-arrow" class="arrow-down"></div></div>
 	   	<div id="signup-compensation">
 <br />
 <!-- edit form for adding compensation plans -->
 <form method="post" action="" id="setup_employee_compensation" name="setup_employee_compensation">
 
-	<label for="employees_compensation">Employee(s)<span class="small">*Select to Update</span></label>
+	<label for="employees_compensation">Employee<span class="small">*Select to Update</span></label>
     <select class="main-select" id="employees_compensation" name="employees_compensation" required>
 		<option value="">- Select -</option>
 	</select><div class="main-select-after" data="compensation_status">&#x25Be;</div>
@@ -119,16 +122,16 @@
 <div class="settings-title"><em>Employee Commission</em></div>
 
 
-	<label for="commission_auto_new">Auto New<span class="small">*Required</span></label>
+	<label for="commission_auto_new">Auto new<span class="small">*Required</span></label>
     <input class="input-percent" id="commission_auto_new" type="text" name="commission_auto_new" placeholder="0" required /><div class="input-after">&#37;</div>
 
-	<label class="label-inline" for="commission_auto_renew">Auto Renew<span class="small">*Required</span></label>
+	<label class="label-inline" for="commission_auto_renew">Auto renew<span class="small">*Required</span></label>
     <input class="input-percent" id="commission_auto_renew" type="text" name="commission_auto_renew" placeholder="0" required /><div class="input-after">&#37;</div>
 
-	<label for="commission_fire_new">Fire New<span class="small">*Required</span></label>
+	<label for="commission_fire_new">Fire new<span class="small">*Required</span></label>
     <input class="input-percent" id="commission_fire_new" type="text" name="commission_fire_new" placeholder="0" required /><div class="input-after">&#37;</div>
 
-	<label class="label-inline" for="commission_fire_renew">Fire Renew<span class="small">*Required</span></label>
+	<label class="label-inline" for="commission_fire_renew">Fire renew<span class="small">*Required</span></label>
     <input class="input-percent" id="commission_fire_renew" type="text" name="commission_fire_renew" placeholder="0" required /><div class="input-after">&#37;</div>
 
 	<label for="commission_life">Life<span class="small">*Required</span></label>
@@ -142,13 +145,12 @@
 	<button id="update_employee" class="plain-btn">Update Compensation</button>
 	<br />
 </form>
-
-<div class="settings-title"><em>Employee Setup Progress</em></div>
-
 <br />
 	   	</div>
 
 	</div>
+
+<div class="settings-title"><em>Account Setup Progress</em></div>
 
 <br />
 <button id="save_setup" class="plain-btn">Save &amp; Continue</button>

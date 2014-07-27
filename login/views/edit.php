@@ -1,7 +1,10 @@
 <?php include('../application/views/_templates/header.php'); ?>
 
 <div id="user-panel">
-	<div class="user-box">
+	<div class="user-box-settings">
+		<div id="menu-link" class="button-normal">
+			<div class="icon-home">Menu</div>
+		</div>
 		<div id="settings-link" class="button-select">
 			<div class="icon-gears">Settings</div>
 		</div>
@@ -41,9 +44,6 @@
 <br />
 <!-- backlink -->
 	<div style="clear:both;"></div>
-	<br />
-	<a href="/menu/"><button class="plain-btn"><?php echo WORDING_BACK_TO_LOGIN; ?></button></a>
-	<br />
 
 <div style="clear:both;">
 <!-- clean separation of HTML and PHP -->
@@ -101,22 +101,22 @@
 <form method="post" action="/login/?edit=info" name="user_edit_form_info">
 	<input type="hidden" id="user_edit_submit_info" name="user_edit_submit_info" value="1" />
     <label for="user_first_name"><?php echo WORDING_FIRST_NAME; ?><span class="small">*Optional</span></label>
-    <input id="user_first_name" type="text" name="user_first_name" />
+    <input id="user_first_name" type="text" name="user_first_name" maxlength="64" value="<?php if (isset($user->user_first_name)) echo $user->user_first_name; ?>" />
 
 	<label for="user_last_name"><?php echo WORDING_LAST_NAME; ?><span class="small">*Optional</span></label>
-    <input id="user_last_name" type="text" name="user_last_name" />
+    <input id="user_last_name" type="text" name="user_last_name" maxlength="64" value="<?php if (isset($user->user_last_name)) echo $user->user_last_name; ?>" />
 
     <label for="user_job_title"><?php echo WORDING_JOB_TITLE; ?><span class="small">*Optional</span></label>
-    <input id="user_job_title" type="text" name="user_job_title" />
+    <input id="user_job_title" type="text" name="user_job_title" maxlength="64" value="<?php if (isset($user->user_job_title)) echo $user->user_job_title; ?>" />
 
     <label for="user_phone"><?php echo WORDING_PHONE; ?><span class="small">*Optional</span></label>
-    <input id="user_phone" type="text" name="user_phone" />
+    <input id="user_phone" type="text" name="user_phone" maxlength="20" value="<?php if (isset($user->user_phone)) echo $user->user_phone; ?>" />
 
 	<label for="user_mobile"><?php echo WORDING_MOBILE; ?><span class="small">*Optional</span></label>
-    <input id="user_mobile" type="text" name="user_mobile" />
+    <input id="user_mobile" type="text" name="user_mobile" maxlength="20" value="<?php if (isset($user->user_mobile)) echo $user->user_mobile; ?>" />
 
 	<label for="user_zip_code"><?php echo WORDING_ZIP_CODE; ?><span class="small">*Optional</span></label>
-    <input id="user_zip_code" type="text" name="user_zip_code" />
+    <input id="user_zip_code" type="text" name="user_zip_code" maxlength="10" value="<?php if (isset($user->user_zip_code)) echo $user->user_zip_code; ?>" />
 
 	<div style="clear:both;"></div>
 	<br />

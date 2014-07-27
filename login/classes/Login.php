@@ -94,6 +94,9 @@ class Login
             } elseif (isset($_POST["user_edit_submit_password"])) {
                 // function below uses $_SESSION['user_name'] and $_SESSION['user_id']
                 $this->editUserPassword($_POST['user_password_old'], $_POST['user_password_new'], $_POST['user_password_repeat']);
+            } elseif (isset($_POST["user_edit_submit_info"])) {
+                // function below uses $_SESSION['user_id']
+                $this->editUserInfo($_POST['user_first_name'], $_POST['user_last_name'], $_POST['user_job_title'], $_POST['user_phone'], $_POST['user_mobile'], $_POST['user_zip_code']);
             }
 
         // login with cookie
@@ -483,6 +486,49 @@ class Login
             }
         }
     }
+
+	/**
+     * Edit the user's personal info, provided in the editing form
+     */
+    public function editUserInfo($user_first_name, $user_last_name, $user_job_title, $user_phone, $user_mobile, $user_zip_code)
+    {
+		if ($this->databaseConnection()) {
+
+			// write user's new data into database
+        		$query_edit_user_info = $this->db_connection->prepare('UPDATE users SET user_first_name = :user_first_name, user_last_name = :user_last_name, user_job_title = :user_job_title, user_phone = :user_phone, user_mobile = :user_mobile, user_zip_code = :user_zip_code WHERE user_id = :user_id');
+             $query_edit_user_info->bindValue(':user_first_name', $user_first_name, PDO::PARAM_STR);
+             $query_edit_user_info->bindValue(':user_last_name', $user_last_name, PDO::PARAM_STR);
+             $query_edit_user_info->bindValue(':user_job_title', $user_job_title, PDO::PARAM_STR);
+             $query_edit_user_info->bindValue(':user_phone', $user_phone, PDO::PARAM_STR);
+             $query_edit_user_info->bindValue(':user_mobile', $user_mobile, PDO::PARAM_STR);
+             $query_edit_user_info->bindValue(':user_zip_code', $user_zip_code, PDO::PARAM_STR);
+             $query_edit_user_info->bindValue(':user_id', $_SESSION['user_id'], PDO::PARAM_INT);
+             $query_edit_user_info->execute();
+
+             if ($query_edit_user_info) {
+                 $this->messages[] = MESSAGE_USER_INFO_CHANGED_SUCCESSFULLY;
+             } else {
+                 $this->errors[] = MESSAGE_USER_INFO_CHANGE_FAILED;
+             }
+		}
+    }
+
+	/**
+     * Get the user's personal info, provided in the editing form
+     */
+    public function getUserInfo() {
+
+		if ($this->databaseConnection()) {
+
+			// query to get employee data
+			$query_get_user_info = $this->db_connection->prepare('SELECT user_first_name, user_last_name, user_job_title, user_phone, user_mobile, user_zip_code FROM users WHERE user_id = :user_id');
+			$query_get_user_info->bindValue(':user_id', $_SESSION['user_id'], PDO::PARAM_INT);
+			$query_get_user_info->execute();
+			return $query_get_user_info->fetchObject();
+
+		}
+
+	}
 
     /**
      * Edit the user's password, provided in the editing form

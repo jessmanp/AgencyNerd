@@ -212,7 +212,7 @@ class Home extends Controller
 		$return['msg'] = '';
 		$return['error'] = false;
 
-		// *UODATE EMPLOYEE COMPENSATION*
+		// *UPDATE EMPLOYEE COMPENSATION*
 		$employee_id = trim(@$_POST['employees_compensation']); // must be an existing ID
 		$compensation_type = trim(@$_POST['compensation_type']); // will be either 1 = hourly or 2 = salary
 		$compensation_rate = trim(@$_POST['compensation_rate']); // must be decimal money
@@ -233,7 +233,7 @@ class Home extends Controller
 			$comp_draw = 0;
 		}
 
-		if (!isset($employee_id) || $employee_id == '') {
+		if (!isset($employee_id) || $employee_id == '' || !is_numeric($employee_id)) {
 			$return['error'] = true;
 			$return['msg'] .= 'No employee was selected. Please select an employee.';
 		} elseif (!isset($compensation_type) || !is_numeric($compensation_type)){
@@ -287,7 +287,41 @@ class Home extends Controller
 	}
 
 
-	
+	/*
+     * This method handles what happens when the Employees are selected
+	 */
+    public function getEmployeeCompensation()
+    {
+
+		// array values that will be returned via ajax
+		$return = array();
+		$return['msg'] = '';
+		$return['error'] = false;
+
+		// *POPULATE EMPLOYEE COMPENSATION DATA*
+		$employee_id = trim(@$_GET['eid']); // must be an existing ID
+
+		if (!isset($employee_id) || $employee_id == '' || !is_numeric($employee_id)) {
+			$return['error'] = true;
+			$return['msg'] .= 'ERROR. Invalid employee or no employee was selected.';
+		}
+
+		// load model, to perform all setup actions
+		$setup_model = $this->loadModel('SetupModel');
+		// get employees data
+		$employee_data = $setup_model->getEmployeeCompensationData($employee_id);
+
+		if (empty($employee_data)) {
+			$return['error'] = true;
+			$return['msg'] .= 'ERROR. No employee data found.';
+		} else {
+			$return = $employee_data;
+		}
+
+		//Return json encoded results
+		echo json_encode($return);
+
+	}
 
 
 }

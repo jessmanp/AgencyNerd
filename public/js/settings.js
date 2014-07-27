@@ -9,6 +9,10 @@ $(document).ready(function() {
 	});
 
 	// NAVIGATION
+	$("#menu-link").on("click", function(event) {
+		event.preventDefault();
+		window.location = "/menu";
+	});
 	$("#logout-link").on("click", function(event) {
 		event.preventDefault();
 		window.location = "/login/?logout";
@@ -111,6 +115,9 @@ $(document).ready(function() {
 
 
 
+
+
+
 	//var ddstate = false;
 	$(".main-select-after").on("click", function() {
     		//$(this).closest("select").trigger("change");
@@ -120,6 +127,12 @@ $(document).ready(function() {
     		//$(elem).prop("size", ddstate ? $("option").length : 1);
 
 	});
+
+
+
+
+
+
 
 	$("#signup_agency_info").submit(function(event) {
 		$.ajax({
@@ -261,7 +274,62 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
+	$("#employees_compensation").on("change", function() {
+		var eid = $(this).val();
+		if (eid != '') {
+			// update employee info into form
+			$.ajax({
+					type: "GET",
+					url: "/home/getEmployeeCompensation/?eid="+eid,
+					data: $(this).serialize(),
+					dataType: "json",
+					cache: false,
+        				async: true,
+					success: function (data) {
+						console.log(data);
+						if (data.error == true) {
+							// show returned error msg here
+							$("#info").html(data.msg);
+						} else {
+							// show success message...
+							$("#info").html('Employee loaded. Please edit the employee&rsquo;s compensation information.');
+							// update was successful populate form fields with json data
+							$.each(data, function(key, value) {
+								//check compensation_type1 or compensation_type2
+								if (value.rate_type == 1) {
+									$("#compensation_type1").prop("checked", true);
+									// change display text
+									$("#rate-text").text("per hour");
+								} else if (value.rate_type == 2) {
+									$("#compensation_type2").prop("checked", true);
+									// change display text
+									$("#rate-text").text("per month");
+								}
+								//compensation_draw on or off
+								if (value.draw == 1) {
+									$("#compensation_draw").prop("checked", true);
+								}
+								// fill out fields with data
+        							$("#compensation_rate").val(value.rate);
+        							$("#compensation_other").val(value.other);
+        							$("#commission_auto_new").val(value.commission_auto_new);
+        							$("#commission_auto_renew").val(value.commission_auto_renew);
+        							$("#commission_fire_new").val(value.commission_fire_new);
+        							$("#commission_fire_renew").val(value.commission_fire_renew);
+        							$("#commission_life").val(value.commission_life);
+        							$("#commission_health").val(value.commission_health);
+  							});
+						}	
+					},
+					error: function (request, status, error) {
+        					console.log(error);
+					}
+			});
+		}
+	});
 
+	// query any existing employee data on refresh
+	updateEmployeeList();
 	
 });
 
