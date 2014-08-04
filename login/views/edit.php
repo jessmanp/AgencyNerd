@@ -18,19 +18,29 @@
  	<div class="button-right"><div class="icon-user"></div></div>
 </header>
 <div style="background-color:#eeeeee;">
-<br /><br />
+<br />
+
+<div id="modal"></div>
+<div id="popupmessage">
+	<div id="message"></div>
+	<button class="plain-btn">OK</button>
+	<br /><br />
+</div>
 
 <?php
+$msg = '';
 // show potential errors / feedback (from login object)
     if ($login->errors) {
         foreach ($login->errors as $error) {
-            echo $error;
+            $msg .= $error." ";
         }
+		echo "<script>openModal('error','".$msg."')</script>";
     }
     if ($login->messages) {
         foreach ($login->messages as $message) {
-            echo $message;
+            $msg .= $message." ";
         }
+		echo "<script>openModal('info','".$msg."')</script>";
     }
 ?>
 
@@ -129,7 +139,7 @@
 <br /><br />
 </div>
 
-<br /><br />
+<br />
 </div>
 
 <?php include('../application/views/_templates/footer.php'); ?>

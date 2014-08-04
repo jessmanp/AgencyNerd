@@ -39,6 +39,9 @@ class Home extends Controller
         require 'application/views/_templates/header.php';
         require 'application/views/home/index.php';
         require 'application/views/_templates/footer.php';
+		// clear out any error popups so they don't keep showing since we use sessions vars
+		unset($_SESSION['login_errors']);
+		unset($_SESSION['login_messages']);
     }
 
     /**
@@ -316,6 +319,38 @@ class Home extends Controller
 			$return['msg'] .= 'ERROR. No employee data found.';
 		} else {
 			$return = $employee_data;
+		}
+
+		//Return json encoded results
+		echo json_encode($return);
+
+	}
+
+	/*
+     * This method handles what happens when the Employee setup is checked
+	 */
+    public function checkEmployeeSetup()
+    {
+
+		// array values that will be returned via ajax
+		$return = array();
+		$return['msg'] = '';
+		$return['error'] = false;
+
+		// load model, to perform all setup actions
+		$setup_model = $this->loadModel('SetupModel');
+        
+		// get agency id based on owner
+		$agency_id = $setup_model->getOwnerAgencyID($_SESSION['user_id']);
+
+		// get list of employees
+		$employees = $setup_model->checkEmployeeCompensation($agency_id);
+
+		if (empty($employees)) {
+			$return['error'] = true;
+			$return['msg'] .= 'ERROR. No employee(s) found.';
+		} else {
+			$return = $employees;
 		}
 
 		//Return json encoded results

@@ -3,20 +3,30 @@
 	<img src="<?php echo URL; ?>public/img/agency_nerd_app_logo.png" class="home-logo" alt="" />
 </header>
 <div style="background-color:#eeeeee;">
-<br /><br />
+<br />
+
+<div id="modal"></div>
+<div id="popupmessage">
+	<div id="message"></div>
+	<button class="plain-btn">OK</button>
+	<br /><br />
+</div>
 
 <?php
+$msg = '';
 // show potential errors / feedback (from registration object)
 if (isset($registration)) {
     if ($registration->errors) {
         foreach ($registration->errors as $error) {
-            echo $error;
+           $msg .= $error." ";
         }
+		echo "<script>openModal('error','".$msg."')</script>";
     }
     if ($registration->messages) {
         foreach ($registration->messages as $message) {
-            echo $message;
+            $msg .= $message." ";
         }
+		echo "<script>openModal('info','".$msg."')</script>";
     }
 }
 ?>
@@ -67,7 +77,7 @@ setup steps will go here
 <?php } ?>
 <?php } ?>
 
-<br /><br />
+<br />
 </div>
 
 <?php include('../application/views/_templates/footer.php'); ?>

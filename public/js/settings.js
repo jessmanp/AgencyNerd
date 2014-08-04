@@ -1,6 +1,11 @@
 // do load
 $(document).ready(function() {
 
+	// MODAL WINDOW
+	$("#popupmessage").find(".plain-btn").on("click", function() {
+		closeModal();
+	});
+
 	// ABOUT
 	$("header").find("img").on("click", function(event) {
 		event.preventDefault();
@@ -131,7 +136,12 @@ $(document).ready(function() {
 
 
 
-
+	$("#agency_name").on("blur", function() {
+		if ($("#agency_name").val() != '') {
+			$("#progress").append('<span class="progress-info"><strong>Agency Name:</strong> '+$("#agency_name").val()+' &nbsp;</span><br />');
+			$(".meter span").css("width","25%");
+		}
+	});
 
 
 	$("#signup_agency_info").submit(function(event) {
@@ -146,7 +156,7 @@ $(document).ready(function() {
 						console.log(data);
 						if (data.error == true) {
 							// show returned error msg here
-							$("#info").html(data.msg);
+							openModal('error',data.msg);
 							$("#agency_name").focus();
 						} else {
 							// setup was successful, send to menu screen
@@ -172,8 +182,8 @@ $(document).ready(function() {
 						console.log(data);
 						if (data.error == true) {
 							// show returned error msg here
+							openModal('error',data.msg);
 							$("#employee_email").focus();
-							$("#info").html(data.msg);
 						} else {
 							// invite was successful, clear fields...
 							$("#employee_first_name").val("");
@@ -183,7 +193,7 @@ $(document).ready(function() {
 							// update user drop down in step 3...
 							updateEmployeeList();
 							// show success message...
-							$("#info").html(data.msg);
+							openModal('info',data.msg);
 						}	
 					},
 					error: function (request, status, error) {
@@ -205,7 +215,7 @@ $(document).ready(function() {
 						console.log(data);
 						if (data.error == true) {
 							// show returned error msg here
-							$("#info").html(data.msg);
+							openModal('error',data.msg);
 						} else {
 							// update was successful populate drop down with json data
 							$.each(data, function(key, value) {
@@ -213,6 +223,8 @@ $(document).ready(function() {
     								$("#employees_compensation").append(
         								$("<option></option>").val(value.user_id).html(value.user_first_name+" "+value.user_last_name)
     								);
+								$("#progress").append('<span class="progress-info"><strong>Employee Invited:</strong> '+value.user_first_name+' '+value.user_last_name+'&nbsp;</span><br />');
+								$(".meter span").css("width","50%");
   							});
 						}	
 					},
@@ -234,10 +246,11 @@ $(document).ready(function() {
 						console.log(data);
 						if (data.error == true) {
 							// show returned error msg here
-							$("#info").html(data.msg);
+							openModal('error',data.msg);
 						} else {
 							// show success message...
-							$("#info").html(data.msg);
+							openModal('info',data.msg);
+							checkEmployeeSetup();
 						}	
 					},
 					error: function (request, status, error) {
@@ -246,6 +259,33 @@ $(document).ready(function() {
 		});
 		event.preventDefault();
 	});
+
+	function checkEmployeeSetup() {
+		$.ajax({
+					type: "POST",
+					url: "/home/checkEmployeeSetup",
+					data: $(this).serialize(),
+					dataType: "json",
+					cache: false,
+        				async: true,
+					success: function (data) {
+						console.log(data);
+						if (data.error == true) {
+							// show returned error msg here
+							openModal('error',data.msg);
+						} else {
+							// update was successful populate drop down with json data
+							$.each(data, function(key, value) {
+								$("#progress").append('<span class="progress-info"><strong>Employee Setup:</strong> '+value.user_first_name+' '+value.user_last_name+'&nbsp;</span><br />');
+								$(".meter span").css("width","100%");
+  							});
+						}	
+					},
+					error: function (request, status, error) {
+        					console.log(error);
+					}
+		});
+	}
 
 	$("#save_setup").on("click", function() {
 		//do agency info form submit
@@ -289,10 +329,10 @@ $(document).ready(function() {
 						console.log(data);
 						if (data.error == true) {
 							// show returned error msg here
-							$("#info").html(data.msg);
+							openModal('error',data.msg);
 						} else {
 							// show success message...
-							$("#info").html('Employee loaded. Please edit the employee&rsquo;s compensation information.');
+							openModal('info','Employee loaded. Please edit the employee&rsquo;s compensation information.');
 							// update was successful populate form fields with json data
 							$.each(data, function(key, value) {
 								//check compensation_type1 or compensation_type2
@@ -328,8 +368,23 @@ $(document).ready(function() {
 		}
 	});
 
-	// query any existing employee data on refresh
-	updateEmployeeList();
-	
+	// animate progress meter
+	function animateMeter() {
+			$(".meter > span").each(function() {
+				$(this)
+					.data("origWidth", $(this).width())
+					.width(0)
+					.animate({
+						width: $(this).data("origWidth")
+					}, 1200);
+			});
+	}
+
+	//animateMeter();
+
+	//updateEmployeeList();
+
+
 });
+
 

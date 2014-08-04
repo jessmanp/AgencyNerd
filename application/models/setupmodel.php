@@ -302,6 +302,18 @@ If you do not wish to receive email from <span style="font-weight:bold; color:#0
 
 	}
 
+	/**
+     * Check Employees compensation from database based on Agency ID
+     */
+    public function checkEmployeeCompensation($agency_id)
+    {
+		// query agency ID for new owner
+        $sql = 'SELECT users.user_id,users.user_first_name,users.user_last_name FROM users, agencies, agencies_users, compensation_plans WHERE agencies_users.user_id = users.user_id AND agencies_users.agency_id = agencies.id AND compensation_plans.user_id = users.user_id AND agencies.id = '.$agency_id.' AND users.user_level < 3 AND compensation_plans.rate != 0 AND compensation_plans.commission_auto_new != 0 AND compensation_plans.commission_auto_renew != 0 AND compensation_plans.commission_fire_new != 0 AND compensation_plans.commission_fire_renew != 0 AND compensation_plans.commission_life != 0 AND compensation_plans.commission_health != 0;';
+        $query = $this->db->prepare($sql);
+        $query->execute();
+		return $query->fetchAll();
+    }
+
 
 // EOF
 }

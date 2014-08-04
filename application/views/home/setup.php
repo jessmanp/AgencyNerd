@@ -18,7 +18,12 @@
 <div style="background-color:#eeeeee;">
 <br />
 
-<div id="info"></div>
+<div id="modal"></div>
+<div id="popupmessage">
+	<div id="message"></div>
+	<button class="plain-btn">OK</button>
+	<br /><br />
+</div>
 
 <div id="register">
 
@@ -151,6 +156,10 @@
 	</div>
 
 <div class="settings-title"><em>Account Setup Progress</em></div>
+<div id="progress"><span class="progress-info"><strong>Email Confirmed:</strong> <?php echo $_SESSION['user_email']; ?>&nbsp;</span><br /></div>
+<div class="meter red nostripes">
+	<span style="width:10%"></span>
+</div>
 
 <br />
 <button id="save_setup" class="plain-btn">Save &amp; Continue</button>

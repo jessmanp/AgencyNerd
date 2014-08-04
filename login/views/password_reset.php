@@ -4,19 +4,29 @@
 	<img src="<?php echo URL; ?>public/img/agency_nerd_app_logo.png" class="home-logo" alt="" />
 </header>
 <div style="background-color:#eeeeee;">
-<br /><br />
+<br />
+
+<div id="modal"></div>
+<div id="popupmessage">
+	<div id="message"></div>
+	<button class="plain-btn">OK</button>
+	<br /><br />
+</div>
 
 <?php
+$msg = '';
 // show potential errors / feedback (from login object)
     if ($login->errors) {
         foreach ($login->errors as $error) {
-            echo $error;
+            $msg .= $error." ";
         }
+		echo "<script>openModal('error','".$msg."')</script>";
     }
     if ($login->messages) {
         foreach ($login->messages as $message) {
-            echo $message;
+            $msg .= $message." ";
         }
+		echo "<script>openModal('info','".$msg."')</script>";
     }
 ?>
 
@@ -63,7 +73,7 @@
 <!-- <a href="/menu/"><?php echo WORDING_BACK_TO_LOGIN; ?></a> -->
 </div>
 
-<br /><br />
+<br />
 </div>
 
 <?php include('../application/views/_templates/footer.php'); ?>

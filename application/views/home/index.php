@@ -2,19 +2,29 @@
 	<img src="<?php echo URL; ?>public/img/agency_nerd_app_logo.png" class="home-logo" alt="" />
 </header>
 <div style="background-color:#eeeeee;">
+	<br />
+
+<div id="modal"></div>
+<div id="popupmessage">
+	<div id="message"></div>
+	<button class="plain-btn">OK</button>
 	<br /><br />
+</div>
 
 <?php
+$msg = '';
 // show potential errors / feedback (from login object)
     if (isset($_SESSION['login_errors'])) {
         foreach ($_SESSION['login_errors'] as $error) {
-            echo $error;
+            $msg .= $error." ";
         }
+		echo "<script>openModal('error','".$msg."')</script>";
     }
     if (isset($_SESSION['login_messages'])) {
         foreach ($_SESSION['login_messages'] as $message) {
-            echo $message;
+            $msg .= $message." ";
         }
+		echo "<script>openModal('info','".$msg."')</script>";
     }
 ?>
 
@@ -37,6 +47,6 @@
 		Not a member? <a href="/login/register.php" class="content-link">Register Now</a>.<br />
 		Forgot password? <a href="/login/password_reset.php" class="content-link">Reset Password</a>.
 	</div>
-	<br /><br />
+	<br />
 </div>
 
