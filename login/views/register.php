@@ -12,25 +12,6 @@
 	<br /><br />
 </div>
 
-<?php
-$msg = '';
-// show potential errors / feedback (from registration object)
-if (isset($registration)) {
-    if ($registration->errors) {
-        foreach ($registration->errors as $error) {
-           $msg .= $error." ";
-        }
-		echo "<script>openModal('error','".$msg."')</script>";
-    }
-    if ($registration->messages) {
-        foreach ($registration->messages as $message) {
-            $msg .= $message." ";
-        }
-		echo "<script>openModal('info','".$msg."')</script>";
-    }
-}
-?>
-
 <?php if (!$registration->registration_successful && !$registration->verification_successful) { ?>
 <div id="register">
 
@@ -81,3 +62,22 @@ setup steps will go here
 </div>
 
 <?php include('../application/views/_templates/footer.php'); ?>
+
+<?php
+$msg = '';
+// show potential errors / feedback (from registration object)
+if (isset($registration)) {
+    if ($registration->errors) {
+        foreach ($registration->errors as $error) {
+           $msg .= $error." ";
+        }
+		echo "<script>openModal('error','".$msg."')</script>";
+    }
+    if ($registration->messages) {
+        foreach ($registration->messages as $message) {
+            $msg .= $message." ";
+        }
+		echo "<script>openModal('info','".$msg."')</script>";
+    }
+}
+?>

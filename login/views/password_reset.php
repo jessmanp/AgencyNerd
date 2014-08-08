@@ -13,23 +13,6 @@
 	<br /><br />
 </div>
 
-<?php
-$msg = '';
-// show potential errors / feedback (from login object)
-    if ($login->errors) {
-        foreach ($login->errors as $error) {
-            $msg .= $error." ";
-        }
-		echo "<script>openModal('error','".$msg."')</script>";
-    }
-    if ($login->messages) {
-        foreach ($login->messages as $message) {
-            $msg .= $message." ";
-        }
-		echo "<script>openModal('info','".$msg."')</script>";
-    }
-?>
-
 <div id="register">
 
 <h1>Password Reset</h1>
@@ -77,3 +60,20 @@ $msg = '';
 </div>
 
 <?php include('../application/views/_templates/footer.php'); ?>
+
+<?php
+$msg = '';
+// show potential errors / feedback (from login object)
+    if ($login->errors) {
+        foreach ($login->errors as $error) {
+            $msg .= $error." ";
+        }
+		echo "<script>openModal('error','".$msg."')</script>";
+    }
+    if ($login->messages) {
+        foreach ($login->messages as $message) {
+            $msg .= $message." ";
+        }
+		echo "<script>openModal('info','".$msg."')</script>";
+    }
+?>
