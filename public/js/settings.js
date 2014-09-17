@@ -83,6 +83,22 @@ $(document).ready(function() {
 		$("#signup-footer").removeClass("signup-middle").addClass("signup-footer");
 	});
 
+	// 1ST NEXT BUTTON
+	$("#next-step1").on("click", function() {
+		if($(".signup-middle").find("#setup-arrow").hasClass("arrow-down")) {
+			$(".signup-middle").find("#setup-arrow").removeClass("arrow-down").addClass("arrow-up");
+		} else {
+			$(".signup-middle").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		}
+		$(".signup-header").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		$("#signup-footer").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		$("#signup-employees").slideToggle();
+		$("#signup-agency").slideUp();
+		$("#signup-compensation").slideUp();
+		$("#signup-commission").slideUp();
+		$("#signup-footer").removeClass("signup-middle").addClass("signup-footer");
+	});
+
 	$(".signup-middle").on("click", function() {
 		if($(this).find("#setup-arrow").hasClass("arrow-down")) {
 			$(this).find("#setup-arrow").removeClass("arrow-down").addClass("arrow-up");
@@ -96,6 +112,26 @@ $(document).ready(function() {
 		$("#signup-compensation").slideUp();
 		$("#signup-commission").slideUp();
 		$("#signup-footer").removeClass("signup-middle").addClass("signup-footer");
+	});
+
+	// 2ND NEXT BUTTON
+	$("#next-step2").on("click", function() {
+		if($("#signup-footer").find("#setup-arrow").hasClass("arrow-down")) {
+			$("#signup-footer").find("#setup-arrow").removeClass("arrow-down").addClass("arrow-up");
+		} else {
+			$("#signup-footer").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		}
+		$(".signup-header").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		$(".signup-middle").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		$("#signup-compensation").slideToggle();
+		$("#signup-employees").slideUp();
+		$("#signup-agency").slideUp();
+		$("#signup-commission").slideUp();
+		if($("#signup-footer").hasClass("signup-footer")) {
+			$("#signup-footer").removeClass("signup-footer").addClass("signup-middle");
+		} else {
+			$("#signup-footer").removeClass("signup-middle").addClass("signup-footer");
+		}
 	});
 
 	$("#signup-footer").on("click", function(e) {
@@ -117,11 +153,28 @@ $(document).ready(function() {
 		}
 	});
 
+	// 3RD NEXT BUTTON
+	$("#next-step3").on("click", function() {
+		if($("#signup-footer").find("#setup-arrow").hasClass("arrow-down")) {
+			$("#signup-footer").find("#setup-arrow").removeClass("arrow-down").addClass("arrow-up");
+		} else {
+			$("#signup-footer").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		}
+		$(".signup-header").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		$(".signup-middle").find("#setup-arrow").removeClass("arrow-up").addClass("arrow-down");
+		$("#signup-compensation").slideToggle();
+		$("#signup-employees").slideUp();
+		$("#signup-agency").slideUp();
+		$("#signup-commission").slideUp();
+		if($("#signup-footer").hasClass("signup-footer")) {
+			$("#signup-footer").removeClass("signup-footer").addClass("signup-middle");
+		} else {
+			$("#signup-footer").removeClass("signup-middle").addClass("signup-footer");
+		}
+	});
 
 
-
-
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	//var ddstate = false;
 	$(".main-select-after").on("click", function() {
@@ -131,16 +184,6 @@ $(document).ready(function() {
 		//ddstate = !ddstate;
     		//$(elem).prop("size", ddstate ? $("option").length : 1);
 
-	});
-
-
-
-
-	$("#agency_name").on("blur", function() {
-		if ($("#agency_name").val() != '') {
-			$("#progress").append('<span class="progress-info"><strong>Agency Name:</strong> '+$("#agency_name").val()+' &nbsp;</span><br />');
-			$(".meter span").css("width","25%");
-		}
 	});
 
 
@@ -189,6 +232,7 @@ $(document).ready(function() {
 							$("#employee_first_name").val("");
 							$("#employee_last_name").val("");
 							$("#employee_email").val("");
+							$("#employee_email_verify").val("");
 							$("#employee_type").val("").change();
 							// update user drop down in step 3...
 							updateEmployeeList();
@@ -215,17 +259,32 @@ $(document).ready(function() {
 						console.log(data);
 						if (data.error == true) {
 							// show returned error msg here
-							openModal('error',data.msg);
+							//openModal('error',data.msg);
 						} else {
+							// loop over array old school way for IE
+							for (var i=progressMessages.length-1; i>=0; i--) {
+								// search array for previous agency name
+    								if (progressMessages[i].search('Invited:') >= 0) {
+        								progressMessages.splice(i, 1);
+    								}
+							}
 							// update was successful populate drop down with json data
 							$.each(data, function(key, value) {
+								var user_level = 'General';
+								if (value.user_level == 0) {
+									user_level = 'Employee';
+								} else if (value.user_level == 1) {
+									user_level = 'Manager';
+								} else if (value.user_level == 2) {
+									user_level = 'Admin';
+								}
+								progressMessages.push('<div class="progress-rule"></div><span class="progress-info"><strong>'+user_level+' Invited:</strong><br />'+value.user_first_name+' '+value.user_last_name+'&nbsp;</span><br />');
 								$("#employees_compensation option[value="+value.user_id+"]").remove();
     								$("#employees_compensation").append(
-        								$("<option></option>").val(value.user_id).html(value.user_first_name+" "+value.user_last_name)
+        								$("<option></option>").val(value.user_id).html(value.user_first_name+" "+value.user_last_name+" ("+user_level+")")
     								);
-								$("#progress").append('<span class="progress-info"><strong>Employee Invited:</strong> '+value.user_first_name+' '+value.user_last_name+'&nbsp;</span><br />');
-								$(".meter span").css("width","50%");
   							});
+							updateProgress(3);
 						}	
 					},
 					error: function (request, status, error) {
@@ -274,11 +333,28 @@ $(document).ready(function() {
 							// show returned error msg here
 							openModal('error',data.msg);
 						} else {
+							// loop over array old school way for IE
+							for (var i=progressMessages.length-1; i>=0; i--) {
+								// search array for previous agency name
+    								if (progressMessages[i].search('Setup:') >= 0) {
+        								progressMessages.splice(i, 1);
+    								}
+							}
 							// update was successful populate drop down with json data
 							$.each(data, function(key, value) {
-								$("#progress").append('<span class="progress-info"><strong>Employee Setup:</strong> '+value.user_first_name+' '+value.user_last_name+'&nbsp;</span><br />');
-								$(".meter span").css("width","100%");
+								var user_level = 'General';
+								if (value.user_level == 0) {
+									user_level = 'Employee';
+								} else if (value.user_level == 1) {
+									user_level = 'Manager';
+								} else if (value.user_level == 2) {
+									user_level = 'Admin';
+								}
+								progressMessages.push('<div class="progress-rule"></div><span class="progress-info"><strong>'+user_level+' Setup:</strong><br />'+value.user_first_name+' '+value.user_last_name+'&nbsp;</span><br />');
+								//$("#progress").append('<span class="progress-info"><strong>Employee Setup:</strong> '+value.user_first_name+' '+value.user_last_name+'&nbsp;</span><br />');
+								//$(".meter span").css("width","100%");
   							});
+							updateProgress(4);
 						}	
 					},
 					error: function (request, status, error) {
@@ -357,7 +433,9 @@ $(document).ready(function() {
         							$("#commission_fire_new").val(value.commission_fire_new);
         							$("#commission_fire_renew").val(value.commission_fire_renew);
         							$("#commission_life").val(value.commission_life);
+        							$("#commission_life_renew").val(value.commission_life_renew);
         							$("#commission_health").val(value.commission_health);
+        							$("#commission_health_renew").val(value.commission_health_renew);
   							});
 						}	
 					},
@@ -382,9 +460,137 @@ $(document).ready(function() {
 
 	//animateMeter();
 
-	//updateEmployeeList();
+	function loadAgencyInfo() {
+		$.ajax({
+					type: "POST",
+					url: "/home/preloadAgencyInfo",
+					data: $(this).serialize(),
+					dataType: "json",
+					cache: false,
+        				async: true,
+					success: function (data) {
+						console.log(data);
+						if (data.error == true) {
+							// show returned error msg here
+							//openModal('error',data.msg);
+						} else {
+							// show success message...
+							if (data[0].agency_name) {
+								//openModal('info','Agency information found. Please verify your information.');
+								// data does exists populate fields...
+								$.each(data, function(key, value) {
+									$("#agency_name").val(value.agency_name);
+									$("#agency_address").val(value.agency_address);
+									$("#agency_city").val(value.agency_city);
+									$("#agency_state").val(value.agency_state);
+									$("#agency_zip_code").val(value.agency_zip);
+									$("#agency_phone").val(value.agency_phone);
+								});
+							}
+						}	
+					},
+					error: function (request, status, error) {
+        					console.log(error);
+					}
+		});
+		event.preventDefault();
+	}
 
+	$("#agency_name").on("blur", function() {
+		if ($("#agency_name").val() != '') {
+			// loop over array old school way for IE
+			for (var i=progressMessages.length-1; i>=0; i--) {
+				// search array for previous agency name
+    				if (progressMessages[i].search('Agency Name:') >= 0) {
+        				progressMessages.splice(i, 1);
+        				break;
+    				}
+			}
+			progressMessages.push('<div class="progress-rule"></div><span class="progress-info"><strong>Agency Name:</strong><br />'+$("#agency_name").val()+' &nbsp;</span><br />');
+			updateProgress(2);
+		}
+	});
+
+	$("#info-window").draggable({ 
+                containment: '#glassbox', 
+                scroll: false
+         }).mousemove(function(){
+                var coord = $(this).position();
+                //$("p:last").text( "left: " + coord.left + ", top: " + coord.top );
+         }).mouseup(function(){ 
+                var coords=[];
+                var coord = $(this).position();
+                var item={ coordTop:  coord.left, coordLeft: coord.top  };
+                coords.push(item);
+             /*
+			   var order = { coords: coords };
+                $.post('updatecoords.php', 'data='+$.toJSON(order), function(response){
+                        if(response=="success")
+                            $("#respond").html('<div class="success">X and Y Coordinates Saved!</div>').hide().fadeIn(1000);
+                            setTimeout(function(){ $('#respond').fadeOut(1000); }, 2000);
+                        }); 
+                });
+			*/
+                         
+	});
+
+	$("#info-window").on("click", function() {
+		if($(this).find("#info-arrow").hasClass("arrow-down-dark")) {
+			$(this).find("#info-arrow").removeClass("arrow-down-dark").addClass("arrow-up-dark");
+			$(this).find("#progress").slideToggle();
+		} else {
+			$(this).find("#info-arrow").removeClass("arrow-up-dark").addClass("arrow-down-dark");
+			$(this).find("#progress").slideToggle();
+		}
+	});
+
+	var progressMessages = [];
+
+	function updateProgress(bar) {
+		$("#progress").empty();
+		for (var i in progressMessages) {
+			// update progress window with array items
+			$("#progress").append(progressMessages[i]);
+		}
+		// update progress bar width
+		var w = (bar*25);
+		$(".meter span").css("width",w+"%");
+	}
+
+	function preUpdateProgress() {
+		$.ajax({
+					type: "POST",
+					url: "/home/preUpdateProgress",
+					data: $(this).serialize(),
+					dataType: "json",
+					cache: false,
+        				async: true,
+					success: function (data) {
+						console.log(data);
+						if (data.error == true) {
+							// show returned error msg here
+							openModal('error',data.msg);
+						} else {
+							// update was successful populate drop down with json data
+							progressMessages.push(data);
+							updateProgress(1);
+						}	
+					},
+					error: function (request, status, error) {
+        					console.log(error);
+					}
+		});
+
+	}
+
+	// run initial setup on load only if on setup page
+	if(document.URL.search("/setup") != -1) {
+		preUpdateProgress();
+		loadAgencyInfo();
+		updateEmployeeList();
+	}
 
 });
+
 
 

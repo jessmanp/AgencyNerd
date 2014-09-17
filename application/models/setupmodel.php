@@ -247,7 +247,7 @@ If you do not wish to receive email from <span style="font-weight:bold; color:#0
     public function getInvitedEmployees($agency_id)
     {
 		// query agency ID for new owner
-        $sql = 'SELECT users.user_id,users.user_first_name,users.user_last_name FROM users, agencies, agencies_users WHERE agencies_users.user_id = users.user_id AND agencies_users.agency_id = agencies.id AND agencies.id = '.$agency_id.' AND users.user_level < 3';
+        $sql = 'SELECT users.user_id,users.user_level,users.user_first_name,users.user_last_name FROM users, agencies, agencies_users WHERE agencies_users.user_id = users.user_id AND agencies_users.agency_id = agencies.id AND agencies.id = '.$agency_id.' AND users.user_level < 3';
         $query = $this->db->prepare($sql);
         $query->execute();
 		return $query->fetchAll();
@@ -257,7 +257,7 @@ If you do not wish to receive email from <span style="font-weight:bold; color:#0
 	/**
      * Insert employee compensation
      */
-    public function saveEmployeeCompensation($employee_id, $compensation_type, $compensation_rate, $compensation_other, $comp_draw, $commission_auto_new, $commission_auto_renew, $commission_fire_new, $commission_fire_renew, $commission_life, $commission_health)
+    public function saveEmployeeCompensation($employee_id, $compensation_type, $compensation_rate, $compensation_other, $comp_draw, $commission_auto_new, $commission_auto_renew, $commission_fire_new, $commission_fire_renew, $commission_life, $commission_life_renew, $commission_health, $commission_health_renew)
     {
 
 		// update compensation data for employee
@@ -266,7 +266,7 @@ If you do not wish to receive email from <span style="font-weight:bold; color:#0
 		}
 
 		// query to update comp plan
-		$query_update_employee_compensation = $this->db->prepare('UPDATE compensation_plans SET active = 1, effective_date = now(), rate_type = :rate_type, rate = :rate, other = :other, draw = :draw, commission_auto_new = :commission_auto_new, commission_auto_renew = :commission_auto_renew, commission_fire_new = :commission_fire_new, commission_fire_renew = :commission_fire_renew, commission_life = :commission_life, commission_health = :commission_health WHERE user_id = :employee_id');
+		$query_update_employee_compensation = $this->db->prepare('UPDATE compensation_plans SET active = 1, effective_date = now(), rate_type = :rate_type, rate = :rate, other = :other, draw = :draw, commission_auto_new = :commission_auto_new, commission_auto_renew = :commission_auto_renew, commission_fire_new = :commission_fire_new, commission_fire_renew = :commission_fire_renew, commission_life = :commission_life, commission_life_renew = :commission_life_renew, commission_health = :commission_health, commission_health_renew = :commission_health_renew WHERE user_id = :employee_id');
 
 		$query_update_employee_compensation->bindValue(':rate_type', $compensation_type, PDO::PARAM_INT);
 		$query_update_employee_compensation->bindValue(':rate', $compensation_rate, PDO::PARAM_STR);
@@ -277,7 +277,9 @@ If you do not wish to receive email from <span style="font-weight:bold; color:#0
 		$query_update_employee_compensation->bindValue(':commission_fire_new', $commission_fire_new, PDO::PARAM_STR);
 		$query_update_employee_compensation->bindValue(':commission_fire_renew', $commission_fire_renew, PDO::PARAM_STR);
 		$query_update_employee_compensation->bindValue(':commission_life', $commission_life, PDO::PARAM_STR);
+		$query_update_employee_compensation->bindValue(':commission_life_renew', $commission_life_renew, PDO::PARAM_STR);
 		$query_update_employee_compensation->bindValue(':commission_health', $commission_health, PDO::PARAM_STR);
+		$query_update_employee_compensation->bindValue(':commission_health_renew', $commission_health_renew, PDO::PARAM_STR);
 		$query_update_employee_compensation->bindValue(':employee_id', $employee_id, PDO::PARAM_INT);
 		$query_update_employee_compensation->execute();
 
@@ -308,7 +310,19 @@ If you do not wish to receive email from <span style="font-weight:bold; color:#0
     public function checkEmployeeCompensation($agency_id)
     {
 		// query agency ID for new owner
-        $sql = 'SELECT users.user_id,users.user_first_name,users.user_last_name FROM users, agencies, agencies_users, compensation_plans WHERE agencies_users.user_id = users.user_id AND agencies_users.agency_id = agencies.id AND compensation_plans.user_id = users.user_id AND agencies.id = '.$agency_id.' AND users.user_level < 3 AND compensation_plans.rate != 0 AND compensation_plans.commission_auto_new != 0 AND compensation_plans.commission_auto_renew != 0 AND compensation_plans.commission_fire_new != 0 AND compensation_plans.commission_fire_renew != 0 AND compensation_plans.commission_life != 0 AND compensation_plans.commission_health != 0;';
+        $sql = 'SELECT users.user_id,users.user_level,users.user_first_name,users.user_last_name FROM users, agencies, agencies_users, compensation_plans WHERE agencies_users.user_id = users.user_id AND agencies_users.agency_id = agencies.id AND compensation_plans.user_id = users.user_id AND agencies.id = '.$agency_id.' AND users.user_level < 3 AND compensation_plans.rate != 0';
+        $query = $this->db->prepare($sql);
+        $query->execute();
+		return $query->fetchAll();
+    }
+
+	/**
+     * Get Agency Info from database based on Agency ID
+     */
+    public function getAgencyInfo($agency_id)
+    {
+		// query agency ID for new owner
+        $sql = 'SELECT * FROM agencies WHERE id = '.$agency_id;
         $query = $this->db->prepare($sql);
         $query->execute();
 		return $query->fetchAll();

@@ -35,3 +35,4 @@ function closeModal() {
 	$("#popupmessage").fadeOut();
 	$("#message").fadeOut();
 }
+

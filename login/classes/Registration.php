@@ -84,6 +84,9 @@ class Registration
         $user_name  = trim($user_name);
         $user_email = trim($user_email);
 
+		$this->temp_user_name = $user_name;
+		$this->temp_user_email = $user_email;
+
         // check provided data validity
         // TODO: check for "return true" case early, so put this first
         if (strtolower($captcha) != strtolower($_SESSION['captcha'])) {

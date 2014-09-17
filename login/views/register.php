@@ -22,10 +22,10 @@
 	<input type="hidden" id="register" name="register" value="1" />
 	
     <label for="user_name">Username<span class="small">*Required</span></label>
-    <input id="user_name" type="text" pattern="[a-zA-Z0-9]{2,64}" name="user_name" placeholder="Enter Username" required />
+    <input id="user_name" type="text" pattern="[a-zA-Z0-9]{2,64}" name="user_name" placeholder="Enter Username" value="<?php if (isset($registration->temp_user_name)) { echo $registration->temp_user_name; } ?>" required />
 	
     <label for="user_email">Email<span class="small">*Valid e-mail only</span></label>
-    <input id="user_email" type="email" name="user_email" placeholder="Enter Email" required />
+    <input id="user_email" type="email" name="user_email" placeholder="Enter Email" value="<?php if (isset($registration->temp_user_email)) { echo $registration->temp_user_email; } ?>" required />
 
     <label for="user_password_new">Password<span class="small">*Minimum 6 chars</span></label>
     <input id="user_password_new" type="password" name="user_password_new" pattern=".{6,}" placeholder="Enter Password" required autocomplete="off" />
@@ -47,21 +47,19 @@
 <div style="clear:both;"></div>
 </div>
 <?php } else { ?>
-<?php if ($registration->verification_successful) { ?>
+
 <div id="register">
 
-<h1>New User Account Setup</h1>
+<h1>User Activation</h1>
 <br />
-setup steps will go here
-<br />
+<p>Instruction page here (junk folder verbiage) *need RESEND btn</p>
+
 </div>
-<?php } ?>
+
 <?php } ?>
 
 <br />
 </div>
-
-<?php include('../application/views/_templates/footer.php'); ?>
 
 <?php
 $msg = '';
@@ -81,3 +79,5 @@ if (isset($registration)) {
     }
 }
 ?>
+
+<?php include('../application/views/_templates/footer.php'); ?>

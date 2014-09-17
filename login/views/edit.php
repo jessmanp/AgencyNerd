@@ -125,8 +125,6 @@
 <br />
 </div>
 
-<?php include('../application/views/_templates/footer.php'); ?>
-
 <?php
 $msg = '';
 // show potential errors / feedback (from login object)
@@ -143,3 +141,5 @@ $msg = '';
 		echo "<script>openModal('info','".$msg."')</script>";
     }
 ?>
+
+<?php include('../application/views/_templates/footer.php'); ?>

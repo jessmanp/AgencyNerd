@@ -1,3 +1,9 @@
+<div id="info-window">
+	<div class="info-title">Account Setup Progress<div id="info-arrow" class="arrow-up-dark"></div></div>
+	<div class="meter red nostripes"><span style="width:0%"></span></div>
+	<div id="progress"></div>
+</div>
+
 <div id="user-panel">
 	<div class="user-box-settings">
 		<div id="menu-link-dead" class="button-select">
@@ -51,7 +57,7 @@
 	<label for="agency_state">State<span class="small">*Optional</span></label>
     <input id="agency_state" type="text" name="agency_state" maxlength="4" placeholder="Enter State" />
 
-	<label for="agency_zip_code">Zip Code<span class="small">*Optional</span></label>
+	<label for="agency_zip_code">Zip Code<span class="small">*Required</span></label>
     <input id="agency_zip_code" type="text" name="agency_zip_code" maxlength="10" placeholder="Enter Zip Code" />
 
     <label for="agency_phone">Phone<span class="small">*Optional</span></label>
@@ -59,6 +65,9 @@
 
 	<div style="clear:both;"></div>
 </form>
+	<br />
+	<button id="next-step1" class="small-btn">Next</button>
+	<br />
 <br />
 	   	</div>
 
@@ -79,6 +88,9 @@
     <label for="employee_email">Email<span class="small">*Valid e-mail only</span></label>
     <input id="employee_email" type="email" name="employee_email" maxlength="64" placeholder="Enter Email" required />
 
+	<label for="employee_email_verify">Email<span class="small">*Valid e-mail again</span></label>
+    <input id="employee_email_verify" type="email" name="employee_email_verify" maxlength="64" placeholder="Enter Email" required />
+
 	<label for="employee_type">User Type<span class="small">*Required</span></label>
     <select class="main-select" id="employee_type" name="employee_type" required>
 		<option value="">- Select -</option>
@@ -92,6 +104,9 @@
 	<button class="plain-btn">Invite Employee</button>
 	<br />
 </form>
+	<br />
+	<button id="next-step2" class="small-btn">Next</button>
+	<br />
 <br />
 	   	</div>
 
@@ -124,42 +139,60 @@
 	<input type="checkbox" id="compensation_draw" name="compensation_draw" value="1" /><span><span></span></span>
 
 
-<div class="settings-title"><em>Employee Commission</em></div>
+<div class="settings-title"><em>Employee Commission</em><span class="footnote"><sup>*</sup></span></div>
 
+	<div class="commission-title">New Policies</div>
 
-	<label for="commission_auto_new">Auto new<span class="small">*Required</span></label>
-    <input class="input-percent" id="commission_auto_new" type="text" name="commission_auto_new" placeholder="0" required /><div class="input-after">&#37;</div>
+	<div class="commission-fields">
 
-	<label class="label-inline" for="commission_auto_renew">Auto renew<span class="small">*Required</span></label>
-    <input class="input-percent" id="commission_auto_renew" type="text" name="commission_auto_renew" placeholder="0" required /><div class="input-after">&#37;</div>
+		<label for="commission_auto_new">Auto<span class="small">*Required</span></label>
+    		<input class="input-percent" id="commission_auto_new" type="text" name="commission_auto_new" placeholder="0" required /><div class="input-after">&#37;</div>
 
-	<label for="commission_fire_new">Fire new<span class="small">*Required</span></label>
-    <input class="input-percent" id="commission_fire_new" type="text" name="commission_fire_new" placeholder="0" required /><div class="input-after">&#37;</div>
+		<label for="commission_fire_new">Fire<span class="small">*Required</span></label>
+    		<input class="input-percent" id="commission_fire_new" type="text" name="commission_fire_new" placeholder="0" required /><div class="input-after">&#37;</div>
 
-	<label class="label-inline" for="commission_fire_renew">Fire renew<span class="small">*Required</span></label>
-    <input class="input-percent" id="commission_fire_renew" type="text" name="commission_fire_renew" placeholder="0" required /><div class="input-after">&#37;</div>
+		<label for="commission_life">Life<span class="small">*Required</span></label>
+    		<input class="input-percent" id="commission_life" type="text" name="commission_life" placeholder="0" required /><div class="input-after">&#37;</div>
 
-	<label for="commission_life">Life<span class="small">*Required</span></label>
-    <input class="input-percent" id="commission_life" type="text" name="commission_life" placeholder="0" required /><div class="input-after">&#37;</div>
+		<label for="commission_health">Health<span class="small">*Required</span></label>
+    		<input class="input-percent" id="commission_health" type="text" name="commission_health" placeholder="0" required /><div class="input-after">&#37;</div>
+	
+	</div>
 
-	<label class="label-inline" for="commission_health">Health<span class="small">*Required</span></label>
-    <input class="input-percent" id="commission_health" type="text" name="commission_health" placeholder="0" required /><div class="input-after">&#37;</div>
+	<div class="commission-inline-title">Renew Policies</div>
+
+	<div class="commission-inline-fields">
+
+		<label for="commission_auto_renew">Auto<span class="small">*Required</span></label>
+    		<input class="input-percent" id="commission_auto_renew" type="text" name="commission_auto_renew" placeholder="0" required /><div class="input-after">&#37;</div>
+
+		<label for="commission_fire_renew">Fire<span class="small">*Required</span></label>
+    		<input class="input-percent" id="commission_fire_renew" type="text" name="commission_fire_renew" placeholder="0" required /><div class="input-after">&#37;</div>
+
+		<label for="commission_life_renew">Life<span class="small">*Required</span></label>
+    		<input class="input-percent" id="commission_life_renew" type="text" name="commission_life_renew" placeholder="0" required /><div class="input-after">&#37;</div>
+
+		<label for="commission_health_renew">Health<span class="small">*Required</span></label>
+    		<input class="input-percent" id="commission_health_renew" type="text" name="commission_health_renew" placeholder="0" required /><div class="input-after">&#37;</div>
+
+	</div>
 
 	<div style="clear:both;"></div>
-	<br />
+
+	<span class="footnote"><sup>*</sup>Percentage of agency revenue (not premium)</span>
+
+	<br /><br />
 	<button id="update_employee" class="plain-btn">Update Compensation</button>
 	<br />
 </form>
+	<br />
+	<button id="next-step3" class="small-btn">Next</button>
+	<br />
 <br />
 	   	</div>
 
 	</div>
 
-<div class="settings-title"><em>Account Setup Progress</em></div>
-<div id="progress"><span class="progress-info"><strong>Email Confirmed:</strong> <?php echo $_SESSION['user_email']; ?>&nbsp;</span><br /></div>
-<div class="meter red nostripes">
-	<span style="width:10%"></span>
-</div>
 
 <br />
 <button id="save_setup" class="plain-btn">Save &amp; Continue</button>
