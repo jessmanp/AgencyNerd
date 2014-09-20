@@ -424,6 +424,8 @@ $(document).ready(function() {
 								//compensation_draw on or off
 								if (value.draw == 1) {
 									$("#compensation_draw").prop("checked", true);
+								} else {
+									$("#compensation_draw").prop("checked", false);
 								}
 								// fill out fields with data
         							$("#compensation_rate").val(value.rate);
@@ -571,9 +573,13 @@ $(document).ready(function() {
 							// show returned error msg here
 							openModal('error',data.msg);
 						} else {
-							// update was successful populate drop down with json data
+							// populate progress window with status
 							progressMessages.push(data);
 							updateProgress(1);
+							// update employee dropdown and update progress window
+							updateEmployeeList();
+							// load any saved agency info
+							loadAgencyInfo();
 						}	
 					},
 					error: function (request, status, error) {
@@ -586,8 +592,6 @@ $(document).ready(function() {
 	// run initial setup on load only if on setup page
 	if(document.URL.search("/setup") != -1) {
 		preUpdateProgress();
-		loadAgencyInfo();
-		updateEmployeeList();
 	}
 
 });

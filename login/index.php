@@ -36,8 +36,7 @@ $login = new Login();
 
 // ... ask if we are logged in here:
 if ($login->isUserLoggedIn() == true) {
-    // the user is logged in. you can do whatever you want here.
-    // for demonstration purposes, we simply show the "you are logged in" view.
+    // the user is logged in
 	if (isset($_GET['edit'])) {
 		$user = $login->getUserInfo();
     		include("views/edit.php");

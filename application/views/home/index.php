@@ -37,7 +37,7 @@ $msg = '';
 			<input id="password" name="user_password" type="password" placeholder="Enter Password" autocomplete="off" required />
 			<br /><br />
 			<input type="checkbox" id="remember-me" name="user_rememberme" value="1" />
-			<label for="remember-me"><span><span></span></span>Remember Me <em>(for 2 weeks)</em></label>
+			<label for="remember-me"><span><span></span></span>Remember Me<!-- <em>(for 2 weeks)</em>--></label>
 			<br /><br />
 			<!-- <input id="login-btn" name="login" type="submit" value="Login" /> -->
 			<input name="login" type="hidden" value="1" />
