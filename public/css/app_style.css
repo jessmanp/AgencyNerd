@@ -1544,6 +1544,19 @@ footer {
 	font-weight:bold;
 }
 
+.signup-icons {
+	text-align:center;
+	margin:0 auto 0 auto;
+}
+
+.signup-icon {
+	float:left;
+	margin:0 0 25px 25px;
+	width:230px;
+	height:230px;
+	border:0;
+}
+
 #progress {
 	padding:5px 0 0 0;
 }

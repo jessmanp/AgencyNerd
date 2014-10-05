@@ -1,6 +1,20 @@
 // do load
 $(document).ready(function() {
 
+	// animate progress meter
+	function animateMeter() {
+			$(".meter > span").each(function() {
+				$(this)
+					.data("origWidth", $(this).width())
+					.width(0)
+					.animate({
+						width: $(this).data("origWidth")
+					}, 1200);
+			});
+	}
+
+	//animateMeter(); *NOT USED*
+
 	// MODAL WINDOW
 	$("#popupmessage").find(".plain-btn").on("click", function() {
 		closeModal();
@@ -32,13 +46,14 @@ $(document).ready(function() {
 	
 	// REGISTER FORM	
 	$("#register-btn").on("click", function() {
-		//event.preventDefault();
 		$("#registerform").submit();
 	});
 	
+	// PRE VALIDATION
 	$("#registerform").submit(function() {
 		var valid = true;
 		$("div.error", this).remove();
+		// pre validatation
 		if (!$("#user_name").val()) {
 			valid = false;
 			$('<div class="error">Please enter a Username</div>').insertBefore($("#user_name").prev());
@@ -68,6 +83,7 @@ $(document).ready(function() {
 		return valid;
 	});
 
+	// #1 SLIDE BAR CLICK
 	$(".signup-header").on("click", function() {
 		if($(this).find("#setup-arrow").hasClass("arrow-down")) {
 			$(this).find("#setup-arrow").removeClass("arrow-down").addClass("arrow-up");
@@ -99,6 +115,7 @@ $(document).ready(function() {
 		$("#signup-footer").removeClass("signup-middle").addClass("signup-footer");
 	});
 
+	// #2 SLIDE BAR CLICK
 	$(".signup-middle").on("click", function() {
 		if($(this).find("#setup-arrow").hasClass("arrow-down")) {
 			$(this).find("#setup-arrow").removeClass("arrow-down").addClass("arrow-up");
@@ -134,6 +151,7 @@ $(document).ready(function() {
 		}
 	});
 
+	// #3 SLIDE BAR CLICK
 	$("#signup-footer").on("click", function(e) {
 		if($(this).find("#setup-arrow").hasClass("arrow-down")) {
 			$(this).find("#setup-arrow").removeClass("arrow-down").addClass("arrow-up");
@@ -176,17 +194,18 @@ $(document).ready(function() {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	//var ddstate = false;
+	var ddstate = false;
 	$(".main-select-after").on("click", function() {
-    		//$(this).closest("select").trigger("change");
-		var elem = $(this).attr("data");
+		//$(this).closest("select").prop("size", state ? $("option").length : 1);
+    	//$(this).closest("select").trigger("click");
+		//elem = $(this).attr("data");
 		// NEED TO FIGURE HOW TO TRIGGER DROPDOWN
-		//ddstate = !ddstate;
-    		//$(elem).prop("size", ddstate ? $("option").length : 1);
+		ddstate = !ddstate;
+    	$(this).closest("select").prop("size", ddstate ? $("option").length : 1);
 
 	});
 
-
+	// FINAL SUBMIT ACTION
 	$("#signup_agency_info").submit(function(event) {
 		$.ajax({
 					type: "POST",
@@ -213,6 +232,7 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
+	// STEP #2 SUBMIT ACTION
 	$("#setup_invite_employee").submit(function(event) {
 		$.ajax({
 					type: "POST",
@@ -247,6 +267,7 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
+	// LOAD EMPLOYEES AND UPDATE PROGRESS
 	function updateEmployeeList() {
 		$.ajax({
 					type: "POST",
@@ -261,7 +282,7 @@ $(document).ready(function() {
 							// show returned error msg here
 							//openModal('error',data.msg);
 						} else {
-							// loop over array old school way for IE
+							// loop over array old school way for IE clear if the status existed before
 							for (var i=progressMessages.length-1; i>=0; i--) {
 								// search array for previous agency name
     								if (progressMessages[i].search('Invited:') >= 0) {
@@ -293,6 +314,7 @@ $(document).ready(function() {
 		});
 	}
 
+	// STEP #3 SUBMIT ACTION
 	$("#setup_employee_compensation").submit(function(event) {
 		$.ajax({
 					type: "POST",
@@ -319,6 +341,7 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
+	// LOAD SETUP AND UPDATE PROGRESS
 	function checkEmployeeSetup() {
 		$.ajax({
 					type: "POST",
@@ -390,6 +413,7 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
+	// LOAD EMPLOYEES AND UPDATE STATUS
 	$("#employees_compensation").on("change", function() {
 		var eid = $(this).val();
 		if (eid != '') {
@@ -448,20 +472,7 @@ $(document).ready(function() {
 		}
 	});
 
-	// animate progress meter
-	function animateMeter() {
-			$(".meter > span").each(function() {
-				$(this)
-					.data("origWidth", $(this).width())
-					.width(0)
-					.animate({
-						width: $(this).data("origWidth")
-					}, 1200);
-			});
-	}
-
-	//animateMeter();
-
+	// LOAD AGENCY INFO AND UPDATE PROGRESS
 	function loadAgencyInfo() {
 		$.ajax({
 					type: "POST",
@@ -498,6 +509,7 @@ $(document).ready(function() {
 		event.preventDefault();
 	}
 
+	// UPDATE PROGRESS WHEN AGENCY NAME IS ENTERED
 	$("#agency_name").on("blur", function() {
 		if ($("#agency_name").val() != '') {
 			// loop over array old school way for IE
@@ -513,6 +525,7 @@ $(document).ready(function() {
 		}
 	});
 
+	// PROGRESS INFO WINDOW DRAG CONTROL
 	$("#info-window").draggable({ 
                 containment: '#glassbox', 
                 scroll: false
@@ -536,6 +549,7 @@ $(document).ready(function() {
                          
 	});
 
+	// PROGRESS INFO WINDOW CLICK ACTION
 	$("#info-window").on("click", function() {
 		if($(this).find("#info-arrow").hasClass("arrow-down-dark")) {
 			$(this).find("#info-arrow").removeClass("arrow-down-dark").addClass("arrow-up-dark");
@@ -546,6 +560,7 @@ $(document).ready(function() {
 		}
 	});
 
+	// PREPARE ARRAY FOR PROGRESS MESSAGES
 	var progressMessages = [];
 
 	function updateProgress(bar) {
@@ -559,6 +574,7 @@ $(document).ready(function() {
 		$(".meter span").css("width",w+"%");
 	}
 
+	// LOAD INITIAL PROGRESS
 	function preUpdateProgress() {
 		$.ajax({
 					type: "POST",

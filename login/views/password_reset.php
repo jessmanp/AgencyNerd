@@ -19,7 +19,7 @@
 <br />
 
 <?php if ($login->passwordResetLinkIsValid() == true) { ?>
-<form method="post" action="password_reset.php" name="new_password_form">
+<form method="post" action="/login/?reset" name="new_password_form">
 	<input type="hidden" id="submit_new_password" name="submit_new_password" value="1" />
     <input type='hidden' name='user_name' value='<?php echo $_GET['user_name']; ?>' />
     <input type='hidden' name='user_password_reset_hash' value='<?php echo $_GET['verification_code']; ?>' />
@@ -38,7 +38,7 @@
 </form>
 <!-- no data from a password-reset-mail has been provided, so we simply show the request-a-password-reset form -->
 <?php } else { ?>
-<form method="post" action="password_reset.php" name="password_reset_form">
+<form method="post" action="/login/?reset" name="password_reset_form">
 	<input type="hidden" id="request_password_reset" name="request_password_reset" value="1" />
 	<!-- <?php echo WORDING_REQUEST_PASSWORD_RESET; ?> -->
 	Please enter your username below to reset your password.<br />You will receive an email with further instructions on how to reset your password.<br /><br /><br />

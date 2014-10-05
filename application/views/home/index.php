@@ -44,8 +44,8 @@ $msg = '';
 			<button id="login-btn"><span class="icon-key">Login</span></button>
 		</form>
 		<br />
-		Not a member? <a href="/login/register.php" class="content-link">Register Now</a>.<br />
-		Forgot password? <a href="/login/password_reset.php" class="content-link">Reset Password</a>.
+		Not a member? <a href="/login/?register" class="content-link">Register Now</a>.<br />
+		Forgot password? <a href="/login/?reset" class="content-link">Reset Password</a>.
 	</div>
 	<br />
 </div>

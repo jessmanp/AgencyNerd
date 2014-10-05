@@ -9,25 +9,24 @@ if (version_compare(PHP_VERSION, '5.3.7', '<')) {
     require_once('libraries/password_compatibility_library.php');
 }
 // include the config
-require_once('config/config.php');
+//require_once('config/config.php');
 
 // include the to-be-used language, english by default. feel free to translate your project and include something else
-require_once('translations/en.php');
+//require_once('translations/en.php');
 
 // include the PHPMailer library
-require_once('libraries/PHPMailer.php');
+//require_once('libraries/PHPMailer.php');
 
 // load the registration class
-require_once('classes/Registration.php');
+//require_once('classes/Registration.php');
 
 // create the registration object. when this object is created, it will do all registration stuff automatically
 // so this single line handles the entire registration process.
-$registration = new Registration();
+//$registration = new Registration();
 
 // ... check if we are new and verified:
 if ($registration->verification_successful == true) {
-    // the user is verified in. you can now pass to signup screen.
-    // after completing the signup process the user will be automatically logged in.
+    // the user is verified pass to setup screen
 	header("location: /home/setup");
 }
 

@@ -1,5 +1,8 @@
 <?php
 
+// create/read session
+session_start();
+
 // load jQuery script for login/settings nav
 $navScript = 'settings.js';
 
@@ -81,7 +84,7 @@ define("EMAIL_SMTP_ENCRYPTION", "ssl");
  * Configuration for: password reset email data
  * Set the absolute URL to password_reset.php, necessary for email password reset links
  */
-define("EMAIL_PASSWORDRESET_URL", "http://dev.agencynerd.com/login/password_reset.php");
+define("EMAIL_PASSWORDRESET_URL", "http://dev.agencynerd.com/login/?reset=email");
 define("EMAIL_PASSWORDRESET_FROM", "support@agencynerd.com");
 define("EMAIL_PASSWORDRESET_FROM_NAME", "Agency Nerd");
 define("EMAIL_PASSWORDRESET_SUBJECT", "Password reset for Agency Nerd");
@@ -91,7 +94,7 @@ define("EMAIL_PASSWORDRESET_CONTENT", "Please click on this link to reset your p
  * Configuration for: verification email data
  * Set the absolute URL to register.php, necessary for email verification links
  */
-define("EMAIL_VERIFICATION_URL", "http://dev.agencynerd.com/login/register.php");
+define("EMAIL_VERIFICATION_URL", "http://dev.agencynerd.com/login/?register=email");
 define("EMAIL_VERIFICATION_FROM", "support@agencynerd.com");
 define("EMAIL_VERIFICATION_FROM_NAME", "Agency Nerd");
 define("EMAIL_VERIFICATION_SUBJECT", "Account activation for Agency Nerd");

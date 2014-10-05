@@ -18,6 +18,7 @@ if (version_compare(PHP_VERSION, '5.3.7', '<')) {
     // (this library adds the PHP 5.5 password hashing functions to older versions of PHP)
     require_once('libraries/password_compatibility_library.php');
 }
+
 // include the config
 require_once('config/config.php');
 
@@ -27,6 +28,13 @@ require_once('translations/en.php');
 // include the PHPMailer library
 require_once('libraries/PHPMailer.php');
 
+// load the registration class
+require_once('classes/Registration.php');
+
+// create the registration object. when this object is created, it will do all registration stuff automatically
+// so this single line handles the entire registration process.
+$registration = new Registration();
+
 // load the login class
 require_once('classes/Login.php');
 
@@ -34,8 +42,20 @@ require_once('classes/Login.php');
 // so this single line handles the entire login process.
 $login = new Login();
 
-// ... ask if we are logged in here:
-if ($login->isUserLoggedIn() == true) {
+if (isset($_GET['register'])) {
+
+	// ... check if we are new and verified
+	if ($registration->verification_successful == true) {
+		// the user is verified pass to setup screen
+		header("location: /home/setup");
+	} else {
+		// load registeration form
+		include("views/register.php");	
+	}
+
+// check if we are logged in
+} else if ($login->isUserLoggedIn() == true) {
+
     // the user is logged in
 	if (isset($_GET['edit'])) {
 		$user = $login->getUserInfo();
@@ -43,6 +63,11 @@ if ($login->isUserLoggedIn() == true) {
 	} else {
 		header("location: /menu");
 	}
+
+} else if (isset($_GET['reset'])) {
+
+	// load reset password form
+	include("views/password_reset.php");
 
 } else {
 
@@ -55,8 +80,6 @@ if ($login->isUserLoggedIn() == true) {
 		$_SESSION['login_messages'] = $login->messages;
     }
 
-    // the user is not logged in. you can do whatever you want here.
-    // for demonstration purposes, we simply show the "you are not logged in" view.
-    //include("views/not_logged_in.php");
+    // the user is not logged in show login form
 	header("location: /");
 }

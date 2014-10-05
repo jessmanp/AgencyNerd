@@ -36,7 +36,8 @@ class Registration
      */
     public function __construct()
     {
-        session_start();
+		// create/read session
+		//session_start();
 
         // if we have such a POST request, call the registerNewUser() method
         if (isset($_POST["register"])) {
@@ -137,12 +138,16 @@ class Registration
                 $user_password_hash = password_hash($user_password, PASSWORD_DEFAULT, array('cost' => $hash_cost_factor));
                 // generate random hash for email verification (40 char string)
                 $user_activation_hash = sha1(uniqid(mt_rand(), true));
+			   // set new registration user level as 3 = Owner/Agency level
+			   $user_level = 3;
 
                 // write new users data into database
-                $query_new_user_insert = $this->db_connection->prepare('INSERT INTO users (user_name, user_password_hash, user_email, user_activation_hash, user_registration_ip, user_registration_datetime) VALUES(:user_name, :user_password_hash, :user_email, :user_activation_hash, :user_registration_ip, now())');
+                $query_new_user_insert = $this->db_connection->prepare('INSERT INTO users (user_name, user_password_hash, user_email, user_level, user_activation_hash, user_registration_ip, user_registration_datetime) VALUES (:user_name, :user_password_hash, :user_email, :user_level, :user_activation_hash, :user_registration_ip, now())');
+
                 $query_new_user_insert->bindValue(':user_name', $user_name, PDO::PARAM_STR);
                 $query_new_user_insert->bindValue(':user_password_hash', $user_password_hash, PDO::PARAM_STR);
                 $query_new_user_insert->bindValue(':user_email', $user_email, PDO::PARAM_STR);
+                $query_new_user_insert->bindValue(':user_level', $user_level, PDO::PARAM_INT);
                 $query_new_user_insert->bindValue(':user_activation_hash', $user_activation_hash, PDO::PARAM_STR);
                 $query_new_user_insert->bindValue(':user_registration_ip', $_SERVER['REMOTE_ADDR'], PDO::PARAM_STR);
                 $query_new_user_insert->execute();
@@ -230,10 +235,12 @@ class Registration
 <div style="margin:0 10px 0 10px;background-color:#ffffff;border:2px solid #ff0000;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;font-size:16px;text-align:left;line-height:22px;padding:15px;">
 <h1 style="margin:5px 0 0 0;font-size:22px;font-weight:normal;">Welcome to Agency Nerd!</h1>
 <br />
-Please confirm your email by clicking the link below. Once you have clicked the link below your account will be confirmed and you can complete the setup process.
+You will be asked to setup your agency information and employee compensation when you first log in.
+<br /><br />
+Please confirm your email by clicking the link below. Once you have clicked the link below your account will be activated and you will be logged in and asked to complete the setup process.
 <br /><br />
 ';
-        $link = EMAIL_VERIFICATION_URL.'?id='.urlencode($user_id).'&verification_code='.urlencode($user_activation_hash);
+        $link = EMAIL_VERIFICATION_URL.'&id='.urlencode($user_id).'&verification_code='.urlencode($user_activation_hash);
 	    $body .= EMAIL_VERIFICATION_CONTENT.' <a href="'.$link.'">'.$link.'</a>';
 
 	    $body .= '
@@ -249,7 +256,7 @@ Thanks! We look forward to making your agency smarter!
 <div style="clear:both;font-size:14px;padding:10px;">
 <span style="font-weight:bold; color:#000000;">AGENCY</span> <span style="font-family:Courier, \'Courier New Bold\', monospace; color:#ff0000; font-style:normal; font-weight:normal;">nerd</span>&trade; is Your Agency&rsquo;s Solution.<br />
 <span style="color:#ff0000; text-shadow:none; font-weight:bold;">We make your agency smarter</span><br /><br />
-<span style="font-weight:bold; color:#000000;">AGENCY</span> <span style="font-family:Courier, \'Courier New Bold\', monospace; color:#ff0000; font-style:normal; font-weight:normal;">nerd</span>&trade; is easy to use and can be set up in minutes. There is no annual contract or set up fee. Cancel at any time.<br /><br />
+<span style="font-weight:bold; color:#000000;">AGENCY</span> <span style="font-family:Courier, \'Courier New Bold\', monospace; color:#ff0000; font-style:normal; font-weight:normal;">nerd</span>&trade; is easy to set up in minutes. There is no annual contract or set up fee. Cancel at any time.<br /><br />
 If you do not wish to receive email from <span style="font-weight:bold; color:#000000;">AGENCY</span> <span style="font-family:Courier, \'Courier New Bold\', monospace; color:#ff0000; font-style:normal; font-weight:normal;">nerd</span>&trade; in the future, please <a href="http://www.agencynerd.com/unsubscribe">UNSUBSCRIBE</a>.
 <br /><br />
 </div>

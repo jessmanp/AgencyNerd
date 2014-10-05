@@ -60,8 +60,8 @@ class Login
      */
     public function __construct()
     {
-        // create/read session
-        session_start();
+		// create/read session
+		//session_start();
 
         // TODO: organize this stuff better and make the constructor very small
         // TODO: unite Login and Registration classes ?
@@ -668,7 +668,7 @@ class Login
         $mail->AddAddress($user_email);
         $mail->Subject = EMAIL_PASSWORDRESET_SUBJECT;
 
-        $link    = EMAIL_PASSWORDRESET_URL.'?user_name='.urlencode($user_name).'&verification_code='.urlencode($user_password_reset_hash);
+        $link    = EMAIL_PASSWORDRESET_URL.'&user_name='.urlencode($user_name).'&verification_code='.urlencode($user_password_reset_hash);
         $mail->Body = EMAIL_PASSWORDRESET_CONTENT . ' ' . $link;
 
         if(!$mail->Send()) {
