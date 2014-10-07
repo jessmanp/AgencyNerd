@@ -218,6 +218,8 @@ class Login
                         $_SESSION['user_name'] = $result_row->user_name;
                         $_SESSION['user_email'] = $result_row->user_email;
                         $_SESSION['user_logged_in'] = 1;
+						// regen session ID to prevent hacks
+						session_regenerate_id(true);
 
                         // declare user id, set the login status to true
                         $this->user_id = $result_row->user_id;
@@ -289,11 +291,13 @@ class Login
             } else if ($result_row->user_active != 1) {
                 $this->errors[] = MESSAGE_ACCOUNT_NOT_ACTIVATED;
             } else {
-                // write user data into PHP SESSION [a file on your server]
+                // write user data into PHP SESSION [new session on your server]
                 $_SESSION['user_id'] = $result_row->user_id;
                 $_SESSION['user_name'] = $result_row->user_name;
                 $_SESSION['user_email'] = $result_row->user_email;
                 $_SESSION['user_logged_in'] = 1;
+			    // regen session ID to prevent hacks
+				session_regenerate_id(true);
 
                 // declare user id, set the login status to true
                 $this->user_id = $result_row->user_id;

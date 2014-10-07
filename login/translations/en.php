@@ -48,7 +48,7 @@ define("MESSAGE_USER_DOES_NOT_EXIST", "Sorry, the username you entered does not 
 define("MESSAGE_USERNAME_BAD_LENGTH", "Sorry, username cannot be shorter than 2 characters or longer than 64 characters.");
 define("MESSAGE_USERNAME_CHANGE_FAILED", "Sorry, the attempt to update your username failed.");
 define("MESSAGE_USERNAME_CHANGED_SUCCESSFULLY", "Your username has been changed successfully. Your new username is: ");
-define("MESSAGE_USERNAME_EMPTY", "Sorry, the username field was empty. Please enter a usernam.");
+define("MESSAGE_USERNAME_EMPTY", "Sorry, the username field was empty. Please enter a username.");
 define("MESSAGE_USERNAME_EXISTS", "Sorry, that username is already taken. Please choose a different username.");
 define("MESSAGE_USERNAME_INVALID", "Sorry, that username does not fit our requirements. Only Letters A-Z (upper or lower case) and numbers are allowed, and it must be at least 2 characters to 64 characters long.");
 define("MESSAGE_USERNAME_SAME_LIKE_OLD_ONE", "Sorry, that username is the same as your current one. Please choose a different username.");
