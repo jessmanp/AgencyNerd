@@ -59,3 +59,9 @@ define("EMAIL_VERIFICATION_FROM", "support@agencynerd.com");
 define("EMAIL_VERIFICATION_FROM_NAME", "Agency Nerd");
 define("EMAIL_VERIFICATION_SUBJECT", "Account activation for Agency Nerd");
 define("EMAIL_VERIFICATION_CONTENT", "Please click on this link to activate your account:");
+
+/**
+ * FILES Configuration for: Control D Upload
+*/
+define("FILE_UPLOAD_PATH", "/var/www/html/dev.agencynerd.com/files/");
+

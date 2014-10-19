@@ -49,6 +49,9 @@ function detectIE() {
 <?php if (isset($dateScript)) { ?>
 <script src="<?php echo URL; ?>public/js/<?php echo $dateScript; ?>"></script>
 <?php } ?>
+<?php if (isset($uploadScript)) { ?>
+<script src="<?php echo URL; ?>public/js/<?php echo $uploadScript; ?>"></script>
+<?php } ?>
 <!-- google analytics tracking -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

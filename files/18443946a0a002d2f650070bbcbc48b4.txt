@@ -1,0 +1,641 @@
+1POL DET PREF                                                 RIZPB00C                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            01/15/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+1PREFERRED AUTO
+1___________________________________________________________________________________________________________________________________
+1|                              |  POLICY/CAR  | TRANS| COMP |  RENEWAL  |      POLICY     |  RATE  |COMP PERCENT  |    AGENTS     |
+1|   INSURED NAME               |    NUMBER    | CODE | CLASS|   DATE    |     PREMIUM     |SCHEDULE|BASE   QRP/VAR| COMPENSATION  |
+1|                              |              |      |      |           |                 |        |              |               |
+1|ADAMS, AUDRA                  | 2997118B     |  R29 |  P   | 05/25/2011|           21.15-|RATE 05 |  8.00%   3.00|          2.32-|
+1|ADAMS, AUDRA                  | 2997118B     |  R21 |  P   | 11/29/2011|          506.02-|RATE 05 |  8.00%   3.00|         55.66-|
+1|ADAMS, AUDRA                  | 2997118C     |  R11 |  P   | 11/29/2011|          525.89 |RATE 05 |  8.00%   3.00|         57.85 |
+1|ADAMS, AUDRA                  | 2997118C     |  R09 |  P   | 05/25/2011|           23.14 |RATE 05 |  8.00%   3.00|          2.54 |
+1|AKINS CONSULTING INC          | 3816674A     |  R11 |  P   | 12/16/2011|          612.04 |RATE 05 |  8.00%   3.00|         67.32 |
+1|AKINS CONSULTING INC          | 3816675A     |  R11 |  P   | 12/16/2011|          647.50 |RATE 05 |  8.00%   3.00|         71.23 |
+1|ALGAN, MATTHEW METIN          | 3501720A     |  R11 |  P   | 12/21/2011|          880.50 |RATE 05 |  8.00%   3.00|         96.86 |
+1|ALLEN, JENNIFER               | 3585539B     |  R29 |  P   | 09/22/2011|          346.01-|RATE 05 |  8.00%   3.00|         38.06-|
+1|ALLEN, JENNIFER               | 3585539C     |  R09 |  P   | 09/22/2011|          346.01 |RATE 05 |  8.00%   3.00|         38.06 |
+1|ALLISON, CHRIS                | 3130716A     |  R11 |  P   | 12/27/2011|          413.02 |RATE 05 |  8.00%   3.00|         45.43 |
+1|ALMOS, STEVE & CAROL &        | 3901987      |  N00 |  P   | 12/21/2011|          435.17 |RATE 05 |  8.00%   3.00|         47.87 |
+1|ALMOS, STEVE & CAROL &        | 3901989      |  N00 |  P   | 12/21/2011|          487.81 |RATE 05 |  8.00%   3.00|         53.65 |
+1|ALMOS, STEVE & CAROL &        | 3901990      |  N00 |  P   | 12/21/2011|          563.66 |RATE 05 |  8.00%   3.00|         62.00 |
+1|ANDRE, MARK                   | 3507878      |  R11 |  P   | 12/21/2011|        1,055.45 |RATE 05 |  8.00%   3.00|        116.10 |
+1|ANDRUS, HEATHER R             | 3379286      |  R11 |  A   | 12/30/2011|          531.58 |RATE 05 |  8.00%   3.00|         58.48 |
+1|ARGUELLO, MIGUEL & RUTH       | 3507880B     |  R11 |  P   | 12/19/2011|          332.64 |RATE 05 |  8.00%   3.00|         36.59 |
+1|ARGUELLO, MIGUEL & RUTH       | 3507881      |  R11 |  P   | 12/19/2011|          378.84 |RATE 05 |  8.00%   3.00|         41.68 |
+1|ARONSON KOTLARCHYK, LINDSAY   | 3848262A     |  N09 |  P   | 10/11/2011|          527.70 |RATE 05 |  8.00%   3.00|         58.05 |
+1|ARONSON KOTLARCHYK, LINDSAY   | 3848262A     |  N09 |  P   | 10/11/2011|          527.70 |RATE 05 |  8.00%   3.00|         58.05 |
+1|ARONSON KOTLARCHYK, LINDSAY   | 3848262A     |  N29 |  P   | 10/11/2011|          527.70-|RATE 05 |  8.00%   3.00|         58.05-|
+1|ARONSON KOTLARCHYK, LINDSAY   | 3848262A     |  N29 |  P   | 10/11/2011|          420.68-|RATE 05 |  8.00%   3.00|         46.27-|
+1|ARRONA, CHARLES               | 3237076C     |  R09 |  P   | 06/02/2011|           70.27 |RATE 05 |  8.00%   3.00|          7.73 |
+1|ARRONA, CHARLES               | 3237076C     |  R11 |  P   | 12/05/2011|          408.61 |RATE 05 |  8.00%   3.00|         44.95 |
+1|ARRONA, CHARLES               | 3237076C     |  R21 |  P   | 12/05/2011|          468.42-|RATE 05 |  8.00%   3.00|         51.52-|
+1|ARRONA, CHARLES               | 3237076C     |  R29 |  P   | 06/02/2011|           81.01-|RATE 05 |  8.00%   3.00|          8.91-|
+1|ARRONA, CHARLES               | 3237076C     |  R29 |  P   | 06/02/2011|           70.27-|RATE 05 |  8.00%   3.00|          7.73-|
+1|ARRONA, CHARLES               | 3237076C     |  R21 |  P   | 12/05/2011|          408.61-|RATE 05 |  8.00%   3.00|         44.95-|
+1|ARRONA, CHARLES & DIEDREANN   | 3237076D     |  R09 |  P   | 06/02/2011|           57.45 |RATE 05 |  8.00%   3.00|          6.32 |
+1|ARRONA, CHARLES & DIEDREANN   | 3237076D     |  R11 |  P   | 12/05/2011|          334.00 |RATE 05 |  8.00%   3.00|         36.74 |
+1|ARRONA, DIEDREANN             | 3454212D     |  R29 |  P   | 10/05/2011|          564.56-|RATE 05 |  8.00%   3.00|         62.10-|
+1|ARRONA, DIEDREANN & CHARLES   | 3454212E     |  R09 |  P   | 10/05/2011|          544.63 |RATE 05 |  8.00%   3.00|         59.91 |
+1|ARRONA, DIEDREANN & CHARLES   | 3454212E     |  R09 |  P   | 10/05/2011|          457.15 |RATE 05 |  8.00%   3.00|         50.28 |
+1|ARRONA, DIEDREANN & CHARLES   | 3454212E     |  R29 |  P   | 10/05/2011|          544.63-|RATE 05 |  8.00%   3.00|         59.91-|
+1|ARRONA, DIEDREANN & CHARLES   | 3454212E     |  R09 |  P   | 10/05/2011|          624.33 |RATE 05 |  8.00%   3.00|         68.68 |
+1|ARRONA, DIEDREANN & CHARLES   | 3454212E     |  R29 |  P   | 10/05/2011|          624.33-|RATE 05 |  8.00%   3.00|         68.68-|
+1|ASTILLERO, NOEL &             | 3271364A     |  R08 |  P   | 07/20/2011|          130.77 |RATE 05 |  8.00%   3.00|         14.38 |
+1|AVIGDOR, JOSEPH & MARY        | 3536861      |  R28 |  P   | 07/25/2011|           58.02-|RATE 05 |  8.00%   3.00|          6.38-|
+1|AVIGDOR, JOSEPH & MARY        | 3910975      |  N00 |  P   | 12/28/2011|          288.91 |RATE 05 |  8.00%   3.00|         31.78 |
+1|AZIZ, SAM & MAGDA & TRACEY &  | 3900844      |  N00 |  P   | 12/21/2011|          514.69 |RATE 05 |  8.00%   3.00|         56.62 |
+1|AZIZ, SAM & MAGDA & TRACEY &  | 3900845      |  N00 |  P   | 12/21/2011|          417.23 |RATE 05 |  8.00%   3.00|         45.90 |
+1|AZIZ, SAM & MAGDA & TRACEY &  | 3900846      |  N00 |  P   | 12/21/2011|          383.75 |RATE 05 |  8.00%   3.00|         42.21 |
+1|AZIZ, SAM & MAGDA & TRACEY &  | 3900847      |  N00 |  P   | 12/21/2011|          467.18 |RATE 05 |  8.00%   3.00|         51.39 |
+1|BACLIG, TANYA &               | 3509021      |  R11 |  P   | 12/19/2011|          807.20 |RATE 05 |  8.00%   3.00|         88.80 |
+1|BALL, MISTY & NATHAN          | 3246993      |  R11 |  P   | 12/19/2011|          400.11 |RATE 05 |  8.00%   3.00|         44.01 |
+1|BALL, MISTY & NATHAN          | 3246994A     |  R11 |  P   | 12/19/2011|          478.32 |RATE 05 |  8.00%   3.00|         52.62 |
+1|BEAVER, ROBERT                | 3643357      |  R11 |  A   | 12/16/2011|          448.42 |RATE 05 |  8.00%   3.00|         49.32 |
+1|BELLI, DAVE                   | 3006098A     |  R11 |  P   | 12/16/2011|           92.43 |RATE 05 |  8.00%   3.00|         10.16 |
+1|BELLI, DAVE                   | 3006100C     |  R11 |  P   | 12/16/2011|          129.63 |RATE 05 |  8.00%   3.00|         14.26 |
+1|BERKUS, JULIE                 | 2892765      |  R11 |  P   | 12/28/2011|          670.09 |RATE 05 |  8.00%   3.00|         73.71 |
+1POL DET PREF                                                 RIZPB00C                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            01/15/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+1PREFERRED AUTO
+1___________________________________________________________________________________________________________________________________
+1|                              |  POLICY/CAR  | TRANS| COMP |  RENEWAL  |      POLICY     |  RATE  |COMP PERCENT  |    AGENTS     |
+1|   INSURED NAME               |    NUMBER    | CODE | CLASS|   DATE    |     PREMIUM     |SCHEDULE|BASE   QRP/VAR| COMPENSATION  |
+1|                              |              |      |      |           |                 |        |              |               |
+1|BERKUS, JULIE                 | 2892766      |  R11 |  P   | 12/28/2011|          566.67 |RATE 05 |  8.00%   3.00|         62.33 |
+1|BIGERT, GRETE &               | 3127953A     |  R11 |  P   | 12/28/2011|          385.84 |RATE 05 |  8.00%   3.00|         42.45 |
+1|BIGERT, GRETE &               | 3127954A     |  R11 |  P   | 12/28/2011|          464.83 |RATE 05 |  8.00%   3.00|         51.13 |
+1|BLAKE, JOSH & CRISTINA        | 2972851C     |  R29 |  P   | 10/27/2011|          475.26-|RATE 05 |  8.00%   3.00|         52.28-|
+1|BLAKE, JOSH & CRISTINA        | 2972851C     |  R09 |  P   | 10/27/2011|          475.42 |RATE 05 |  8.00%   3.00|         52.29 |
+1|BLAKE, JOSH & CRISTINA        | 3131843B     |  R09 |  P   | 06/27/2011|          139.74 |RATE 05 |  8.00%   3.00|         15.37 |
+1|BLAKE, JOSH & CRISTINA        | 3131843B     |  R29 |  P   | 06/27/2011|          138.43-|RATE 05 |  8.00%   3.00|         15.22-|
+1|BLAKE, JOSH & CRISTINA        | 3131843B     |  R11 |  P   | 12/23/2011|          627.45 |RATE 05 |  8.00%   3.00|         69.02 |
+1|BLANCAFLOR, LUZVIMINDA &      | 3530170      |  R09 |  P   | 07/15/2011|          137.27 |RATE 05 |  8.00%   3.00|         15.10 |
+1|BLANCAFLOR, LUZVIMINDA &      | 3530170      |  R29 |  P   | 07/15/2011|          137.27-|RATE 05 |  8.00%   3.00|         15.10-|
+1|BOERNER-OTT, MEGGAN           | 3858556      |  N29 |  P   | 10/26/2011|          333.01-|RATE 05 |  8.00%   3.00|         36.63-|
+1|BOERNER-OTT, MEGGAN           | 3858556      |  N09 |  P   | 10/26/2011|          333.01 |RATE 05 |  8.00%   3.00|         36.63 |
+1|BOJORQUEZ, ANDREA             | 2894860B     |  R28 |  P   | 06/24/2011|          123.57-|RATE 05 |  8.00%   3.00|         13.60-|
+1|BOLANOS, PABLO & MYRIAM       | 2915790C     |  R29 |  P   | 08/12/2011|          183.33-|RATE 05 |  8.00%   3.00|         20.17-|
+1|BOLANOS, PABLO & MYRIAM       | 2915790D     |  R09 |  P   | 08/12/2011|          199.97 |RATE 05 |  8.00%   3.00|         22.00 |
+1|BOURASSA, KATHRYN &           | 3127950      |  R11 |  P   | 12/19/2011|          249.18 |RATE 05 |  8.00%   3.00|         27.41 |
+1|BOURASSA, KATHRYN &           | 3509022      |  R11 |  P   | 12/20/2011|          352.85 |RATE 05 |  8.00%   3.00|         38.82 |
+1|BOYER, DAVID & LAURA          | 3340335      |  R11 |  P   | 12/19/2011|          597.41 |RATE 05 |  8.00%   3.00|         65.71 |
+1|BROSNAN, TIM & JENNIFER       | 3140510      |  R28 |  P   | 07/25/2011|          113.06-|RATE 05 |  8.00%   3.00|         12.43-|
+1|BROSNAN, TIM & JENNIFER       | 3901992      |  N09 |  P   | 12/15/2011|          447.60 |RATE 05 |  8.00%   3.00|         49.24 |
+1|BROSNAN, TIM & JENNIFER       | 3901992      |  N29 |  P   | 12/15/2011|          447.60-|RATE 05 |  8.00%   3.00|         49.24-|
+1|CAPARELLI, LIVIO              | 3721503      |  N24 |  P   | 05/12/2011|            9.73-|RATE 05 |  8.00%   3.00|          1.07-|
+1|CASILLAS, TONY & KAMELIA      | 3882689      |  N28 |  P   | 11/23/2011|          275.75-|RATE 05 |  8.00%   3.00|         30.33-|
+1|CASILLAS, TONY & KAMELIA      | 3882690      |  N28 |  P   | 11/23/2011|          203.11-|RATE 05 |  8.00%   3.00|         22.34-|
+1|CASILLAS, TONY & KAMELIA      | 3882691      |  N28 |  P   | 11/23/2011|          208.08-|RATE 05 |  8.00%   3.00|         22.89-|
+1|CASTELLANOS, SYLVIA L         | 2893833      |  R11 |  P   | 12/28/2011|          560.05 |RATE 05 |  8.00%   3.00|         61.60 |
+1|CHRISTIANO, STEVEN & HEATHER  | 3702115      |  R29 |  P   | 08/29/2011|          253.08-|RATE 05 |  8.00%   3.00|         27.84-|
+1|CHRISTIANO, STEVEN & HEATHER  | 3702115A     |  R09 |  P   | 08/29/2011|          313.43 |RATE 05 |  8.00%   3.00|         34.47 |
+1|COFFEY, KEN &                 | 3131847      |  R29 |  P   | 08/01/2011|           59.88-|RATE 05 |  8.00%   3.00|          6.59-|
+1|COFFEY, KEN &                 | 3131847      |  R09 |  P   | 08/01/2011|           59.88 |RATE 05 |  8.00%   3.00|          6.59 |
+1|CORMIER, CHERYL &             | 3796759A     |  R11 |  A   | 12/29/2011|          525.27 |RATE 05 |  8.00%   3.00|         57.78 |
+1|CORTEJO, RODELIO & JOSEPHINE  | 3125862B     |  R11 |  P   | 12/19/2011|          361.81 |RATE 05 |  8.00%   3.00|         39.79 |
+1|CORTEJO, RODELIO & JOSEPHINE  | 3125863A     |  R11 |  P   | 12/19/2011|          330.34 |RATE 05 |  8.00%   3.00|         36.34 |
+1|CURIEL, IRINEO                | 3371101A     |  R11 |  A   | 12/29/2011|          135.25 |RATE 05 |  8.00%   3.00|         14.88 |
+1|CURIEL, IRINEO                | 3371102A     |  R11 |  A   | 12/29/2011|          332.04 |RATE 05 |  8.00%   3.00|         36.52 |
+1|CURIEL, MARTHA L & IRINEO     | 3371103A     |  R11 |  A   | 12/29/2011|          337.84 |RATE 05 |  8.00%   3.00|         37.17 |
+1|CURRIE, MICHAEL               | 3654798      |  R11 |  P   | 12/30/2011|          247.00 |RATE 05 |  8.00%   3.00|         27.17 |
+1|CURRIE, MICHAEL               | 3654800      |  R11 |  P   | 12/30/2011|          369.84 |RATE 05 |  8.00%   3.00|         40.69 |
+1|CVEK, CHRISTINA               | 3648782      |  R11 |  P   | 12/23/2011|          518.44 |RATE 05 |  8.00%   3.00|         57.03 |
+1|DANG, BINH &                  | 3289439      |  R29 |  P   | 08/17/2011|          171.74-|RATE 05 |  8.00%   3.00|         18.89-|
+1|DANG, BINH &                  | 3289439A     |  R09 |  P   | 08/17/2011|          239.64 |RATE 05 |  8.00%   3.00|         26.36 |
+1|DANIEL, ROBERTA A             | 2895707      |  R11 |  P   | 12/28/2011|          283.17 |RATE 05 |  8.00%   3.00|         31.15 |
+1|DANOVA, MARCO                 | 2917694D     |  R29 |  P   | 08/15/2011|          199.51-|RATE 05 |  8.00%   3.00|         21.95-|
+1|DANOVA, MARCO                 | 3006103      |  R11 |  P   | 12/16/2011|          107.95 |RATE 05 |  8.00%   3.00|         11.88 |
+1|DANOVA, MARCO & CYNTHIA       | 2921522C     |  R29 |  P   | 08/31/2011|          416.67-|RATE 05 |  8.00%   3.00|         45.83-|
+1|DANOVA, MARCO & CYNTHIA       | 2921522C     |  R09 |  P   | 08/31/2011|          188.69 |RATE 05 |  8.00%   3.00|         20.76 |
+1|DANOVA, MARCO & CYNTHIA       | 2921523C     |  R09 |  P   | 08/16/2011|          251.83 |RATE 05 |  8.00%   3.00|         27.70 |
+1|DANOVA, MARCO & CYNTHIA       | 2921523C     |  R29 |  P   | 08/16/2011|          265.06-|RATE 05 |  8.00%   3.00|         29.15-|
+1|DANOVA, MICHAEL               | 2917694E     |  R09 |  P   | 08/15/2011|          400.09 |RATE 05 |  8.00%   3.00|         44.01 |
+1POL DET PREF                                                 RIZPB00C                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            01/15/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+1PREFERRED AUTO
+1___________________________________________________________________________________________________________________________________
+1|                              |  POLICY/CAR  | TRANS| COMP |  RENEWAL  |      POLICY     |  RATE  |COMP PERCENT  |    AGENTS     |
+1|   INSURED NAME               |    NUMBER    | CODE | CLASS|   DATE    |     PREMIUM     |SCHEDULE|BASE   QRP/VAR| COMPENSATION  |
+1|                              |              |      |      |           |                 |        |              |               |
+1|DANOVA, MICHAEL               | 2917694E     |  R29 |  P   | 08/15/2011|          487.66-|RATE 05 |  8.00%   3.00|         53.64-|
+1|DANOVA, MICHAEL               | 2917694E     |  R29 |  P   | 08/15/2011|          400.09-|RATE 05 |  8.00%   3.00|         44.01-|
+1|DANOVA, MICHAEL               | 2917694E     |  R09 |  P   | 08/15/2011|          487.66 |RATE 05 |  8.00%   3.00|         53.64 |
+1|DANOVA, MICHAEL               | 2917694E     |  R09 |  P   | 08/15/2011|          561.18 |RATE 05 |  8.00%   3.00|         61.73 |
+1|DAVIDSON, SUZANNE & BRAD      | 3376152      |  R11 |  P   | 12/23/2011|          312.86 |RATE 05 |  8.00%   3.00|         34.42 |
+1|DAVIDSON, SUZANNE & BRAD      | 3376153      |  R11 |  P   | 12/23/2011|          305.61 |RATE 05 |  8.00%   3.00|         33.62 |
+1|DE LA TORRE MUNOZ, JUAN G     | 3791672      |  R09 |  A   | 12/23/2011|          686.47 |RATE 05 |  8.00%   3.00|         75.51 |
+1|DE LA TORRE MUNOZ, JUAN G     | 3791672      |  R11 |  A   | 12/23/2011|          325.67 |RATE 05 |  8.00%   3.00|         35.82 |
+1|DE LA TORRE MUNOZ, JUAN G     | 3791672      |  R29 |  A   | 12/23/2011|          325.67-|RATE 05 |  8.00%   3.00|         35.82-|
+1|DE LA TORRE MUNOZ, JUAN G     | 3896406      |  N09 |  P   | 12/08/2011|           80.18 |RATE 05 |  8.00%   3.00|          8.82 |
+1|DE LA TORRE MUNOZ, JUAN G     | 3896406      |  N29 |  P   | 12/08/2011|           69.96-|RATE 05 |  8.00%   3.00|          7.70-|
+1|DERAKHSHAN, JANICE            | 3372071A     |  R11 |  P   | 12/21/2011|          522.88 |RATE 05 |  8.00%   3.00|         57.52 |
+1|DEWEES, CHARLES & MARYANN     | 3898593      |  N00 |  P   | 12/19/2011|          343.10 |RATE 05 |  8.00%   3.00|         37.74 |
+1|DEWEES, CHARLES & MARYANN     | 3898594      |  N00 |  P   | 12/19/2011|          357.98 |RATE 05 |  8.00%   3.00|         39.38 |
+1|DEWEES, CHARLES & MARYANN     | 3898595      |  N00 |  P   | 12/19/2011|           76.83 |RATE 05 |  8.00%   3.00|          8.45 |
+1|DEWEES, CHARLES & MARYANN     | 3898596      |  N00 |  P   | 12/19/2011|           76.83 |RATE 05 |  8.00%   3.00|          8.45 |
+1|DIFONZO, SUSAN & KENNETH      | 3248054      |  R11 |  P   | 12/19/2011|          327.82 |RATE 05 |  8.00%   3.00|         36.06 |
+1|DOAN, DONALD                  | 0510796C     |  R11 |  P   | 12/19/2011|          264.61 |RATE 05 |  8.00%   3.00|         29.11 |
+1|DORSEY, JOHN                  | 3206153B     |  R09 |  P   | 06/21/2011|          120.86 |RATE 05 |  8.00%   3.00|         13.30 |
+1|DORSEY, JOHN                  | 3206153B     |  R11 |  P   | 12/22/2011|          441.71 |RATE 05 |  8.00%   3.00|         48.59 |
+1|DORSEY, JOHN                  | 3206153B     |  R29 |  P   | 06/21/2011|          120.86-|RATE 05 |  8.00%   3.00|         13.30-|
+1|DUONG, MIMI &                 | 3290411      |  R23 |  P   | 08/16/2011|          274.96-|RATE 05 |  8.00%   3.00|         30.25-|
+1|DUONG, MIMI & NGUYEN, KHANH   | 3290409A     |  R23 |  P   | 08/16/2011|          442.36-|RATE 05 |  8.00%   3.00|         48.66-|
+1|DYAS, KYLA & ZARNEKEE, JERRY  | 3372075A     |  R11 |  P   | 12/21/2011|          328.55 |RATE 05 |  8.00%   3.00|         36.14 |
+1|DYAS, KYLA & ZARNEKEE, JERRY  | 3376157A     |  R11 |  P   | 12/23/2011|          274.59 |RATE 05 |  8.00%   3.00|         30.21 |
+1|EDSON, ERIC & KAREN B         | 3424068      |  R29 |  P   | 11/16/2011|          679.44-|RATE 05 |  8.00%   3.00|         74.74-|
+1|EDSON, ERIC & KAREN B         | 3424068      |  R09 |  P   | 11/16/2011|          718.55 |RATE 05 |  8.00%   3.00|         79.04 |
+1|EDSON, ERIC & KAREN B         | 3905418      |  N07 |  P   | 12/23/2011|          290.47 |RATE 05 |  8.00%   3.00|         31.95 |
+1|ELLEN SONG MD                 | 3349949A     |  R11 |  P   | 12/28/2011|          499.16 |RATE 05 |  8.00%   3.00|         54.90 |
+1|EXTRACT, ALEXIS               | 3912149      |  N09 |  P   | 12/29/2011|          649.58 |RATE 05 |  8.00%   3.00|         71.46 |
+1|EXTRACT, ALEXIS               | 3912149      |  N00 |  P   | 12/29/2011|          649.58 |RATE 05 |  8.00%   3.00|         71.46 |
+1|EXTRACT, ALEXIS               | 3912149      |  N29 |  P   | 12/29/2011|          649.58-|RATE 05 |  8.00%   3.00|         71.46-|
+1|FEINER, RONALD P              | 2891161      |  R11 |  P   | 12/28/2011|          293.21 |RATE 05 |  8.00%   3.00|         32.26 |
+1|FEINER, RONALD P              | 2891162      |  R11 |  P   | 12/28/2011|          356.43 |RATE 05 |  8.00%   3.00|         39.20 |
+1|FEINER, RONALD P              | 2891163      |  R11 |  P   | 12/28/2011|          268.69 |RATE 05 |  8.00%   3.00|         29.56 |
+1|FERRIAN, JANET                | 3367880      |  R11 |  P   | 12/28/2011|          334.39 |RATE 05 |  8.00%   3.00|         36.78 |
+1|FISCHER, DANIEL               | 3902910      |  N07 |  P   | 12/21/2011|          115.71 |RATE 05 |  8.00%   3.00|         12.73 |
+1|FISCHER, DANIEL               | 3902911      |  N07 |  P   | 12/21/2011|          319.97 |RATE 05 |  8.00%   3.00|         35.20 |
+1|FISHER, MICHELLE & DAVID      | 3250024A     |  R11 |  P   | 12/23/2011|          343.53 |RATE 05 |  8.00%   3.00|         37.79 |
+1|FISHER, MICHELLE & DAVID      | 3250025A     |  R11 |  P   | 12/23/2011|          361.45 |RATE 05 |  8.00%   3.00|         39.76 |
+1|FRANK, PAUL & SUSAN           | 3398443C     |  R29 |  P   | 08/10/2011|          197.40-|RATE 05 |  8.00%   3.00|         21.71-|
+1|FRANK, PAUL & SUSAN           | 3398443D     |  R09 |  P   | 08/10/2011|          197.40 |RATE 05 |  8.00%   3.00|         21.71 |
+1|FRICKE, ERIC                  | 3796618      |  R11 |  P   | 12/29/2011|          225.48 |RATE 05 |  8.00%   3.00|         24.80 |
+1|FUNDERBURK, ALEX              | 3033673      |  R09 |  P   | 07/22/2011|          131.17 |RATE 05 |  8.00%   3.00|         14.43 |
+1|FUNDERBURK, ALEX              | 3033673      |  R24 |  P   | 07/22/2011|             .70-|RATE 05 |  8.00%   3.00|          0.08-|
+1|FUNDERBURK, ALEX              | 3033673      |  R09 |  P   | 07/22/2011|          121.51 |RATE 05 |  8.00%   3.00|         13.37 |
+1|FUNDERBURK, ALEX              | 3033673      |  R29 |  P   | 07/22/2011|          131.17-|RATE 05 |  8.00%   3.00|         14.43-|
+1|FUNDERBURK, ALEX              | 3033673      |  R29 |  P   | 07/22/2011|          121.51-|RATE 05 |  8.00%   3.00|         13.37-|
+1|FUNDERBURK, ALEX              | 3033673      |  R29 |  P   | 07/22/2011|          124.76-|RATE 05 |  8.00%   3.00|         13.72-|
+1POL DET PREF                                                 RIZPB00C                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            01/15/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+1PREFERRED AUTO
+1___________________________________________________________________________________________________________________________________
+1|                              |  POLICY/CAR  | TRANS| COMP |  RENEWAL  |      POLICY     |  RATE  |COMP PERCENT  |    AGENTS     |
+1|   INSURED NAME               |    NUMBER    | CODE | CLASS|   DATE    |     PREMIUM     |SCHEDULE|BASE   QRP/VAR| COMPENSATION  |
+1|                              |              |      |      |           |                 |        |              |               |
+1|FUNDERBURK, ALEX              | 3033673      |  R09 |  P   | 07/22/2011|          121.51 |RATE 05 |  8.00%   3.00|         13.37 |
+1|FUNG, DAN K                   | 3484775A     |  R11 |  P   | 12/19/2011|          485.87 |RATE 05 |  8.00%   3.00|         53.45 |
+1|GAAR, MAT                     | 3029505      |  R29 |  P   | 07/15/2011|          138.83-|RATE 05 |  8.00%   3.00|         15.27-|
+1|GAAR, MAT                     | 3029505      |  R09 |  P   | 07/15/2011|          138.83 |RATE 05 |  8.00%   3.00|         15.27 |
+1|GALAN, PABLO DANNY            | 3643162B     |  R21 |  P   | 11/09/2011|          205.04-|RATE 05 |  8.00%   3.00|         22.55-|
+1|GALAN, PABLO DANNY            | 3643162B     |  R28 |  P   | 05/20/2011|           40.04-|RATE 05 |  8.00%   3.00|          4.40-|
+1|GALAN, PABLO DANNY &          | 3659289A     |  R28 |  P   | 07/27/2011|          129.65-|RATE 05 |  8.00%   3.00|         14.26-|
+1|GALAN, PABLO DANNY &          | 3714236A     |  R28 |  P   | 09/13/2011|          244.36-|RATE 05 |  8.00%   3.00|         26.88-|
+1|GARCIA, DAVID &               | 3787192      |  R11 |  P   | 12/22/2011|          216.03 |RATE 05 |  8.00%   3.00|         23.76 |
+1|GARWOOD, GEOFF                | 3511005      |  R11 |  P   | 12/23/2011|          334.36 |RATE 05 |  8.00%   3.00|         36.78 |
+1|GARWOOD, GEOFF                | 3648781      |  R11 |  P   | 12/23/2011|          137.03 |RATE 05 |  8.00%   3.00|         15.07 |
+1|GATTIS, MARISSA               | 3370894A     |  R11 |  P   | 12/16/2011|          744.01 |RATE 05 |  8.00%   3.00|         81.84 |
+1|GONZALEZ, HERIBERTO           | 2889109A     |  R11 |  P   | 12/28/2011|          472.32 |RATE 05 |  8.00%   3.00|         51.96 |
+1|GORDON, MARC                  | 3162802B     |  R29 |  P   | 08/16/2011|          271.15-|RATE 05 |  8.00%   3.00|         29.82-|
+1|GORDON, MARC                  | 3162802C     |  R09 |  P   | 08/16/2011|          309.62 |RATE 05 |  8.00%   3.00|         34.06 |
+1|GREEN, SUZANNE & SYDNEY L     | 3881574      |  N29 |  P   | 11/22/2011|          466.92-|RATE 05 |  8.00%   3.00|         51.36-|
+1|GREEN, SUZANNE & SYDNEY L     | 3881574A     |  N09 |  P   | 11/22/2011|          517.17 |RATE 05 |  8.00%   3.00|         56.89 |
+1|GREENE, LARRY                 | 2892767      |  R11 |  P   | 12/28/2011|          284.02 |RATE 05 |  8.00%   3.00|         31.24 |
+1|GREENE, LARRY                 | 2892768A     |  R11 |  P   | 12/28/2011|          292.98 |RATE 05 |  8.00%   3.00|         32.23 |
+1|GREENLEE, MARLOWE & STONE,    | 3472494      |  R29 |  P   | 10/28/2011|          351.25-|RATE 05 |  8.00%   3.00|         38.64-|
+1|GUILLEN, CARLOS               | 3220263      |  R11 |  P   | 12/16/2011|          298.67 |RATE 05 |  8.00%   3.00|         32.85 |
+1|GUZMAN, SANTIAGO &            | 3550578      |  R28 |  P   | 08/16/2011|          105.43-|RATE 05 |  8.00%   3.00|         11.59-|
+1|GUZMAN, SANTIAGO &            | 3720068      |  R29 |  P   | 09/21/2011|           95.59-|RATE 05 |  8.00%   3.00|         10.52-|
+1|GUZMAN, SANTIAGO &            | 3720068      |  R09 |  P   | 09/21/2011|          163.58 |RATE 05 |  8.00%   3.00|         18.00 |
+1|HADLOCK, PATRICE AND          | 3663031B     |  R11 |  P   | 12/16/2011|          735.82 |RATE 05 |  8.00%   3.00|         80.94 |
+1|HAEFELFINGER, ROBERT & JESSICA| 3370890      |  R11 |  P   | 12/16/2011|          410.38 |RATE 05 |  8.00%   3.00|         45.14 |
+1|HAEFELFINGER, ROBERT & JESSICA| 3370891A     |  R11 |  P   | 12/16/2011|        1,234.63 |RATE 05 |  8.00%   3.00|        135.81 |
+1|HALL, MIKE                    | 3892785      |  N29 |  P   | 12/05/2011|          180.16-|RATE 05 |  8.00%   3.00|         19.81-|
+1|HALL, MIKE                    | 3892785      |  N09 |  P   | 12/05/2011|          180.16 |RATE 05 |  8.00%   3.00|         19.81 |
+1|HALL, MIKE                    | 3894070      |  N00 |  P   | 12/22/2011|           14.50 |RATE 05 |  8.00%   3.00|          1.60 |
+1|HARTANOV, TRAVIS & LEAH       | 3791673      |  R11 |  A   | 12/23/2011|          127.36 |RATE 05 |  8.00%   3.00|         14.01 |
+1|HARVEY, MALCOLM               | 3248050A     |  R29 |  P   | 07/13/2011|           81.90-|RATE 05 |  8.00%   3.00|          9.01-|
+1|HARVEY, MALCOLM               | 3248050B     |  R09 |  P   | 07/13/2011|           83.14 |RATE 05 |  8.00%   3.00|          9.14 |
+1|HERNANDEZ, REFUGIO &          | 3086706      |  R29 |  P   | 11/21/2011|          255.27-|RATE 05 |  8.00%   3.00|         28.08-|
+1|HERNANDEZ, REFUGIO &          | 3086706A     |  R09 |  P   | 11/21/2011|          257.70 |RATE 05 |  8.00%   3.00|         28.35 |
+1|HERNANDEZ, REFUGIO &          | 3086708      |  R29 |  P   | 11/21/2011|          466.80-|RATE 05 |  8.00%   3.00|         51.34-|
+1|HERNANDEZ, REFUGIO &          | 3086708A     |  R09 |  P   | 11/21/2011|          469.23 |RATE 05 |  8.00%   3.00|         51.62 |
+1|HERNANDEZ, REFUGIO &          | 3086709      |  R29 |  P   | 11/21/2011|          255.70-|RATE 05 |  8.00%   3.00|         28.13-|
+1|HERNANDEZ, REFUGIO &          | 3086709A     |  R09 |  P   | 11/21/2011|          258.13 |RATE 05 |  8.00%   3.00|         28.39 |
+1|HESHMATI, NAKISA & WADE, DOUG | 2909990A     |  R09 |  P   | 07/29/2011|          137.35 |RATE 05 |  8.00%   3.00|         15.11 |
+1|HESHMATI, NAKISA & WADE, DOUG | 2909990A     |  R29 |  P   | 07/29/2011|          137.35-|RATE 05 |  8.00%   3.00|         15.11-|
+1|HESKETHORN, RONALD D          | 3904033      |  N00 |  P   | 12/22/2011|          152.90 |RATE 05 |  8.00%   3.00|         16.82 |
+1|HOFFMAN, LORI & RICHARD E     | 3663032      |  R29 |  P   | 07/21/2011|           40.26-|RATE 05 |  8.00%   3.00|          4.43-|
+1|HOFFMAN, LORI & RICHARD E     | 3663032      |  R09 |  P   | 07/21/2011|           40.26 |RATE 05 |  8.00%   3.00|          4.43 |
+1|HOFFMAN, LORI & RICHARD E     | 3663033      |  R29 |  P   | 07/21/2011|           66.14-|RATE 05 |  8.00%   3.00|          7.27-|
+1|HOFFMAN, LORI & RICHARD E     | 3663033      |  R09 |  P   | 07/21/2011|           66.14 |RATE 05 |  8.00%   3.00|          7.27 |
+1|HOFFMAN, LORI & RICHARD E     | 3910976      |  N00 |  P   | 12/28/2011|          168.00 |RATE 05 |  8.00%   3.00|         18.48 |
+1|HOFFMAN, LORI & RICHARD E     | 3910976      |  N09 |  P   | 12/28/2011|          168.00 |RATE 05 |  8.00%   3.00|         18.48 |
+1|HOFFMAN, LORI & RICHARD E     | 3910976      |  N29 |  P   | 12/28/2011|          168.00-|RATE 05 |  8.00%   3.00|         18.48-|
+1POL DET PREF                                                 RIZPB00C                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            01/15/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+1PREFERRED AUTO
+1___________________________________________________________________________________________________________________________________
+1|                              |  POLICY/CAR  | TRANS| COMP |  RENEWAL  |      POLICY     |  RATE  |COMP PERCENT  |    AGENTS     |
+1|   INSURED NAME               |    NUMBER    | CODE | CLASS|   DATE    |     PREMIUM     |SCHEDULE|BASE   QRP/VAR| COMPENSATION  |
+1|                              |              |      |      |           |                 |        |              |               |
+1|HOUR, SAMANTHA                | 3131844      |  R11 |  P   | 12/28/2011|          395.68 |RATE 05 |  8.00%   3.00|         43.52 |
+1|HOUR, SAMANTHA                | 3131845      |  R11 |  P   | 12/28/2011|          380.27 |RATE 05 |  8.00%   3.00|         41.83 |
+1|JANG, HYOSEON                 | 3156299A     |  R11 |  A   | 12/30/2011|          407.98 |RATE 05 |  8.00%   3.00|         44.88 |
+1|JIMENEZ, DANIEL & NORMALINDA  | 2834289      |  R29 |  P   | 09/26/2011|          248.97-|RATE 05 |  8.00%   3.00|         27.39-|
+1|JIMENEZ, DANIEL & NORMALINDA  | 2834289A     |  R09 |  P   | 09/26/2011|          273.23 |RATE 05 |  8.00%   3.00|         30.06 |
+1|JOHNSON, TOM                  | 3589713A     |  R09 |  P   | 10/17/2011|          268.81 |RATE 05 |  8.00%   3.00|         29.56 |
+1|JOHNSON, TOM                  | 3589713A     |  R29 |  P   | 10/17/2011|          242.20-|RATE 05 |  8.00%   3.00|         26.65-|
+1|JONES, TRACY & CHRIS          | 3252808      |  R11 |  P   | 12/28/2011|          276.41 |RATE 05 |  8.00%   3.00|         30.40 |
+1|KANG, KYURIM                  | 3510055      |  R11 |  P   | 12/21/2011|          499.05 |RATE 05 |  8.00%   3.00|         54.89 |
+1|KASHIMA, SATOMI               | 3908603      |  N00 |  P   | 12/30/2011|        1,084.53 |RATE 05 |  8.00%   3.00|        119.30 |
+1|KEIL, PAMELA                  | 3255186      |  R11 |  P   | 12/29/2011|          409.48 |RATE 05 |  8.00%   3.00|         45.04 |
+1|KEISER, FRANK                 | 3249117D     |  R11 |  P   | 12/27/2011|          483.45 |RATE 05 |  8.00%   3.00|         53.18 |
+1|KEISER, FRANK                 | 3249119A     |  R11 |  P   | 12/27/2011|          386.07 |RATE 05 |  8.00%   3.00|         42.47 |
+1|KEISER, FRANK                 | 3252118A     |  R11 |  P   | 12/27/2011|           14.00 |RATE 05 |  8.00%   3.00|          1.54 |
+1|KELLY, CAROLINE               | 3372072C     |  R11 |  P   | 12/21/2011|          263.14 |RATE 05 |  8.00%   3.00|         28.94 |
+1|KELLY, CAROLINE               | 3846867      |  N29 |  P   | 10/06/2011|          184.61-|RATE 05 |  8.00%   3.00|         20.31-|
+1|KELLY, CAROLINE               | 3846867A     |  N09 |  P   | 10/06/2011|          184.61 |RATE 05 |  8.00%   3.00|         20.31 |
+1|KELLY, CAROLINE               | 3846867A     |  N09 |  P   | 10/06/2011|          184.61 |RATE 05 |  8.00%   3.00|         20.31 |
+1|KELLY, CAROLINE               | 3846867A     |  N29 |  P   | 10/06/2011|          184.61-|RATE 05 |  8.00%   3.00|         20.31-|
+1|KELLY, FARRELL & CULVER, KELLY| 3902909      |  N00 |  P   | 12/20/2011|          402.32 |RATE 05 |  8.00%   3.00|         44.26 |
+1|KHAKSARFARD, ROUDY            | 3898591      |  R29 |  P   | 12/13/2011|          372.34-|RATE 05 |  8.00%   3.00|         40.96-|
+1|KHAKSARFARD, ROUDY            | 3898591      |  R09 |  P   | 12/13/2011|          336.64 |RATE 05 |  8.00%   3.00|         37.03 |
+1|KILER, STEPHANIE & KRIS       | 3252806      |  R11 |  P   | 12/23/2011|          745.45 |RATE 05 |  8.00%   3.00|         82.00 |
+1|KIMURA, NAOKO                 | 3509023      |  R11 |  P   | 12/20/2011|          442.19 |RATE 05 |  8.00%   3.00|         48.65 |
+1|KOO-BULLIS, TIFFANY           | 3322028A     |  R29 |  P   | 11/03/2011|          271.35-|RATE 05 |  8.00%   3.00|         29.85-|
+1|KOO-BULLIS, TIFFANY           | 3322028A     |  R09 |  P   | 11/03/2011|          268.65 |RATE 05 |  8.00%   3.00|         29.55 |
+1|KRUSKA, JOSEPH & KATHY        | 3513191      |  R11 |  P   | 12/20/2011|          325.73 |RATE 05 |  8.00%   3.00|         35.83 |
+1|KRUTIAK, STEPHEN &            | 3012923C     |  R11 |  P   | 12/28/2011|          406.42 |RATE 05 |  8.00%   3.00|         44.70 |
+1|LA MONTAGNE, MICHAEL          | 3369768A     |  R09 |  P   | 10/18/2011|          494.93 |RATE 05 |  8.00%   3.00|         54.44 |
+1|LA MONTAGNE, MICHAEL          | 3369768A     |  R29 |  P   | 10/18/2011|          460.93-|RATE 05 |  8.00%   3.00|         50.70-|
+1|LA MONTAGNE, MICHAEL          | 3369768A     |  R22 |  P   | 10/18/2011|          397.70-|RATE 05 |  8.00%   3.00|         43.75-|
+1|LAKE, STEVEN & WAGNER, LAUREN | 3645549      |  R09 |  P   | 12/20/2011|          284.12 |RATE 05 |  8.00%   3.00|         31.25 |
+1|LAKE, STEVEN & WAGNER, LAUREN | 3645549      |  R11 |  P   | 12/20/2011|          284.12 |RATE 05 |  8.00%   3.00|         31.25 |
+1|LAKE, STEVEN & WAGNER, LAUREN | 3645549      |  R29 |  P   | 12/20/2011|          284.12-|RATE 05 |  8.00%   3.00|         31.25-|
+1|LE, JANERYL & DAVID           | 3877359      |  B29 |  A   | 11/17/2011|          478.61-|RATE 05 |  6.00%       |         28.72-|
+1|LE, JANERYL & DAVID           | 3877359A     |  B09 |  A   | 11/17/2011|          549.49 |RATE 05 |  6.00%       |         32.97 |
+1|LE, QUOC & HOANG, SUOT        | 3261260      |  R09 |  P   | 07/22/2011|          277.54 |RATE 05 |  8.00%   3.00|         30.53 |
+1|LE, QUOC & HOANG, SUOT        | 3261260      |  R29 |  P   | 07/22/2011|          231.67-|RATE 05 |  8.00%   3.00|         25.48-|
+1|LOEHR, RICHARD                | 3486510B     |  R29 |  P   | 04/13/2011|           20.49-|RATE 05 |  8.00%   3.00|          2.25-|
+1|LOEHR, RICHARD                | 3486510B     |  R21 |  P   | 11/01/2011|          365.95-|RATE 05 |  8.00%   3.00|         40.26-|
+1|LOEHR, RICHARD                | 3486510B     |  R09 |  P   | 04/13/2011|           24.69 |RATE 05 |  8.00%   3.00|          2.72 |
+1|LOEHR, RICHARD                | 3486510B     |  R11 |  P   | 11/01/2011|          440.90 |RATE 05 |  8.00%   3.00|         48.50 |
+1|LOEHR, RICHARD                | 3538057C     |  R09 |  P   | 06/17/2011|           91.53 |RATE 05 |  8.00%   3.00|         10.07 |
+1|LOEHR, RICHARD                | 3538057C     |  R21 |  P   | 12/20/2011|          184.83-|RATE 05 |  8.00%   3.00|         20.33-|
+1|LOEHR, RICHARD                | 3538057C     |  R11 |  P   | 12/20/2011|          222.70 |RATE 05 |  8.00%   3.00|         24.50 |
+1|LOEHR, RICHARD                | 3538057C     |  R29 |  P   | 06/17/2011|           75.97-|RATE 05 |  8.00%   3.00|          8.36-|
+1|LOEHR, RICHARD                | 3538057C     |  R11 |  P   | 12/20/2011|          184.83 |RATE 05 |  8.00%   3.00|         20.33 |
+1|LOEHR, RICHARD                | 3538058C     |  R21 |  P   | 12/20/2011|          169.67-|RATE 05 |  8.00%   3.00|         18.66-|
+1|LOEHR, RICHARD                | 3538058C     |  R09 |  P   | 06/17/2011|           79.80 |RATE 05 |  8.00%   3.00|          8.77 |
+1POL DET PREF                                                 RIZPB00C                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            01/15/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+1PREFERRED AUTO
+1___________________________________________________________________________________________________________________________________
+1|                              |  POLICY/CAR  | TRANS| COMP |  RENEWAL  |      POLICY     |  RATE  |COMP PERCENT  |    AGENTS     |
+1|   INSURED NAME               |    NUMBER    | CODE | CLASS|   DATE    |     PREMIUM     |SCHEDULE|BASE   QRP/VAR| COMPENSATION  |
+1|                              |              |      |      |           |                 |        |              |               |
+1|LOEHR, RICHARD                | 3538058C     |  R11 |  P   | 12/20/2011|          204.42 |RATE 05 |  8.00%   3.00|         22.48 |
+1|LOEHR, RICHARD                | 3538058C     |  R11 |  P   | 12/20/2011|          169.67 |RATE 05 |  8.00%   3.00|         18.66 |
+1|LOEHR, RICHARD                | 3538058C     |  R29 |  P   | 06/17/2011|           66.25-|RATE 05 |  8.00%   3.00|          7.29-|
+1|LOTT, AUSTIN & HARMONY        | 3803547B     |  N29 |  P   | 08/15/2011|          144.04-|RATE 05 |  8.00%   3.00|         15.84-|
+1|LOTT, AUSTIN & HARMONY        | 3803547B     |  N08 |  P   | 08/15/2011|          144.04 |RATE 05 |  8.00%   3.00|         15.84 |
+1|LOTT, AUSTIN & HARMONY        | 3803547B     |  N09 |  P   | 08/15/2011|           87.11 |RATE 05 |  8.00%   3.00|          9.58 |
+1|LOTT,AUSTIN & HARMONY         | 3803547A     |  N28 |  P   | 08/15/2011|          175.11-|RATE 05 |  8.00%   3.00|         19.26-|
+1|LUONG, SAO & TANG, NGHIA AND  | 3361600      |  R11 |  P   | 12/27/2011|          329.04 |RATE 05 |  8.00%   3.00|         36.19 |
+1|LUONG, SAO & TANG, NGHIA AND  | 3361601      |  R11 |  P   | 12/27/2011|          364.28 |RATE 05 |  8.00%   3.00|         40.07 |
+1|MALONEY, CAROL & LINDSAY      | 3657405A     |  R29 |  P   | 07/01/2011|          150.06-|RATE 05 |  8.00%   3.00|         16.50-|
+1|MALONEY, CAROL & LINDSAY      | 3657405A     |  R09 |  P   | 07/01/2011|          150.06 |RATE 05 |  8.00%   3.00|         16.50 |
+1|MAMIC, MARIJA                 | 3252805      |  R23 |  P   | 06/24/2011|          356.09-|RATE 05 |  8.00%   3.00|         39.17-|
+1|MARKEL, CHERYLE               | 3382030      |  R11 |  P   | 12/30/2011|          517.31 |RATE 05 |  8.00%   3.00|         56.90 |
+1|MARTINEZ, JOSE A &            | 3796760      |  R11 |  A   | 12/29/2011|          385.24 |RATE 05 |  8.00%   3.00|         42.38 |
+1|MARTINEZ, VALERIE             | 3512066A     |  R11 |  A   | 12/23/2011|          360.14 |RATE 05 |  8.00%   3.00|         39.61 |
+1|MCCLAIN, CHARLES              | 3787190      |  R11 |  P   | 12/16/2011|          289.88 |RATE 05 |  8.00%   3.00|         31.89 |
+1|MCKEEHAN, ROCHELLE            | 3226421B     |  R29 |  P   | 11/16/2011|          671.65-|RATE 05 |  8.00%   3.00|         73.88-|
+1|MCKEEHAN, ROCHELLE            | 3226421C     |  R09 |  P   | 11/16/2011|          671.65 |RATE 05 |  8.00%   3.00|         73.88 |
+1|MERCADO, BRYN                 | 3784224      |  R29 |  P   | 07/25/2011|          113.38-|RATE 05 |  8.00%   3.00|         12.47-|
+1|MERCADO, BRYN                 | 3784224A     |  R09 |  P   | 07/25/2011|          131.50 |RATE 05 |  8.00%   3.00|         14.47 |
+1|MERCADO, BRYN                 | 3784224A     |  R11 |  P   | 12/19/2011|          576.80 |RATE 05 |  8.00%   3.00|         63.44 |
+1|MERRITT, RICHARD & JAYNE      | 3132925A     |  R11 |  P   | 12/30/2011|          234.37 |RATE 05 |  8.00%   3.00|         25.78 |
+1|MERRITT, RICHARD & JAYNE      | 3132926      |  R11 |  P   | 12/30/2011|          302.68 |RATE 05 |  8.00%   3.00|         33.29 |
+1|MERRITT, RICHARD & JAYNE      | 3132928A     |  R11 |  P   | 12/30/2011|          539.55 |RATE 05 |  8.00%   3.00|         59.35 |
+1|MEYERS, DEB AND DANIEL        | 3257006A     |  R09 |  P   | 07/19/2011|          221.47 |RATE 05 |  8.00%   3.00|         24.36 |
+1|MEYERS, DEB AND DANIEL        | 3257006A     |  R29 |  P   | 07/19/2011|          231.34-|RATE 05 |  8.00%   3.00|         25.45-|
+1|MILLER, MACKENZIE             | 3401165      |  R11 |  P   | 12/30/2011|          754.41 |RATE 05 |  8.00%   3.00|         82.98 |
+1|MILLER, MICHAEL &             | 3370895      |  R11 |  P   | 12/16/2011|          387.91 |RATE 05 |  8.00%   3.00|         42.67 |
+1|MILLER, MICHAEL &             | 3370896      |  R11 |  P   | 12/16/2011|          627.31 |RATE 05 |  8.00%   3.00|         69.00 |
+1|MILLER, TEONIA                | 3795311      |  N09 |  P   | 08/03/2011|           83.95 |RATE 05 |  8.00%   3.00|          9.24 |
+1|MILLER, TEONIA                | 3795311      |  R11 |  P   | 12/28/2011|          316.87 |RATE 05 |  8.00%   3.00|         34.86 |
+1|MILLER, TEONIA                | 3795311      |  N29 |  P   | 08/03/2011|           83.95-|RATE 05 |  8.00%   3.00|          9.24-|
+1|MOFFETT, THOMAS & REBEKAH     | 2942362      |  R29 |  P   | 09/14/2011|          287.42-|RATE 05 |  8.00%   3.00|         31.61-|
+1|MOFFETT, THOMAS & REBEKAH     | 2942362A     |  R09 |  P   | 09/14/2011|          337.66 |RATE 05 |  8.00%   3.00|         37.14 |
+1|MONTGOMERY, ZACK              | 3621041      |  R11 |  P   | 12/16/2011|          129.92 |RATE 05 |  8.00%   3.00|         14.29 |
+1|MOSS, JEREMY & NATASCHA       | 3515712      |  R11 |  P   | 12/29/2011|          312.84 |RATE 05 |  8.00%   3.00|         34.42 |
+1|MOUA, HERBERT                 | 3245285      |  R11 |  P   | 12/16/2011|          196.34 |RATE 05 |  8.00%   3.00|         21.60 |
+1|MYRONOWICZ, CAYLAN & ROBSON,  | 3841533      |  N29 |  P   | 09/30/2011|          239.83-|RATE 05 |  8.00%   3.00|         26.38-|
+1|MYRONOWICZ, CAYLAN & ROBSON,  | 3841533A     |  N09 |  P   | 09/30/2011|          247.84 |RATE 05 |  8.00%   3.00|         27.27 |
+1|NAGLE, BRIAN & COOK, TRACIE   | 3644415      |  R11 |  P   | 12/16/2011|          275.76 |RATE 05 |  8.00%   3.00|         30.33 |
+1|NAVARRO, ANTONIO & FEDRA      | 3766598      |  N29 |  P   | 06/28/2011|           45.40-|RATE 05 |  8.00%   3.00|          4.99-|
+1|NAVARRO, ANTONIO & FEDRA      | 3766598      |  R21 |  P   | 11/18/2011|          575.23-|RATE 05 |  8.00%   3.00|         63.28-|
+1|NAVARRO, ANTONIO & FEDRA      | 3766598      |  R11 |  P   | 11/18/2011|          472.89 |RATE 05 |  8.00%   3.00|         52.02 |
+1|NAVARRO, ANTONIO & FEDRA      | 3766598      |  N09 |  P   | 06/28/2011|           37.35 |RATE 05 |  8.00%   3.00|          4.11 |
+1|NAVARRO, ANTONIO & FEDRA      | 3905421      |  N07 |  P   | 12/23/2011|          498.95 |RATE 05 |  8.00%   3.00|         54.89 |
+1|NEDVED, MIKE                  | 3238178A     |  R11 |  P   | 12/01/2011|          668.93 |RATE 05 |  8.00%   3.00|         73.58 |
+1|NEDVED, MIKE                  | 3238178A     |  R09 |  P   | 06/01/2011|           67.16 |RATE 05 |  8.00%   3.00|          7.38 |
+1|NEDVED, MIKE &                | 3238178      |  R09 |  P   | 06/01/2011|           52.25 |RATE 05 |  8.00%   3.00|          5.75 |
+1|NEDVED, MIKE &                | 3238178      |  R29 |  P   | 06/01/2011|           52.25-|RATE 05 |  8.00%   3.00|          5.75-|
+1POL DET PREF                                                 RIZPB00C                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            01/15/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+1PREFERRED AUTO
+1___________________________________________________________________________________________________________________________________
+1|                              |  POLICY/CAR  | TRANS| COMP |  RENEWAL  |      POLICY     |  RATE  |COMP PERCENT  |    AGENTS     |
+1|   INSURED NAME               |    NUMBER    | CODE | CLASS|   DATE    |     PREMIUM     |SCHEDULE|BASE   QRP/VAR| COMPENSATION  |
+1|                              |              |      |      |           |                 |        |              |               |
+1|NEDVED, MIKE &                | 3238178      |  R21 |  P   | 12/01/2011|          469.91-|RATE 05 |  8.00%   3.00|         51.69-|
+1|NEDVED, MIKE &                | 3238178      |  R11 |  P   | 12/01/2011|          520.41 |RATE 05 |  8.00%   3.00|         57.24 |
+1|NEDVED, MIKE &                | 3238178      |  R21 |  P   | 12/01/2011|          520.41-|RATE 05 |  8.00%   3.00|         57.24-|
+1|NEDVED, MIKE &                | 3238178      |  R29 |  P   | 06/01/2011|           47.19-|RATE 05 |  8.00%   3.00|          5.20-|
+1|NEW IMAGE PROMOTIONS          | 3678012A     |  R11 |  P   | 12/21/2011|          877.25 |RATE 05 |  8.00%   3.00|         96.50 |
+1|NEWMAN, MIKE & SHEREE &       | 3759920      |  R29 |  P   | 11/09/2011|          577.20-|RATE 05 |  8.00%   3.00|         63.50-|
+1|NEWMAN, MIKE & SHEREE &       | 3759920A     |  R09 |  P   | 11/09/2011|          574.43 |RATE 05 |  8.00%   3.00|         63.18 |
+1|NEWMAN, MIKE & SHEREE &       | 3759922      |  R29 |  P   | 11/09/2011|          734.46-|RATE 05 |  8.00%   3.00|         80.79-|
+1|NEWMAN, MIKE & SHEREE &       | 3759922A     |  R09 |  P   | 11/09/2011|          731.69 |RATE 05 |  8.00%   3.00|         80.49 |
+1|NEWMAN, MIKE & SHEREE &       | 3759923      |  R29 |  P   | 11/09/2011|          483.19-|RATE 05 |  8.00%   3.00|         53.16-|
+1|NEWMAN, MIKE & SHEREE &       | 3759923A     |  R09 |  P   | 11/09/2011|          480.42 |RATE 05 |  8.00%   3.00|         52.84 |
+1|NGUYEN, MIKE                  | 3639226      |  R11 |  P   | 12/29/2011|          783.10 |RATE 05 |  8.00%   3.00|         86.14 |
+1|NGUYEN, MIKE                  | 3639226      |  R29 |  P   | 06/15/2011|           85.51-|RATE 05 |  8.00%   3.00|          9.41-|
+1|NGUYEN, MIKE                  | 3639226      |  R09 |  P   | 06/15/2011|           81.41 |RATE 05 |  8.00%   3.00|          8.95 |
+1|OKOUN, ARTHUR                 | 3008982B     |  R11 |  P   | 12/28/2011|          459.95 |RATE 05 |  8.00%   3.00|         50.60 |
+1|OROSCO, ESBIN                 | 3548775      |  R24 |  A   | 09/22/2011|            2.64-|RATE 05 |  8.00%   3.00|          0.29-|
+1|OWENS, GREG                   | 3133854A     |  R11 |  P   | 12/30/2011|          557.34 |RATE 05 |  8.00%   3.00|         61.31 |
+1|PAINTON, MARIE                | 3652676A     |  R11 |  A   | 12/30/2011|          605.25 |RATE 05 |  8.00%   3.00|         66.58 |
+1|PEBLEY, BILL                  | 3482678      |  R11 |  P   | 12/19/2011|          340.76 |RATE 05 |  8.00%   3.00|         37.48 |
+1|PETERSON, JULIE               | 3010911B     |  R09 |  P   | 06/24/2011|           51.39 |RATE 05 |  8.00%   3.00|          5.65 |
+1|PETERSON, JULIE               | 3010911B     |  R29 |  P   | 06/24/2011|           68.74-|RATE 05 |  8.00%   3.00|          7.56-|
+1|PETERSON, JULIE               | 3010911B     |  R11 |  P   | 12/19/2011|          164.95 |RATE 05 |  8.00%   3.00|         18.15 |
+1|PETERSON, JULIE               | 3900848      |  N00 |  P   | 12/19/2011|          144.06 |RATE 05 |  8.00%   3.00|         15.84 |
+1|PHUONG, WILSON &              | 3377459      |  R11 |  P   | 12/28/2011|          406.33 |RATE 05 |  8.00%   3.00|         44.70 |
+1|PRAIS, CHRIS                  | 3373106      |  R11 |  P   | 12/21/2011|          373.34 |RATE 05 |  8.00%   3.00|         41.07 |
+1|PRAIS, CHRIS                  | 3373107A     |  R11 |  P   | 12/21/2011|          408.77 |RATE 05 |  8.00%   3.00|         44.96 |
+1|QIAN, YUFENG & ZHOU, WEILIN   | 3402338      |  R29 |  P   | 08/10/2011|          148.22-|RATE 05 |  8.00%   3.00|         16.31-|
+1|QIAN, YUFENG & ZHOU, WEILIN   | 3402338      |  R09 |  P   | 08/10/2011|          148.22 |RATE 05 |  8.00%   3.00|         16.31 |
+1|QIAN, YUFENG AND              | 0856723I     |  R29 |  P   | 07/19/2011|           94.64-|RATE 05 |  8.00%   3.00|         10.41-|
+1|QIAN, YUFENG AND              | 0856723I     |  R09 |  P   | 07/19/2011|           94.64 |RATE 05 |  8.00%   3.00|         10.41 |
+1|QUINTERO, CYNTHIA &           | 3372073A     |  R11 |  P   | 12/22/2011|          671.66 |RATE 05 |  8.00%   3.00|         73.88 |
+1|QUINTERO, CYNTHIA &           | 3372074B     |  R11 |  P   | 12/22/2011|          739.10 |RATE 05 |  8.00%   3.00|         81.30 |
+1|RABELLO, MICHAEL              | 3151280B     |  R23 |  P   | 07/21/2011|          363.53-|RATE 05 |  8.00%   3.00|         39.99-|
+1|RAIM, MARTHA                  | 2889108      |  R11 |  P   | 12/28/2011|          348.03 |RATE 05 |  8.00%   3.00|         38.28 |
+1|RAINBOLT, LISA                | 3652549      |  R11 |  P   | 12/28/2011|          450.53 |RATE 05 |  8.00%   3.00|         49.56 |
+1|RAMIREZ, YVETTE AND           | 3250915A     |  R11 |  P   | 12/23/2011|          572.17 |RATE 05 |  8.00%   3.00|         62.94 |
+1|REALTY CENTER MANAGEMENT, INC | 3849968      |  N24 |  P   | 10/24/2011|            7.75-|RATE 05 |  8.00%   3.00|          0.85-|
+1|REALTY CENTER MANAGEMENT, INC | 3849968A     |  N28 |  P   | 10/24/2011|          114.05-|RATE 05 |  8.00%   3.00|         12.54-|
+1|REALTY CENTER MANAGEMENT, INC | 3849969      |  N24 |  P   | 10/25/2011|            7.75-|RATE 05 |  8.00%   3.00|          0.85-|
+1|REALTY CENTER MANAGEMENT, INC | 3849969A     |  N28 |  P   | 10/25/2011|          114.05-|RATE 05 |  8.00%   3.00|         12.54-|
+1|REALTY CENTER MANAGEMENT, INC | 3849970      |  N24 |  P   | 10/25/2011|            7.75-|RATE 05 |  8.00%   3.00|          0.85-|
+1|REALTY CENTER MANAGEMENT, INC | 3849970A     |  N28 |  P   | 10/25/2011|          114.05-|RATE 05 |  8.00%   3.00|         12.54-|
+1|REALTY CENTER MANAGEMENT, INC | 3849971      |  N24 |  P   | 10/25/2011|            7.75-|RATE 05 |  8.00%   3.00|          0.85-|
+1|REALTY CENTER MANAGEMENT, INC | 3849971A     |  N28 |  P   | 10/25/2011|          114.05-|RATE 05 |  8.00%   3.00|         12.54-|
+1|REALTY CENTER MANAGEMENT, INC | 3849972      |  N24 |  P   | 10/21/2011|            4.47-|RATE 05 |  8.00%   3.00|          0.49-|
+1|REALTY CENTER MANAGEMENT, INC | 3849972      |  N28 |  P   | 10/21/2011|            6.28-|RATE 05 |  8.00%   3.00|          0.69-|
+1|REBOLLEDO, FERMIN & ESTELA    | 3652548      |  R11 |  P   | 12/29/2011|          369.85 |RATE 05 |  8.00%   3.00|         40.69 |
+1|REBOLLEDO, FERMIN & ESTELA    | 3765403      |  R28 |  P   | 09/13/2011|          216.83-|RATE 05 |  8.00%   3.00|         23.85-|
+1|REED, PAUL AND REED, NIKKI    | 3252807A     |  R11 |  P   | 12/28/2011|          715.43 |RATE 05 |  8.00%   3.00|         78.69 |
+1POL DET PREF                                                 RIZPB00C                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            01/15/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+1PREFERRED AUTO
+1___________________________________________________________________________________________________________________________________
+1|                              |  POLICY/CAR  | TRANS| COMP |  RENEWAL  |      POLICY     |  RATE  |COMP PERCENT  |    AGENTS     |
+1|   INSURED NAME               |    NUMBER    | CODE | CLASS|   DATE    |     PREMIUM     |SCHEDULE|BASE   QRP/VAR| COMPENSATION  |
+1|                              |              |      |      |           |                 |        |              |               |
+1|REYES, KIMBERLY               | 3252809      |  R11 |  A   | 12/28/2011|          443.81 |RATE 05 |  8.00%   3.00|         48.81 |
+1|REYES, KIMBERLY               | 3252810      |  R11 |  A   | 12/28/2011|          566.60 |RATE 05 |  8.00%   3.00|         62.33 |
+1|RITUAL CLEANSE                | 3794529      |  N29 |  P   | 08/08/2011|           42.68-|RATE 05 |  8.00%   3.00|          4.69-|
+1|RITUAL CLEANSE                | 3794529A     |  N09 |  P   | 08/08/2011|           42.68 |RATE 05 |  8.00%   3.00|          4.69 |
+1|RIVERA, ALAN                  | 3375002B     |  R11 |  P   | 12/23/2011|          318.34 |RATE 05 |  8.00%   3.00|         35.02 |
+1|RIVERA, BRIAN & GALINDO, CELIA| 3756764      |  R09 |  P   | 11/29/2011|          422.08 |RATE 05 |  8.00%   3.00|         46.43 |
+1|RIVERA, BRIAN & GALINDO, CELIA| 3756764      |  R29 |  P   | 11/29/2011|          422.08-|RATE 05 |  8.00%   3.00|         46.43-|
+1|RIVERA, BRIAN & GALINDO, CELIA| 3756765A     |  R29 |  P   | 11/29/2011|          413.99-|RATE 05 |  8.00%   3.00|         45.54-|
+1|RIVERA, BRIAN & GALINDO, CELIA| 3756765A     |  R09 |  P   | 11/29/2011|          413.99 |RATE 05 |  8.00%   3.00|         45.54 |
+1|RIVERA, BRIAN & GALINDO, CELIA| 3756767A     |  R09 |  P   | 11/29/2011|          427.89 |RATE 05 |  8.00%   3.00|         47.07 |
+1|RIVERA, BRIAN & GALINDO, CELIA| 3756767A     |  R29 |  P   | 11/29/2011|          427.89-|RATE 05 |  8.00%   3.00|         47.07-|
+1|ROBERTS, JEFFREY & ERICA      | 3126979      |  R11 |  P   | 12/28/2011|          397.01 |RATE 05 |  8.00%   3.00|         43.67 |
+1|ROBERTS, JEFFREY & ERICA      | 3126980      |  R11 |  P   | 12/28/2011|          888.01 |RATE 05 |  8.00%   3.00|         97.68 |
+1|RODRIGUEZ, ADAN R & ERICA     | 3848266      |  N29 |  P   | 10/10/2011|          306.49-|RATE 05 |  8.00%   3.00|         33.71-|
+1|RODRIGUEZ, ADAN R & ERICA     | 3848266A     |  N09 |  P   | 10/10/2011|          317.70 |RATE 05 |  8.00%   3.00|         34.95 |
+1|RODRIGUEZ, ADAN R & ERICA     | 3848267      |  N29 |  P   | 10/10/2011|          242.16-|RATE 05 |  8.00%   3.00|         26.63-|
+1|RODRIGUEZ, ADAN R & ERICA     | 3848267A     |  N09 |  P   | 10/10/2011|          253.37 |RATE 05 |  8.00%   3.00|         27.87 |
+1|RODRIGUEZ, ADAN R & ERICA     | 3848269      |  N09 |  P   | 10/10/2011|          384.77 |RATE 05 |  8.00%   3.00|         42.32 |
+1|RODRIGUEZ, ADAN R & ERICA     | 3848269      |  N29 |  P   | 10/10/2011|          457.27-|RATE 05 |  8.00%   3.00|         50.30-|
+1|RODRIGUEZ, YESSICA            | 3369767C     |  R11 |  P   | 12/16/2011|          610.81 |RATE 05 |  8.00%   3.00|         67.18 |
+1|ROJAS, DEBRA AND              | 3130710C     |  R11 |  P   | 12/27/2011|          328.55 |RATE 05 |  8.00%   3.00|         36.14 |
+1|ROJAS, DEBRA AND              | 3130711A     |  R11 |  P   | 12/27/2011|          294.56 |RATE 05 |  8.00%   3.00|         32.40 |
+1|RUSSELL, RICK                 | 3214111      |  R04 |  P   | 04/22/2011|           44.73 |RATE 05 |  8.00%   3.00|          4.92 |
+1|RUSSELL, RICK                 | 3214111      |  R04 |  P   | 10/24/2011|            8.13 |RATE 05 |  8.00%   3.00|          0.89 |
+1|RUSSELL, RICK                 | 3214111      |  R03 |  P   | 10/24/2011|          263.24 |RATE 05 |  8.00%   3.00|         28.96 |
+1|RUSSELL, RICK                 | 3214112      |  R03 |  P   | 10/25/2011|          395.29 |RATE 05 |  8.00%   3.00|         43.48 |
+1|RUSSELL, RICK                 | 3214112      |  R04 |  P   | 10/25/2011|           12.21 |RATE 05 |  8.00%   3.00|          1.35 |
+1|RUSSELL, RICK                 | 3214112      |  R04 |  P   | 04/22/2011|           71.08 |RATE 05 |  8.00%   3.00|          7.82 |
+1|RUSSELL, RICK                 | 3393993      |  R04 |  P   | 07/15/2011|           71.05 |RATE 05 |  8.00%   3.00|          7.81 |
+1|RUSSELL, RICK                 | 3393993      |  R03 |  P   | 07/15/2011|          111.43 |RATE 05 |  8.00%   3.00|         12.25 |
+1|RUSSELL, RICK                 | 3880621      |  N24 |  P   | 11/17/2011|            1.83-|RATE 05 |  8.00%   3.00|          0.20-|
+1|SANCHEZ, GINA & JENNIFER      | 3151283B     |  R09 |  P   | 07/27/2011|          350.71 |RATE 05 |  8.00%   3.00|         38.58 |
+1|SANCHEZ, GINA & JENNIFER      | 3151283B     |  R29 |  P   | 07/27/2011|          415.93-|RATE 05 |  8.00%   3.00|         45.75-|
+1|SANTAMARIA, MARISOL           | 3795312      |  R11 |  P   | 12/30/2011|        1,299.40 |RATE 05 |  8.00%   3.00|        142.93 |
+1|SANTAMARIA, MARISOL           | 3795312      |  N09 |  P   | 08/09/2011|          202.71 |RATE 05 |  8.00%   3.00|         22.30 |
+1|SANTAMARIA, MARISOL           | 3795312      |  N29 |  P   | 08/09/2011|          207.70-|RATE 05 |  8.00%   3.00|         22.85-|
+1|SEIP, SANDRA                  | 3790415A     |  R11 |  P   | 12/22/2011|          586.27 |RATE 05 |  8.00%   3.00|         64.49 |
+1|SENA, JOHN                    | 3073475A     |  R29 |  P   | 09/22/2011|          258.88-|RATE 05 |  8.00%   3.00|         28.48-|
+1|SENA, JOHN                    | 3073475B     |  R09 |  P   | 09/22/2011|          193.56 |RATE 05 |  8.00%   3.00|         21.29 |
+1|SHAFER, JAMES & STEPHANIE     | 3791558      |  R11 |  P   | 12/19/2011|          419.87 |RATE 05 |  8.00%   3.00|         46.19 |
+1|SHARESTAN, HANI &             | 3531424A     |  R09 |  P   | 08/23/2011|          189.55 |RATE 05 |  8.00%   3.00|         20.85 |
+1|SHARESTAN, HANI &             | 3531424A     |  R29 |  P   | 08/23/2011|          189.55-|RATE 05 |  8.00%   3.00|         20.85-|
+1|SHOTWELL, JEFF                | 3625355      |  R11 |  P   | 12/27/2011|          426.40 |RATE 05 |  8.00%   3.00|         46.90 |
+1|SIGRIST, JOHN & EMILY         | 3084092A     |  R29 |  P   | 10/05/2011|          433.02-|RATE 05 |  8.00%   3.00|         47.63-|
+1|SLUTMAN, CRAIG                | 3439855      |  R29 |  P   | 10/24/2011|          147.03-|RATE 05 |  8.00%   3.00|         16.17-|
+1|SLUTMAN, CRAIG                | 3439855      |  R09 |  P   | 10/24/2011|          147.03 |RATE 05 |  8.00%   3.00|         16.17 |
+1|SMITH, CHAD                   | 3565355A     |  R23 |  P   | 08/31/2011|          309.33-|RATE 05 |  8.00%   3.00|         34.03-|
+1|SMITH, CHAD & JOHN            | 3129663      |  R11 |  P   | 12/28/2011|          363.59 |RATE 05 |  8.00%   3.00|         40.00 |
+1|SMITH, JAMIE P                | 3457245      |  R29 |  P   | 10/10/2011|          480.15-|RATE 05 |  8.00%   3.00|         52.81-|
+1POL DET PREF                                                 RIZPB00C                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            01/15/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+1PREFERRED AUTO
+1___________________________________________________________________________________________________________________________________
+1|                              |  POLICY/CAR  | TRANS| COMP |  RENEWAL  |      POLICY     |  RATE  |COMP PERCENT  |    AGENTS     |
+1|   INSURED NAME               |    NUMBER    | CODE | CLASS|   DATE    |     PREMIUM     |SCHEDULE|BASE   QRP/VAR| COMPENSATION  |
+1|                              |              |      |      |           |                 |        |              |               |
+1|SMITH, JAMIE P                | 3457245      |  R24 |  P   | 04/08/2011|            4.33-|RATE 05 |  8.00%   3.00|          0.48-|
+1|SMITH, JAMIE P                | 3457245      |  R24 |  P   | 10/10/2011|           15.27-|RATE 05 |  8.00%   3.00|          1.68-|
+1|SMITH, JAMIE P &              | 3457245A     |  R09 |  P   | 10/10/2011|          457.13 |RATE 05 |  8.00%   3.00|         50.28 |
+1|SMITH, JAMIE P &              | 3749042A     |  R29 |  P   | 10/26/2011|          358.42-|RATE 05 |  8.00%   3.00|         39.42-|
+1|SMITH, JAMIE P &              | 3749042A     |  R09 |  P   | 10/26/2011|          475.61 |RATE 05 |  8.00%   3.00|         52.32 |
+1|SMITH, REGINA & JUSTIN        | 3133859C     |  R11 |  P   | 12/30/2011|          378.99 |RATE 05 |  8.00%   3.00|         41.69 |
+1|SMITH, THOMAS & BEVERLY       | 3255187      |  R11 |  P   | 12/29/2011|          345.12 |RATE 05 |  8.00%   3.00|         37.96 |
+1|SMITH, THOMAS & BEVERLY       | 3255188      |  R11 |  P   | 12/29/2011|          366.23 |RATE 05 |  8.00%   3.00|         40.29 |
+1|SMITH, THOMAS & BEVERLY       | 3255189      |  R11 |  P   | 12/29/2011|          298.31 |RATE 05 |  8.00%   3.00|         32.81 |
+1|SMITH, THOMAS NEAL            | 3131293      |  R11 |  P   | 12/23/2011|           20.00 |RATE 05 |  8.00%   3.00|          2.20 |
+1|SPREWELL, CAHIL               | 3906593      |  N07 |  P   | 12/22/2011|          352.99 |RATE 05 |  8.00%   3.00|         38.83 |
+1|ST MARTIN, BEVERLY            | 3663034A     |  R09 |  P   | 07/08/2011|          161.32 |RATE 05 |  8.00%   3.00|         17.75 |
+1|ST MARTIN, BEVERLY            | 3663034A     |  R29 |  P   | 07/08/2011|          161.32-|RATE 05 |  8.00%   3.00|         17.75-|
+1|STAMBELOS, JOHN               | 3494334      |  R11 |  P   | 12/16/2011|          183.98 |RATE 05 |  8.00%   3.00|         20.24 |
+1|STANTON, RYAN &               | 1237170C     |  R09 |  P   | 08/12/2011|          504.17 |RATE 05 |  8.00%   3.00|         55.46 |
+1|STANTON, RYAN &               | 1237170C     |  R29 |  P   | 08/12/2011|          580.52-|RATE 05 |  8.00%   3.00|         63.86-|
+1|STANTON, RYAN AND             | 1245850D     |  R29 |  P   | 08/17/2011|          655.32-|RATE 05 |  8.00%   3.00|         72.09-|
+1|STANTON, RYAN AND             | 1245850D     |  R09 |  P   | 08/17/2011|          568.94 |RATE 05 |  8.00%   3.00|         62.59 |
+1|STEPTER, RODNEY               | 3220264      |  R29 |  P   | 11/04/2011|          551.33-|RATE 05 |  8.00%   3.00|         60.65-|
+1|STEPTER, RODNEY               | 3220264A     |  R09 |  P   | 11/04/2011|          583.66 |RATE 05 |  8.00%   3.00|         64.20 |
+1|STERLING, KIM                 | 3010909A     |  R11 |  P   | 12/23/2011|          505.74 |RATE 05 |  8.00%   3.00|         55.63 |
+1|STONE, MARLOWE AND JOSH       | 3472494A     |  R09 |  P   | 10/28/2011|          351.25 |RATE 05 |  8.00%   3.00|         38.64 |
+1|SUAREZ, EVELIO III & SARAH    | 3176956B     |  R29 |  P   | 09/01/2011|          249.88-|RATE 05 |  8.00%   3.00|         27.49-|
+1|SUAREZ, EVELIO III & SARAH    | 3176956C     |  R09 |  P   | 09/01/2011|          305.82 |RATE 05 |  8.00%   3.00|         33.64 |
+1|SWARTZ, JASON & MELISSA       | 3326727A     |  R11 |  A   | 12/30/2011|          400.93 |RATE 05 |  8.00%   3.00|         44.10 |
+1|THOMAS, SYDNIE &              | 3506740C     |  R11 |  P   | 12/28/2011|          341.26 |RATE 05 |  8.00%   3.00|         37.54 |
+1|THOMAS, SYDNIE &              | 3506741C     |  R11 |  P   | 12/28/2011|          444.58 |RATE 05 |  8.00%   3.00|         48.91 |
+1|THOMAS, SYDNIE &              | 3506741C     |  R09 |  P   | 06/24/2011|           96.81 |RATE 05 |  8.00%   3.00|         10.64 |
+1|THOMAS, SYDNIE &              | 3506741C     |  R29 |  P   | 06/24/2011|           96.81-|RATE 05 |  8.00%   3.00|         10.64-|
+1|THOME, THIAGO & TARA AND      | 3161976B     |  R09 |  P   | 08/16/2011|          267.03 |RATE 05 |  8.00%   3.00|         29.37 |
+1|THOME, THIAGO & TARA AND      | 3161976B     |  R09 |  P   | 08/16/2011|          267.03 |RATE 05 |  8.00%   3.00|         29.37 |
+1|THOME, THIAGO & TARA AND      | 3161976B     |  R29 |  P   | 08/16/2011|          267.03-|RATE 05 |  8.00%   3.00|         29.37-|
+1|THOME, THIAGO & TARA AND      | 3161978A     |  R09 |  P   | 08/16/2011|          353.34 |RATE 05 |  8.00%   3.00|         38.87 |
+1|THOME, THIAGO & TARA AND      | 3161978A     |  R29 |  P   | 08/16/2011|          353.34-|RATE 05 |  8.00%   3.00|         38.87-|
+1|THOME, THIAGO, & TARA AND     | 3161974A     |  R29 |  P   | 08/16/2011|          830.49-|RATE 05 |  8.00%   3.00|         91.35-|
+1|THOME, THIAGO, & TARA AND     | 3161974A     |  R09 |  P   | 08/16/2011|          830.49 |RATE 05 |  8.00%   3.00|         91.35 |
+1|THOME, THIAGO, TARA AND       | 3161976A     |  R29 |  P   | 08/16/2011|          210.76-|RATE 05 |  8.00%   3.00|         23.18-|
+1|TONEY, OLGA & MICHAEL         | 3618709      |  R04 |  P   | 05/11/2011|           11.25 |RATE 05 |  8.00%   3.00|          1.24 |
+1|TONEY, OLGA & MICHAEL         | 3618709      |  R24 |  P   | 05/11/2011|            7.19-|RATE 05 |  8.00%   3.00|          0.80-|
+1|TONEY, OLGA & MICHAEL         | 3618709      |  R24 |  P   | 05/11/2011|            4.06-|RATE 05 |  8.00%   3.00|          0.44-|
+1|TONEY, OLGA & MICHAEL         | 3618709      |  R24 |  P   | 05/11/2011|           11.25-|RATE 05 |  8.00%   3.00|          1.24-|
+1|TORRES, ALBERTO               | 3127946A     |  R29 |  P   | 06/17/2011|           74.08-|RATE 05 |  8.00%   3.00|          8.15-|
+1|TORRES, ALBERTO               | 3127946A     |  R11 |  P   | 12/29/2011|          339.79 |RATE 05 |  8.00%   3.00|         37.37 |
+1|TORRES, ALBERTO               | 3127946A     |  R09 |  P   | 06/17/2011|           77.90 |RATE 05 |  8.00%   3.00|          8.57 |
+1|TORRES, ALBERTO               | 3127947      |  R11 |  P   | 12/29/2011|          422.03 |RATE 05 |  8.00%   3.00|         46.42 |
+1|TORRES, ALBERTO               | 3127947      |  R29 |  P   | 06/17/2011|           91.99-|RATE 05 |  8.00%   3.00|         10.12-|
+1|TORRES, ALBERTO               | 3127947      |  R09 |  P   | 06/17/2011|           96.74 |RATE 05 |  8.00%   3.00|         10.64 |
+1|TORRES, ALBERTO               | 3127948      |  R29 |  P   | 06/17/2011|          100.08-|RATE 05 |  8.00%   3.00|         11.01-|
+1|TORRES, ALBERTO               | 3127948      |  R09 |  P   | 06/17/2011|          106.29 |RATE 05 |  8.00%   3.00|         11.69 |
+1POL DET PREF                                                 RIZPB00C                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            01/15/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+1PREFERRED AUTO
+1___________________________________________________________________________________________________________________________________
+1|                              |  POLICY/CAR  | TRANS| COMP |  RENEWAL  |      POLICY     |  RATE  |COMP PERCENT  |    AGENTS     |
+1|   INSURED NAME               |    NUMBER    | CODE | CLASS|   DATE    |     PREMIUM     |SCHEDULE|BASE   QRP/VAR| COMPENSATION  |
+1|                              |              |      |      |           |                 |        |              |               |
+1|TORRES, ALBERTO               | 3127948      |  R11 |  P   | 12/29/2011|          463.60 |RATE 05 |  8.00%   3.00|         51.00 |
+1|TORRES, ALBERTO               | 3127949A     |  R11 |  P   | 12/15/2011|          503.07 |RATE 05 |  8.00%   3.00|         55.34 |
+1|TORRES, ALBERTO               | 3127949A     |  R29 |  P   | 06/17/2011|          109.66-|RATE 05 |  8.00%   3.00|         12.06-|
+1|TORRES, ALBERTO               | 3127949A     |  R09 |  P   | 06/17/2011|          115.77 |RATE 05 |  8.00%   3.00|         12.73 |
+1|TORRES, ALBERTO               | 3127949A     |  R21 |  P   | 12/15/2011|          476.49-|RATE 05 |  8.00%   3.00|         52.41-|
+1|TRAN, JOHN H                  | 3898592      |  N00 |  P   | 12/16/2011|          223.99 |RATE 05 |  8.00%   3.00|         24.64 |
+1|UY, FLORENCE                  | 3798809      |  R11 |  P   | 12/30/2011|          444.92 |RATE 05 |  8.00%   3.00|         48.94 |
+1|VIGIL, DAVID                  | 3132929      |  R11 |  P   | 12/29/2011|          493.90 |RATE 05 |  8.00%   3.00|         54.33 |
+1|VU, VUONG &                   | 3126982D     |  R29 |  P   | 06/22/2011|           70.89-|RATE 05 |  8.00%   3.00|          7.80-|
+1|VU, VUONG &                   | 3126982D     |  R09 |  P   | 06/22/2011|           70.89 |RATE 05 |  8.00%   3.00|          7.80 |
+1|VU, VUONG &                   | 3126982D     |  R11 |  P   | 12/29/2011|          343.09 |RATE 05 |  8.00%   3.00|         37.74 |
+1|WADE, DOUGLAS                 | 2901775A     |  R09 |  P   | 07/14/2011|          166.82 |RATE 05 |  8.00%   3.00|         18.35 |
+1|WADE, DOUGLAS                 | 2901775A     |  R29 |  P   | 07/14/2011|          166.82-|RATE 05 |  8.00%   3.00|         18.35-|
+1|WAHLEN, WENDY                 | 3380829A     |  R11 |  P   | 12/30/2011|          400.04 |RATE 05 |  8.00%   3.00|         44.00 |
+1|WARREN, KRISTIN               | 3009953      |  R11 |  P   | 12/28/2011|          423.79 |RATE 05 |  8.00%   3.00|         46.61 |
+1|WILBUR, GUY RUSSELL &         | 3360315      |  R11 |  P   | 12/27/2011|          388.03 |RATE 05 |  8.00%   3.00|         42.68 |
+1|WILLIAMS, SUE & SHERMAN, SCOTT| 3525843A     |  R29 |  P   | 07/11/2011|           97.81-|RATE 05 |  8.00%   3.00|         10.75-|
+1|WILLIAMS, SUE & SHERMAN, SCOTT| 3525843A     |  R09 |  P   | 07/11/2011|           97.81 |RATE 05 |  8.00%   3.00|         10.75 |
+1|WILSON, ANNELIESE             | 3641949      |  R11 |  P   | 12/16/2011|          753.04 |RATE 05 |  8.00%   3.00|         82.83 |
+1|WITT, JASON & MICHELLE        | 2739188      |  R11 |  P   | 12/20/2011|          377.78 |RATE 05 |  8.00%   3.00|         41.55 |
+1|WOO, STEVE &                  | 3254055      |  R11 |  P   | 12/28/2011|          384.46 |RATE 05 |  8.00%   3.00|         42.29 |
+1|WOO, STEVE &                  | 3254056      |  R11 |  P   | 12/28/2011|          381.88 |RATE 05 |  8.00%   3.00|         42.01 |
+1|WOO, STEVE &                  | 3254057      |  R11 |  P   | 12/28/2011|          563.56 |RATE 05 |  8.00%   3.00|         61.99 |
+1|YANG, KAYLEE                  | 3796619      |  R11 |  P   | 12/29/2011|          617.75 |RATE 05 |  8.00%   3.00|         67.95 |
+1|YIAN, EDWARD & SONG, ELLEN    | 3349948      |  R11 |  P   | 12/28/2011|          406.32 |RATE 05 |  8.00%   3.00|         44.70 |
+1|YOUNG, ERIC & LU, PHUONG      | 3630013      |  R11 |  P   | 12/19/2011|          431.43 |RATE 05 |  8.00%   3.00|         47.45 |
+1|YOUNGLOVE, JEWEL & RAWLEIGH   | 3793972      |  R11 |  P   | 12/28/2011|          394.16 |RATE 05 |  8.00%   3.00|         43.35 |
+1|ZAMORA, MARIA                 | 3802570      |  R11 |  P   | 12/30/2011|          351.55 |RATE 05 |  8.00%   3.00|         38.67 |
+1|ZAMORA, MARIA                 | 3802572      |  R11 |  P   | 12/30/2011|          349.21 |RATE 05 |  8.00%   3.00|         38.42 |
+1|ZIRBES, LARRY & MARIA         | 3124907      |  R11 |  P   | 12/28/2011|          378.57 |RATE 05 |  8.00%   3.00|         41.65 |
+1|ZIRBES, LARRY & MARIA         | 3124908      |  R11 |  P   | 12/28/2011|          319.64 |RATE 05 |  8.00%   3.00|         35.16 |
+1|ZIRBES, LARRY & MARIA         | 3124909      |  R21 |  P   | 12/28/2011|          360.91-|RATE 05 |  8.00%   3.00|         39.70-|
+1|ZIRBES, LARRY & MARIA         | 3124909      |  R29 |  P   | 06/24/2011|           77.54-|RATE 05 |  8.00%   3.00|          8.53-|
+1|ZIRBES, LARRY & MARIA         | 3124909      |  R11 |  P   | 12/28/2011|          360.91 |RATE 05 |  8.00%   3.00|         39.70 |
+1|ZIRBES, LARRY & MARIA         | 3124909A     |  R11 |  P   | 12/28/2011|          559.23 |RATE 05 |  8.00%   3.00|         61.52 |
+1|ZIRBES, LARRY & MARIA         | 3124909A     |  R09 |  P   | 06/24/2011|          106.92 |RATE 05 |  8.00%   3.00|         11.76 |
+1|ZIRBES, LARRY & MARIA         | 3124910      |  R11 |  P   | 12/28/2011|          303.18 |RATE 05 |  8.00%   3.00|         33.35 |
+1|                              |              |      |      |           |                 |        |              |               |
+1| TOTAL - PREFERRED AUTO                                                |       75,095.33 |                       |      8,256.93 |
+1POL SUM PREF                                                 RIZPB00C                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            01/15/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+
+0PREFERRED AUTO
+1_________________________________________________________________________________________________________________________
+1| SUMMARY BY                        |  CURRENT PAY   |  CURRENT PAY   |                |   CURRENT PAY  |  YEAR-TO-DATE  |
+1| PREMIUM AND COMPENSATION          | PERS. PRODUCED |    ASSIGNED    |                |      TOTALS    |      TOTALS    |
+1|NEW BUSINESS PREMIUM               |      7,659.04  |                |                |      7,659.04  |      7,659.04  |
+1|NEW BUSINESS SERVICE COMPENSATION  |        612.75  |                |                |        612.75  |        612.75  |
+1|NEW BUSINESS QRP/VAR COMPENSATION  |        229.83  |                |                |        229.83  |        229.83  |
+1|TOTAL NEW BUSINESS COMPENSATION    |        842.58  |                |                |        842.58  |        842.58  |
+1|                                   |                |                |                |                |                |
+1|RENEWAL PREMIUM                    |     61,073.87  |      6,362.42  |                |     67,436.29  |     67,436.29  |
+1|RENEWAL SERVICE COMPENSATION       |      4,885.82  |        507.57  |                |      5,393.39  |      5,393.39  |
+1|RENEWAL QRP/VAR COMPENSATION       |      1,832.21  |        188.75  |                |      2,020.96  |      2,020.96  |
+1|TOTAL RENEWAL COMPENSATION         |      6,718.03  |        696.32  |                |      7,414.35  |      7,414.35  |
+1|                                   |                |                |                |                |                |
+1|TOTAL PREMIUM                      |     68,732.91  |      6,362.42  |                |     75,095.33  |     75,095.33  |
+1|RATE 5 SERVICE COMPENSATION        |      5,498.57  |        507.57  |                |      6,006.14  |      6,006.14  |
+1|TOTAL QRP/VAR COMPENSATION         |      2,062.04  |        188.75  |                |      2,250.79  |      2,250.79  |
+1|CURRENT COMPENSATION               |      7,560.61  |        696.32  |                |      8,256.93  |      8,256.93  |
+1|                                   |  YEAR-TO-DATE  |  YEAR-TO-DATE  |                |                |  YEAR-TO-DATE  |
+1| SUMMARY BY RATE                   | PERS. PRODUCED |    ASSIGNED    |                |                |      TOTALS    |
+1|RATE 5 COMP                        |      7,560.61  |        696.32  |                |                |      8,256.93  |
+1|TOTAL COMPENSATION                 |      7,560.61  |        696.32  |                |                |      8,256.93  |

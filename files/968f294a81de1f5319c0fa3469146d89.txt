@@ -1,0 +1,145 @@
+1POL DET LIFE                                                 RIZPB00F                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT POLICY DETAIL
+1                                                            01/31/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+1LIFE
+1____________________________________________________________________________________________________________________________________________________
+1|                              | POLICY  |   |             |POL|  |    |              |   AGENTS    |   PREMIUM   |   NEW INS     |      COUNTS    |
+1|   INSURED NAME               | NUMBER  |KND|  ACTION     | YR|MO|MODE|    PREMIUM   |COMPENSATION |   CREDITS   |   CREDITS     |YEAR|AC|PD|EX|LS|
+1|GONZALEZ, HERIBERT            |2495-3283|Q22|PREM PAID     |04|01|  SM|        20.80 |        1.24 |        0.00 |          0.00 |    |  |  |  |  |
+1|MELTREGER, TIMOTHY            |2523-4640|Q22|PREM PAID     |04|01|  SM|        48.96 |        2.94 |        0.00 |          0.00 |    |  |  |  |  |
+1|MARTIN, HEATHER               |2523-4814|Q22|PREM PAID     |04|01|  SM|        20.01 |        1.20 |        0.00 |          0.00 |    |  |  |  |  |
+1|KENDRICK, GREGG               |2530-9058|P13|PREM PAID     |04|01|  SM|        89.00 |        3.56 |        0.00 |          0.00 |    |  |  |  |  |
+1|YOUNGLOVE, JEWELL             |2532-4990|Q21|PREM PAID     |04|01|  SM|        15.32 |        0.92 |        0.00 |          0.00 |    |  |  |  |  |
+1|COETZEE, PORFIDIA             |2574-3785|P13|PREM PAID     |04|01|  SM|        34.00 |        1.36 |        0.00 |          0.00 |    |  |  |  |  |
+1|KUHEN, STACIA                 |2592-1988|Q22|PREM PAID     |04|01|  SM|        22.63 |        1.36 |        0.00 |          0.00 |    |  |  |  |  |
+1|KUHEN, DEREK A                |2592-2311|Q22|PREM PAID     |04|01|  SM|        67.43 |        4.04 |        0.00 |          0.00 |    |  |  |  |  |
+1|DOANE, BLAIR                  |2617-2350|Q22|PREM PAID     |04|01|  SM|        46.53 |        2.80 |        0.00 |          0.00 |    |  |  |  |  |
+1|ROSENFELD, MATT               |2627-5698|Q22|PREM PAID     |03|01|  SM|        50.93 |        3.06 |        0.00 |          0.00 |    |  |  |  |  |
+1|BURK, CHRISTOPHER             |2638-3826|Q22|PREM PAID     |03|01|  SM|        88.33 |        5.30 |        0.00 |          0.00 |    |  |  |  |  |
+1|HALL, GEORGANNA               |2638-6746|Q22|PREM PAID     |03|01|  SM|        19.16 |        1.14 |        0.00 |          0.00 |    |  |  |  |  |
+1|ORR, RANDALL S                |2677-1493|Q22|PREM PAID     |03|12|  SM|        57.43 |        3.44 |        0.00 |          0.00 |    |  |  |  |  |
+1|ORR, CASSIE                   |2677-3156|Q22|PREM PAID     |03|12|  SM|        31.98 |        1.92 |        0.00 |          0.00 |    |  |  |  |  |
+1|MILLER, ROBERT D              |2679-6206|Q22|PREM PAID     |03|01|  SM|        50.88 |        3.06 |        0.00 |          0.00 |    |  |  |  |  |
+1|GUERRERO, JORGE               |2680-1737|Q22|PREM PAID     |03|01|  SM|        33.51 |        2.02 |        0.00 |          0.00 |    |  |  |  |  |
+1|SAVAGE, MARK W                |2680-7178|Q22|PREM PAID     |03|01|  SM|       118.73 |        7.12 |        0.00 |          0.00 |    |  |  |  |  |
+1|SAVAGE, JILL A                |2680-7279|Q22|PREM PAID     |03|01|  SM|        73.06 |        4.38 |        0.00 |          0.00 |    |  |  |  |  |
+1|TSAN, CLAIRE                  |2756-1345|Q13|PREM PAID     |02|01|  SM|       150.00 |       22.50 |        7.50 |          0.00 |    |  |  |  |  |
+1|TSAN, CLAIRE                  |2756-1877|Q22|PREM PAID     |03|01|  SM|        17.41 |        1.04 |        0.00 |          0.00 |    |  |  |  |  |
+1|TEEPLE, EMMA                  |2762-9972|Q22|PREM PAID     |02|01|  SM|        63.93 |        3.84 |        0.00 |          0.00 |    |  |  |  |  |
+1|FISHER, DANIELA               |2766-2640|Q17|PREM PAID     |02|01|  SM|        12.88 |        0.39 |        0.00 |          0.00 |    |  |  |  |  |
+1|SOLORIO, MARIA                |2772-2912|Q12|PREM PAID     |02|01|  SM|       136.60 |        4.10 |        0.00 |          0.00 |    |  |  |  |  |
+1|BERENDS, JEFF                 |2782-0761|Q13|PREM PAID     |02|01|  SM|        75.00 |       11.25 |        3.75 |          0.00 |    |  |  |  |  |
+1|BERENDS, JEFF                 |2782-0761|Q13|PREM PAID     |02|01|  SM|        75.00 |       11.25 |        3.75 |          0.00 |    |  |  |  |  |
+1|SO, ARLINGTON                 |2801-2288|Q26|PREM PAID     |02|01|  SM|        81.36 |        4.88 |        0.00 |          0.00 |    |  |  |  |  |
+1|DERAKHSHAN, JANICE            |2819-2588|Q13|PREM PAID     |02|01|  SM|        55.00 |        8.25 |        2.75 |          0.00 |    |  |  |  |  |
+1|DERAKHSHAN, JANICE            |2819-2588|Q13|PREM PAID     |02|01|  SM|        55.00 |        8.25 |        2.75 |          0.00 |    |  |  |  |  |
+1|GARWOOD, GEOFF                |2829-3756|Q27|PREM PAID     |02|01|  SM|       160.31 |        9.62 |        0.00 |          0.00 |    |  |  |  |  |
+1|ERQUIAGA, NICOLE              |2829-3976|Q27|PREM PAID     |02|01|  SM|        37.21 |        2.24 |        0.00 |          0.00 |    |  |  |  |  |
+1|COETZEE, NICOLAS A            |2844-4220|Q22|PREM PAID     |02|01|  SM|       133.98 |        8.04 |        0.00 |          0.00 |    |  |  |  |  |
+1|HERRERA, VERONICA             |2855-4760|Q17|PREM PAID     |02|01|  SM|        12.79 |        0.38 |        0.00 |          0.00 |    |  |  |  |  |
+1|MARCUM, JOHN                  |2873-4080|R22|PREM PAID     |02|01|  SM|       304.35 |       18.26 |        0.00 |          0.00 |    |  |  |  |  |
+1|THEODORIDIS, GEORG            |2873-7493|R27|PREM PAID     |02|01|  SM|     1,441.55 |       86.50 |        0.00 |          0.00 |    |  |  |  |  |
+1|ORR, CASSIE                   |2886-4507|QU9|PREM PAID     |01|01|  SM|         0.00 |        0.00 |       36.06 |          0.00 |    |  |  |  |  |
+1|ORR, CASSIE                   |2886-4507|Q13|PREM PAID     |02|01|  SM|        36.06 |        5.41 |        1.80 |          0.00 |    |  |  |  |  |
+1|HAMILTON, JAC III             |2892-6255|QU9|PREM PAID     |01|01|  SM|         0.00 |        0.00 |       21.19 |          0.00 |    |  |  |  |  |
+1|HAMILTON, JAC III             |2892-6255|Q13|PREM PAID     |01|01|  SM|        72.73 |       18.64 |       51.54 |          0.00 |    |  |  |  |  |
+1|WOO, STEVE                    |2912-7817|R22|PREM PAID     |01|01|  SM|       389.75 |       77.95 |      389.75 |          0.00 |    |  |  |  |  |
+1|HAMILTON, JAC III             |2946-0662|R22|PREM PAID     |01|01|  SM|        91.80 |       18.36 |       91.80 |          0.00 |    |  |  |  |  |
+1|ZAMORA, MARIA                 |2977-0543|R22|PREM PAID     |01|01|  SM|        37.85 |        7.57 |       37.85 |          0.00 |    |  |  |  |  |
+1|PUERTAS, CYNTHIA              |2987-1841|R22|PREM PAID     |01|01|  SM|       118.35 |       23.67 |      118.35 |          0.00 |    |  |  |  |  |
+1|PUERTAS, CYNTHIA              |2987-1841|R22|PREM REV      |01|01|  SM|       118.35-|       23.67-|      118.35-|          0.00 |    |  |  |  |  |
+1|EICHENMULLER, SHAW            |3017-2166|R22|PREM PAID     |01|01|  SM|        18.97 |        3.79 |       31.59 |          0.00 |    |  |  |  |  |
+1|EICHENMULLER, SHAW            |3017-2166|R22|PREM PAID     |01|12|  SM|        18.97 |        3.79 |       31.59 |          0.00 |    |  |  |  |  |
+1|EICHENMULLER, SHAW            |3017-2166|R22|PREM REV      |01|12|  SM|        56.55-|       11.31-|      119.65-|          0.00 |    |  |  |  |  |
+1|EICHENMULLER, SHAW            |3017-2166|R22|NOT TAKEN     |01|12|  SM|        37.58 |        0.00 |        0.00 |    400,000.00-|    |  |  |  |  |
+1POL DET LIFE                                                 RIZPB00F                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT POLICY DETAIL
+1                                                            01/31/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+1LIFE
+1____________________________________________________________________________________________________________________________________________________
+1|                              | POLICY  |   |             |POL|  |    |              |   AGENTS    |   PREMIUM   |   NEW INS     |      COUNTS    |
+1|   INSURED NAME               | NUMBER  |KND|  ACTION     | YR|MO|MODE|    PREMIUM   |COMPENSATION |   CREDITS   |   CREDITS     |YEAR|AC|PD|EX|LS|
+1|BROWN, ROBERT                 |3022-6572|R22|PREM PAID     |01|01|  SM|       250.55 |       50.11 |      250.55 |          0.00 |    |  |  |  |  |
+1|BROWN, ROBERT                 |3022-6572|R22|INIT PREM     |01|11|  SM|       250.55 |       50.11 |      250.55 |  1,000,000.00 |2012|1 |1 |1 |  |
+1|MOVED TO PRIOR YR             |3022-6572|R22|ADJUSTMENT    |01|11|  SM|       250.55-|        0.00 |      250.55-|  1,000,000.00-|    |  |  |  |  |
+1|MOVED TO PRIOR YR             |3022-6572|R22|ADJUSTMENT    |01|11|  SM|         0.00 |        0.00 |        0.00 |          0.00 |    |1-|1-|  |  |
+1|MOVED TO PRIOR YR             |3022-6572|R22|ADJUSTMENT    |01|12|  SM|       250.55-|        0.00 |      250.55-|          0.00 |    |  |  |  |  |
+1|BROWN, ROBERT                 |3022-6572|R22|PREM PAID     |01|12|  SM|       250.55 |       50.11 |      250.55 |          0.00 |    |  |  |  |  |
+1|MILES, ANITA D                |3038-2704|R17|PREM PAID     |01|01|  SM|        17.75 |        5.33 |       17.75 |          0.00 |    |  |  |  |  |
+1|MILES, ANITA D                |3038-2704|R17|INIT PREM     |01|12|  SM|        17.75 |        5.33 |       17.75 |     50,000.00 |2012|1 |1 |1 |  |
+1|MOVED TO PRIOR YR             |3038-2704|R17|ADJUSTMENT    |01|12|  SM|        17.75-|        0.00 |       17.75-|     50,000.00-|    |  |  |  |  |
+1|MOVED TO PRIOR YR             |3038-2704|R17|ADJUSTMENT    |01|12|  SM|         0.00 |        0.00 |        0.00 |          0.00 |    |1-|1-|  |  |
+1|MOVED TO PRIOR YR             |3038-5619|R16|ADJUSTMENT    |01|01|  SM|        37.00-|        0.00 |       37.00-|     25,000.00-|    |  |  |  |  |
+1|MOVED TO PRIOR YR             |3038-5619|R16|ADJUSTMENT    |01|01|  SM|         0.00 |        0.00 |        0.00 |          0.00 |    |1-|1-|  |  |
+1|WARD, JACOB                   |3038-5619|R16|NEW ISSUE     |01|01|  SM|         0.00 |        0.00 |        0.00 |          0.00 |    |  |  |  |  |
+1|WARD, JACOB                   |3038-5619|R16|INIT PREM     |01|01|  SM|        37.00 |       11.10 |       37.00 |     25,000.00 |2012|1 |1 |1 |  |
+1|WARD, ASHLEE                  |3038-5752|R16|NEW ISSUE     |01|01|  SM|         0.00 |        0.00 |        0.00 |          0.00 |    |  |  |  |  |
+1|WARD, ASHLEE                  |3038-5752|R16|INIT PREM     |01|01|  SM|        36.00 |       10.80 |       36.00 |     25,000.00 |2012|1 |1 |1 |  |
+1|MOVED TO PRIOR YR             |3038-5752|R16|ADJUSTMENT    |01|01|  SM|        36.00-|        0.00 |       36.00-|     25,000.00-|    |  |  |  |  |
+1|MOVED TO PRIOR YR             |3038-5752|R16|ADJUSTMENT    |01|01|  SM|         0.00 |        0.00 |        0.00 |          0.00 |    |1-|1-|  |  |
+1|MOVED TO PRIOR YR             |3038-5972|R16|ADJUSTMENT    |01|01|  SM|        15.50-|        0.00 |       15.50-|     25,000.00-|    |  |  |  |  |
+1|MOVED TO PRIOR YR             |3038-5972|R16|ADJUSTMENT    |01|01|  SM|         0.00 |        0.00 |        0.00 |          0.00 |    |1-|1-|  |  |
+1|CAYETANO, ISIS                |3038-5972|R16|NEW ISSUE     |01|01|  SM|         0.00 |        0.00 |        0.00 |          0.00 |    |  |  |  |  |
+1|CAYETANO, ISIS                |3038-5972|R16|INIT PREM     |01|01|  SM|        15.50 |        4.65 |       15.50 |     25,000.00 |2012|1 |1 |1 |  |
+1|KUHEN, CHLOE K                |3038-6178|R01|PREM PAID     |01|01|  SM|       170.30 |       51.09 |      170.30 |          0.00 |    |  |  |  |  |
+1|MOVED TO PRIOR YR             |3038-6178|R01|ADJUSTMENT    |01|12|  SM|         0.00 |        0.00 |        0.00 |          0.00 |    |1-|1-|  |  |
+1|MOVED TO PRIOR YR             |3038-6178|R01|ADJUSTMENT    |01|12|  SM|       170.30-|        0.00 |      170.30-|    250,000.00-|    |  |  |  |  |
+1|KUHEN, CHLOE K                |3038-6178|R01|INIT PREM     |01|12|  SM|       170.30 |       51.09 |      170.30 |    250,000.00 |2012|1 |1 |1 |  |
+1|         75-3497 TOTAL - LIFE                                         |              |      665.57 |    1,032.62 |    400,000.00-|    |  |  |  |  |
+1
+ *DJDE* FORMAT=PDE1,FONTINDEX=0,DATA=(1,133),DUPLEX=YES,OVERPRINT=PRINT,BOF=67,END;
+1POL SUM LIFE                                                 RIZPB00F                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT POLICY SUMMARY
+1                                                            01/31/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+1LIFE
+1_________________________________________________________________________________________________________________________
+1|SUMMARY BY                                 |  CURRENT PAY |              |              |  CURRENT PAY |  YEAR-TO-DATE |
+1|PREMIUM AND COMPENSATION                   |              |              |              |     TOTALS   |      TOTALS   |
+1|FIRST YEAR WRITING COMPENSATION            |       408.51 |              |              |       408.51 |        408.51 |
+1|TOTAL FIRST YEAR WRITING COMPENSATION      |       408.51 |              |              |       408.51 |        408.51 |
+1|                                           |              |              |              |              |               |
+1|RENEWAL WRITING COMPENSATION               |       144.94 |              |              |       144.94 |        144.94 |
+1|TOTAL WRITING COMPENSATION                 |       144.94 |              |              |       144.94 |        144.94 |
+1|                                           |              |              |              |              |               |
+1|SERVICING COMPENSATION                     |       112.12 |              |              |       112.12 |        112.12 |
+1|TOTAL SERVICING COMPENSATION               |       112.12 |              |              |       112.12 |        112.12 |
+1|                                           |              |              |              |              |               |
+1|BUSINESS DEVELOPMENT ALLOWANCE             |         0.00 |              |              |         0.00 |          0.00 |
+1|OTHER COMPENSATION                         |         0.00 |              |              |         0.00 |          0.00 |
+1|                                           |              |              |              |              |               |
+1|TOTAL COMPENSATION                         |       665.57 |              |              |       665.57 |        665.57 |
+1
+1                                                                                                                         
+1| PRODUCTION                                |    CURRENT   |              |              |              |  YEAR-TO-DATE |
+1|NET PAID FOR POLICIES                      |            0 |              |              |              |             0 |
+1|INSURANCE CREDITS                          |      400,000-|              |              |              |       400,000-|
+1|PREMIUM CREDITS                            |     1,032.62 |              |              |              |      1,032.62 |
+1|POTENTIAL FIRST YEAR PREMIUM CREDITS (EST) |              |              |              |              |     23,278.63 |
+1|POTENTIAL PREMIUM CREDITS NEXT YEAR (EST)  |              |              |              |              |          0.00 |
+1|PRIOR YEAR NET PAID FOR POLICIES           |              |              |              |              |            35 |
+1|PRIOR YEAR PREMIUM CREDITS                 |              |              |              |              |        61,057 |
+1
+1                                                                                                                         
+1| PERSISTENCY                               |        YEAR-TO-DATE         |              |          PRIOR YEARS         |
+1|                                           |     2012     |     2011     |              |     2011     |     2010      |
+1|NUMBER OF EXPOSED POLICIES                 |          6   |         41   |              |         41   |          49   |
+1|NUMBER OF POLICIES REMAINING               |          6   |         36   |              |         36   |          42   |
+1|PERSISTENCY RATIO                          |        100%  |         88%  |              |         88%  |         86%   |
+1|                                           |              |              |              |              |               |
+1| PLACED                                    |              |              |              |              |               |
+1|NUMBER OF POLICIES ACTED UPON              |          0   |         48   |              |              |               |
+1|NET PAID FOR POLICIES                      |          0   |         35   |              |              |               |
+1|PLACED RATIO                               |        100%  |         73%  |              |              |               |
+ *DJDE* FORMAT=PDE2,FONTINDEX=0,DATA=(1,150),DUPLEX=YES,OVERPRINT=PRINT,BOF=67,END;

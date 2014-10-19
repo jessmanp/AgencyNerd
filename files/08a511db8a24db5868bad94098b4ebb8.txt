@@ -1,0 +1,47 @@
+1POL DET IPSI HEALTH ALLIANCE                                 RIZPB00E                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            02/29/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+1IPSI HEALTH ALLIANCE
+1____________________________________________________________________________________________________________________________________________
+1|                              |  POLICY/CAR  | TRANS| COMP |  RENEWAL  |      POLICY     |  RATE  |COMP PERCENT  |    AGENTS     |ALLIANCE|
+1|   INSURED NAME               |    NUMBER    | CODE | CLASS|   DATE    |     PREMIUM     |SCHEDULE|BASE          | COMPENSATION  |  IND   |
+1|                              |              |      |      |           |                 |        |              |               |        |
+1|DAVID J SIGBAND               | 60884556     |  N11 |  P   | 01/19/2012|          123.13 |RATE 05 |  5.00%       |          6.16 |  01    |
+1|JOLYNNE E EWING               | 60963181     |  N11 |  P   | 01/19/2012|          543.75 |RATE 05 |  5.00%       |         27.19 |  01    |
+1|JOLYNNE E EWING               | 60963181     |  N11 |  P   | 01/19/2012|            9.95 |RATE 05 |  5.00%       |          0.50 |  01    |
+1|JOLYNNE E EWING               | 60964297     |  N11 |  P   | 01/19/2012|           17.22 |RATE 05 |  8.00%       |          1.38 |  01    |
+1|                              |              |      |      |           |                 |        |              |               |        |
+1| TOTAL - IPSI HEALTH ALLIANCE                              |           |          694.05 |        |              |         35.23 |        |
+1POL SUM IPSI HEALTH ALLIANCE                                 RIZPB00E                                               753497F418
+1                                                   STATE FARM INSURANCE COMPANIES
+1                                                 SEMIMONTHLY COMPENSATION STATEMENT
+1                                                            02/29/2012
+
+1EARNINGS STATE/AGENT - 75-3497               AGENT NAME - HAMILTON, JACK G
+1RESIDENT STATE/AGENT - 75-3497               AFO CODE -   23-F418
+
+
+0IPSI HEALTH ALLIANCE
+1_________________________________________________________________________________________________________________________
+1| SUMMARY BY                        |  CURRENT PAY   |  CURRENT PAY   |                |   CURRENT PAY  |  YEAR-TO-DATE  |
+1| PREMIUM AND COMPENSATION          | PERS. PRODUCED |    ASSIGNED    |                |      TOTALS    |      TOTALS    |
+1|NEW BUSINESS PREMIUM               |        694.05  |                |                |        694.05  |      1,388.10  |
+1|NEW BUSINESS SERVICE COMPENSATION  |         35.23  |                |                |         35.23  |         70.46  |
+1|TOTAL NEW BUSINESS COMPENSATION    |         35.23  |                |                |         35.23  |         70.46  |
+1|                                   |                |                |                |                |                |
+1|RENEWAL PREMIUM                    |                |                |                |                |                |
+1|RENEWAL SERVICE COMPENSATION       |                |                |                |                |                |
+1|TOTAL RENEWAL COMPENSATION         |                |                |                |                |                |
+1|                                   |                |                |                |                |                |
+1|TOTAL PREMIUM                      |        694.05  |                |                |        694.05  |      1,388.10  |
+1|RATE 5 SERVICE COMPENSATION        |         35.23  |                |                |         35.23  |         70.46  |
+1|CURRENT COMPENSATION               |         35.23  |                |                |         35.23  |         70.46  |
+1|                                   |  YEAR-TO-DATE  |  YEAR-TO-DATE  |                |                |  YEAR-TO-DATE  |
+1| SUMMARY BY RATE                   | PERS. PRODUCED |    ASSIGNED    |                |                |      TOTALS    |
+1|RATE 5 COMP                        |         70.46  |                |                |                |         70.46  |
+1|TOTAL COMPENSATION                 |         70.46  |                |                |                |         70.46  |
