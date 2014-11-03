@@ -203,7 +203,7 @@ class SetupModel
 Please confirm your email by clicking the link below. Once you have clicked the link below your account will be confirmed and you can complete the setup process.
 <br /><br />
 ';
-        $link = EMAIL_VERIFICATION_URL.'?id='.urlencode($user_id).'&verification_code='.urlencode($user_activation_hash);
+        $link = EMAIL_VERIFICATION_URL.'&id='.urlencode($user_id).'&verification_code='.urlencode($user_activation_hash);
 	    $body .= EMAIL_VERIFICATION_CONTENT.' <a href="'.$link.'">'.$link.'</a><br /><br />';
 		$body .= 'You will need to use the login information below to activate your new account.<br /><br /><strong>Temporary Username:</strong> '.$auto_username.'<br /><strong>Temporary Password:</strong> '.$auto_password;
 	    $body .= '

@@ -60,8 +60,15 @@
 <div style="clear:both;"></div>
 </div>
 <p>If you need help you can email us at <a href="mailto:support@agencynerd.com">support@agencynerd.com</a> or use the support section of our application to get more details and instructions on how to get started. You will need to activate your account, login and complete the setup to use our online support and how-to videos. Check your email for further instructions on how to activate your new account.</p>
-<p>If you have not received your activation email from us please check your &quot;spam&quot; or &quot;junk&quot; folder in your email and add our support email address (support@agencynerd.com) to your email contacts.</p>
-
+<p>If you have not received your activation email from us please check your &quot;spam&quot; or &quot;junk&quot; folder in your email and add our support email address (support@agencynerd.com) to your email contacts. You can also try to resend the activation email below.</p>
+<div id="resend">
+<form method="post" action="/login/?register" id="resendform" name="resendform">
+<input type="hidden" id="resend" name="resend" value="1" />
+<input type="hidden" id="tuid" name="tuid" value="<?php echo $registration->temp_user_id; ?>" />
+<input type="submit" class="plain-btn" value="Resend Email">
+</form>
+</div>
+<br /><br />
 </div>
 
 <?php } ?>

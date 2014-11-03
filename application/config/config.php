@@ -54,7 +54,7 @@ define("EMAIL_SMTP_ENCRYPTION", "ssl");
  * Configuration for: verification email data
  * Set the absolute URL to register.php, necessary for email verification links
  */
-define("EMAIL_VERIFICATION_URL", "http://dev.agencynerd.com/login/register.php");
+define("EMAIL_VERIFICATION_URL", "http://dev.agencynerd.com/login/?register=invite");
 define("EMAIL_VERIFICATION_FROM", "support@agencynerd.com");
 define("EMAIL_VERIFICATION_FROM_NAME", "Agency Nerd");
 define("EMAIL_VERIFICATION_SUBJECT", "Account activation for Agency Nerd");

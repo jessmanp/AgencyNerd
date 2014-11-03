@@ -45,7 +45,7 @@
 <!-- edit form for agency info -->
 <form method="post" action="/home/saveAgencySetup" id="signup_agency_info" name="signup_agency_info">
 
-    <label for="agency_name">Name<span class="small">*Required</span></label>
+    <label for="agency_name">Agency Name<span class="small">*Required</span></label>
     <input id="agency_name" type="text" name="agency_name" maxlength="64" placeholder="Enter Name" required />
 
 	<label for="agancy_address">Address<span class="small">*Optional</span></label>

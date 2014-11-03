@@ -30,6 +30,8 @@ class Registration
      */
     public  $messages                 = array();
 
+	public  $temp_user_id 			= 0;
+
     /**
      * the function "__construct()" automatically starts whenever an object of this class is created,
      * you know, when you do "$login = new Login();"
@@ -45,6 +47,10 @@ class Registration
         // if we have such a GET request, call the verifyNewUser() method
         } else if (isset($_GET["id"]) && isset($_GET["verification_code"])) {
             $this->verifyNewUser($_GET["id"], $_GET["verification_code"]);
+		// if we have a POST request to resend verification email, call sendVerificationEmail() method
+        } else if (isset($_POST["resend"])) {
+			$this->resendVerificationEmail($_POST["tuid"]);
+			//$this->registration_successful = true;
         }
     }
 
@@ -133,7 +139,7 @@ class Registration
 
                 // crypt the user's password with the PHP 5.5's password_hash() function, results in a 60 character hash string
                 // the PASSWORD_DEFAULT constant is defined by the PHP 5.5, or if you are using PHP 5.3/5.4, by the password hashing
-                // compatibility library. the third parameter looks a little bit shitty, but that's how those PHP 5.5 functions
+                // compatibility library. the third parameter looks a little bit odd, but that's how those PHP 5.5 functions
                 // want the parameter: as an array with, currently only used with 'cost' => XX.
                 $user_password_hash = password_hash($user_password, PASSWORD_DEFAULT, array('cost' => $hash_cost_factor));
                 // generate random hash for email verification (40 char string)
@@ -160,13 +166,13 @@ class Registration
                     if ($this->sendVerificationEmail($user_id, $user_email, $user_activation_hash)) {
                         // when mail has been send successfully
                         $this->messages[] = MESSAGE_VERIFICATION_MAIL_SENT;
+					   $this->temp_user_id = $user_id;
                         $this->registration_successful = true;
                     } else {
                         // delete this users account immediately, as we could not send a verification email
                         $query_delete_user = $this->db_connection->prepare('DELETE FROM users WHERE user_id=:user_id');
                         $query_delete_user->bindValue(':user_id', $user_id, PDO::PARAM_INT);
                         $query_delete_user->execute();
-
                         $this->errors[] = MESSAGE_VERIFICATION_MAIL_ERROR;
                     }
                 } else {
@@ -345,4 +351,37 @@ If you do not wish to receive email from <span style="font-weight:bold; color:#0
             }
         }
     }
+
+	/*
+     * sends an email to the provided email address
+     * @return boolean gives back true if mail has been sent, gives back false if no mail could been sent
+     */
+    public function resendVerificationEmail($user_id)
+    {	
+		if ($this->databaseConnection()) {
+            // check if user id already exists
+            $query_check_user_id = $this->db_connection->prepare('SELECT user_activation_hash, user_email FROM users WHERE user_id=:user_id');
+            $query_check_user_id->bindValue(':user_id', $user_id, PDO::PARAM_INT);
+            $query_check_user_id->execute();
+            $result = $query_check_user_id->fetchAll();
+
+            // if user id is NOT found in the database pass error
+            if (count($result) > 0) {
+				$rs_user_id = $user_id;
+				$rs_user_email = $result[0]['user_email'];
+				$rs_user_activation_hash = $result[0]['user_activation_hash'];
+                 if ($this->sendVerificationEmail($rs_user_id, $rs_user_email, $rs_user_activation_hash)) {
+					$this->messages[] = MESSAGE_VERIFICATION_MAIL_SENT;
+				}
+            } else {
+				$this->errors[] = MESSAGE_VERIFICATION_MAIL_ERROR;
+		    }
+			
+		}
+
+	}
+
+	// EOF
+
 }
+
