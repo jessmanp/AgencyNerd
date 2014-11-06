@@ -1,3 +1,26 @@
+// LOAD PAGE
+$(document).ready(function() {
+
+	// FILE UPLOAD
+	$("#multipleupload").uploadFile({
+		url:"/app/fileUpload",
+		multiple:true,
+		fileName:"myfile",
+		allowedTypes:"txt",
+		afterUploadAll:function()
+		{
+			$("#eventsmessage").html($("#eventsmessage").html()+"<br/>All files are uploaded");
+	
+		},
+		onError: function(files,status,errMsg)
+		{
+			$("#eventsmessage").html($("#eventsmessage").html()+"<br/>Error for: "+JSON.stringify(files));
+		}
+	});
+
+});
+
+
 /*!
  * jQuery Upload File Plugin
  * version: 3.1.0

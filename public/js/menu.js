@@ -17,9 +17,9 @@ $(document).ready(function() {
 		event.preventDefault();
 		window.location.href = "/app/myagency";
 	});
-	$("#policyentry-link").on("click", function(event) {
+	$("#policies-link").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/app/policyentry";
+		window.location.href = "/app/policies";
 	});
 	$("#controld-link").on("click", function(event) {
 		event.preventDefault();

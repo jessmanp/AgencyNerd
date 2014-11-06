@@ -1,6 +1,6 @@
 		<div id="search-area">
 			<form name="search-form" action="app.html#search" method="post">
-				<input id="field" name="field" type="text" placeholder="Search" />
+				<input id="field" name="field" type="text" placeholder="Search Policies" />
 				<div id="delete"><span id="x">c</span></div>
 				<button id="submit"><span class="icon-find"><span></button>
 				<div class="date-title">Date Range:</div>

@@ -31,11 +31,11 @@
 		<div class="home-btn-text">My Agency</div>
 		</div>
 		<!-- policy entry button -->
-		<div id="policyentry-link" class="button-home">
+		<div id="policies-link" class="button-home">
 		<div class="home-btn">
 			<div class="icon-policy-entry-large"></div>
 		</div>
-		<div class="home-btn-text">Policy Entry</div>
+		<div class="home-btn-text">Policies</div>
 		</div>
 		<!-- control-D button -->
 		<div id="controld-link" class="button-home">

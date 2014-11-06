@@ -45,12 +45,12 @@ function detectIE() {
 <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
 <!-- JavaScript -->
 <script src="<?php echo URL; ?>public/js/global.js"></script>
+<?php if (isset($uploadScript)) { ?>
+<script src="<?php echo URL; ?>public/js/<?php echo $uploadScript; ?>"></script>
+<?php } ?>
 <script src="<?php echo URL; ?>public/js/<?php echo $navScript; ?>"></script>
 <?php if (isset($dateScript)) { ?>
 <script src="<?php echo URL; ?>public/js/<?php echo $dateScript; ?>"></script>
-<?php } ?>
-<?php if (isset($uploadScript)) { ?>
-<script src="<?php echo URL; ?>public/js/<?php echo $uploadScript; ?>"></script>
 <?php } ?>
 <!-- google analytics tracking -->
 <script>

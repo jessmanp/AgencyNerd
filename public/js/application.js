@@ -62,13 +62,13 @@ $(document).ready(function() {
 			event.preventDefault();
 			window.location.href = "/app/employees";
 		});
-	$("#policyentry-link").on("click", function(event) {
+	$("#policies-link").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/app/policyentry";
+		window.location.href = "/app/policies";
 	});
 		$("#punmatched-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/policyentry/punmatched";
+			window.location.href = "/app/policies/punmatched";
 		});
 	$("#controld-link").on("click", function(event) {
 		event.preventDefault();
@@ -94,9 +94,9 @@ $(document).ready(function() {
 			event.preventDefault();
 			window.location.href = "/app/reports/teammembers";
 		});
-		$("#policies-link").on("click", function(event) {
+		$("#rpolicies-link").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/reports/policies";
+			window.location.href = "/app/reports/rpolicies";
 		});
 		$("#premiums-link").on("click", function(event) {
 			event.preventDefault();
@@ -168,13 +168,13 @@ $(document).ready(function() {
 			event.preventDefault();
 			window.location.href = "/app/employees";
 		});
-	$("#policyentry-link-mobile").on("click", function(event) {
+	$("#policies-link-mobile").on("click", function(event) {
 		event.preventDefault();
-		window.location.href = "/app/policyentry";
+		window.location.href = "/app/policies";
 	});
 		$("#punmatched-link-mobile").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/policyentry/punmatched";
+			window.location.href = "/app/policies/punmatched";
 		});
 	$("#controld-link-mobile").on("click", function(event) {
 		event.preventDefault();
@@ -200,9 +200,9 @@ $(document).ready(function() {
 			event.preventDefault();
 			window.location.href = "/app/reports/teammembers";
 		});
-		$("#policies-link-mobile").on("click", function(event) {
+		$("#rpolicies-link-mobile").on("click", function(event) {
 			event.preventDefault();
-			window.location.href = "/app/reports/policies";
+			window.location.href = "/app/reports/rpolicies";
 		});
 		$("#premiums-link-mobile").on("click", function(event) {
 			event.preventDefault();
@@ -246,6 +246,7 @@ $(document).ready(function() {
 		var page = section.split("-");
 		section = page[0];
 		page = page[1];
+
 		if (page) {
 			// SECONDARY HIGHLIGHT EXPANDED BUTTON
 			$(section+"-link").removeClass("button-normal");
@@ -269,8 +270,8 @@ $(document).ready(function() {
 			case "#myagency":
 				$(".sub-myagency").slideDown();
 				break;
-			case "#policyentry":
-				$(".sub-policyentry").slideDown();
+			case "#policies":
+				$(".sub-policies").slideDown();
 				break;
 			case "#controld":
 				$(".sub-controld").slideDown();
@@ -310,22 +311,7 @@ $(document).ready(function() {
 		$(this).hide();
 	});
 
-	// FILE UPLOAD
-	$("#multipleupload").uploadFile({
-		url:"/app/fileUpload",
-		multiple:true,
-		fileName:"myfile",
-		allowedTypes:"txt",
-		afterUploadAll:function()
-		{
-			$("#eventsmessage").html($("#eventsmessage").html()+"<br/>All files are uploaded");
-	
-		},
-		onError: function(files,status,errMsg)
-		{
-			$("#eventsmessage").html($("#eventsmessage").html()+"<br/>Error for: "+JSON.stringify(files));
-		}
-	});
+
 
 
 

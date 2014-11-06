@@ -24,14 +24,16 @@
 				<div class="icon-employees"><span style="font-size:16px;">Employees</span></div>
 			</div>
 		</div>
-		<div id="policyentry-link-mobile" class="button-normal">
-			<div class="icon-policy-entry">Policy Entry</div>
+		<div id="policies-link-mobile" class="button-normal">
+			<div class="icon-policy">Policies</div>
 		</div>
-			<div class="sub-policyentry">
+			<!--
+			<div class="sub-policies">
 				<div id="punmatched-link-mobile" class="button-sub-normal">
 					<div class="icon-unmatched"><span style="font-size:16px;">Unmatched</span></div>
 				</div>
 			</div>
+			-->
 		<div id="controld-link-mobile" class="button-normal">
 			<div class="icon-control-d">Control D</div>
 		</div>
@@ -53,7 +55,7 @@
 				<div id="teammembers-link-mobile" class="button-sub-normal">
 					<div class="icon-member"><span style="font-size:16px;">Team Members</span></div>
 				</div>
-				<div id="policies-link-mobile" class="button-sub-normal">
+				<div id="rpolicies-link-mobile" class="button-sub-normal">
 					<div class="icon-policy"><span style="font-size:16px;">Policies</span></div>
 				</div>
 				<div id="premiums-link-mobile" class="button-sub-normal">
@@ -129,14 +131,16 @@
 				<div class="icon-employees"><span style="font-size:16px;">Employees</span></div>
 			</div>
 		</div>
-		<div id="policyentry-link" class="button-normal">
-			<div class="icon-policy-entry">Policy Entry</div>
+		<div id="policies-link" class="button-normal">
+			<div class="icon-policy">Policies</div>
 		</div>
-			<div class="sub-policyentry">
+			<!--
+			<div class="sub-policies">
 				<div id="punmatched-link" class="button-sub-normal">
 					<div class="icon-unmatched"><span style="font-size:16px;">Unmatched</span></div>
 				</div>
 			</div>
+			-->
 		<div id="controld-link" class="button-normal">
 			<div class="icon-control-d">Control D</div>
 		</div>
@@ -158,7 +162,7 @@
 				<div id="teammembers-link" class="button-sub-normal">
 					<div class="icon-member"><span style="font-size:16px;">Team Members</span></div>
 				</div>
-				<div id="policies-link" class="button-sub-normal">
+				<div id="rpolicies-link" class="button-sub-normal">
 					<div class="icon-policy"><span style="font-size:16px;">Policies</span></div>
 				</div>
 				<div id="premiums-link" class="button-sub-normal">

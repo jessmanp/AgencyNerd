@@ -203,7 +203,7 @@
   vertical-align:middle;
 }
 .icon-policy-entry-large:before {
-  content: "x";
+  content: "w";
   font-size:40px;
 }
 .icon-premium:before {
