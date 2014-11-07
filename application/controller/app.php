@@ -58,6 +58,33 @@ class App extends Controller
 		$navScript = 'application.js';
 
 		if (isset($_GET['listing'])) {
+			$cat = $page = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['listing']);
+			switch($cat) {
+				case 'auto';
+					$category_id = 1;
+					break;
+				case 'fire';
+					$category_id = 9;
+					break;
+				case 'life';
+					$category_id = 26;
+					break;
+				case 'health';
+					$category_id = 40;
+					break;
+				case 'loan';
+					$category_id = 50;
+					break;
+				case 'deposit';
+					$category_id = 58;
+					break;
+				case 'fund';
+					$category_id = 70;
+					break;
+				default;
+					$category_id = 0;
+					break;
+			}
 			// load listing model
 			$policy_listing_model = $this->loadModel('PolicyListingModel');
 			$dateScript = 'datepicker.js';

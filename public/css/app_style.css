@@ -406,9 +406,9 @@ DYNAMIC WIDTH CSS
 	}
 
 	.menu-container {
-		min-width:300px;
+		min-width:290px;
 		margin:0 10px 0 250px;
-		padding:20px 20px 10px 20px;
+		padding:20px 25px 10px 20px;
 		background-color:#a20004;
 		border:2px solid #ffffff;
 		/* for Chrome 10+ and Safari 5+ */
@@ -825,9 +825,9 @@ DYNAMIC WIDTH CSS
 	}
 	
 	.menu-container {
-		min-width:300px;
+		min-width:265px;
 		margin:0 10px 0 10px;
-		padding:20px 20px 10px 20px;
+		padding:20px 15px 10px 15px;
 		background-color:#a20004;
 		border:2px solid #ffffff;
 		/* for Chrome 10+ and Safari 5+ */
@@ -1438,7 +1438,7 @@ footer {
 
 .policy-icon {
 	float:left;
-	margin:0 20px 0 0;
+	margin:0 15px 0 0;
 	width:50px;
 	height:50px;
 	border:0;
@@ -1462,7 +1462,7 @@ footer {
 
 .policy-count {
 	float:left;
-	margin:-25px 0 0 70px;
+	margin:-25px 0 0 65px;
 	font-size:12px;
 }
 
@@ -1702,6 +1702,65 @@ footer {
 
 .policy-right {
 	margin:10px 0 0 125px;
+}
+
+.policy-listing-button {
+	margin:5px 0 5px 0;
+	vertical-align:middle;
+	width:28px;
+	height:28px;
+	border:0;
+	cursor:pointer;
+}
+
+.table-container {
+	margin:0 auto 0 auto;
+    display:table;
+    width:100%;
+	min-width:900px;
+    border-collapse:collapse;
+}
+
+.heading {
+     font-weight:bold;
+     display:table-row;
+     text-align:center;
+     line-height:30px;
+     font-size:14px;
+    
+}
+
+.table-row {
+	line-height:45px;
+     display:table-row;
+     text-align:center;
+}
+
+.table-row-alt {
+	line-height:45px;
+     display:table-row;
+     text-align:center;
+	background-color:#cccccc;
+}
+
+.heading .col {
+	display:table-cell;
+	background-color:#a20004;
+	color:#ffffff;
+}
+
+a.sort-link,  a.sort-link:visited {
+	font-size:14px;
+	color:#ffffff;
+	text-decoration:none;
+}
+a.sort-link:hover {
+	color:#ffffff;
+	text-decoration:underline;
+}
+
+.col {
+	display:table-cell;
 }
 
 
